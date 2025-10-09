@@ -1,0 +1,10 @@
+# Large or reproducible artifacts
+data/
+db/
+*.sqlite
+*.parquet
+*.feather
+*.log
+*.tmp
+# Notebook noise
+.ipynb_checkpoints/
