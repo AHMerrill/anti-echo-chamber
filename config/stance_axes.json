@@ -1,0 +1,345 @@
+[
+  {
+    "id": "gov_vs_market",
+    "label_pos": "government intervention",
+    "label_neg": "market/industry solutions",
+    "archetype_pos": "Argues for public programs, regulation, and government funding to address problems and protect the public interest.",
+    "archetype_neg": "Argues that private enterprise, competition, and limited regulation are best suited to solve problems efficiently."
+  },
+  {
+    "id": "privacy_vs_security",
+    "label_pos": "privacy & civil liberties",
+    "label_neg": "security & surveillance",
+    "archetype_pos": "Prioritizes individual rights, due process, and strict limits on data collection and monitoring.",
+    "archetype_neg": "Prioritizes safety, order, and proactive monitoring tools for law enforcement and national security."
+  },
+  {
+    "id": "hawk_vs_dove",
+    "label_pos": "hawkish foreign policy",
+    "label_neg": "dovish diplomacy-first",
+    "archetype_pos": "Supports military strength, coercive tools, and willingness to use force or hard power to deter threats.",
+    "archetype_neg": "Supports diplomacy, multilateralism, de-escalation, and restraint in the use of military force."
+  },
+  {
+    "id": "regulation_vs_deregulation",
+    "label_pos": "more regulation",
+    "label_neg": "less regulation",
+    "archetype_pos": "Advocates stricter rules, standards, and oversight to address externalities and systemic risks.",
+    "archetype_neg": "Advocates reducing red tape and compliance burdens to encourage innovation and growth."
+  },
+  {
+    "id": "redistribution_vs_low_taxes",
+    "label_pos": "redistribution & social safety net",
+    "label_neg": "low taxes & limited welfare",
+    "archetype_pos": "Supports progressive taxation and robust social programs to reduce inequality and provide broad services.",
+    "archetype_neg": "Supports lower taxes, targeted aid, and limiting government spending to spur investment and self-reliance."
+  },
+  {
+    "id": "public_vs_private_provision",
+    "label_pos": "public provision of services",
+    "label_neg": "private provision / privatization",
+    "archetype_pos": "Favors government-run or public options to ensure universal access and equity.",
+    "archetype_neg": "Favors private providers and competition to improve quality, efficiency, and choice."
+  },
+  {
+    "id": "environmental_precaution_vs_growth",
+    "label_pos": "environmental precaution",
+    "label_neg": "growth & development priority",
+    "archetype_pos": "Emphasizes precautionary environmental protections even at the expense of short-term growth.",
+    "archetype_neg": "Emphasizes economic development, permitting, and infrastructure as primary goals; manage risks pragmatically."
+  },
+  {
+    "id": "open_borders_vs_strict_controls",
+    "label_pos": "more open migration",
+    "label_neg": "stricter border controls",
+    "archetype_pos": "Supports broader immigration pathways, humanitarian protections, and integration policies.",
+    "archetype_neg": "Supports tighter border enforcement, limited admissions, and stringent eligibility requirements."
+  },
+  {
+    "id": "speech_maximalism_vs_harm_reduction",
+    "label_pos": "speech-maximalism",
+    "label_neg": "harm-reduction moderation",
+    "archetype_pos": "Opposes most content restrictions; prioritizes free expression and tolerance for offensive or controversial speech.",
+    "archetype_neg": "Supports stronger moderation to reduce harms like harassment, disinformation, and incitement."
+  },
+  {
+    "id": "decentralize_vs_centralize",
+    "label_pos": "decentralized / local control",
+    "label_neg": "centralized / federal control",
+    "archetype_pos": "Prefers local or regional decision-making tailored to community needs.",
+    "archetype_neg": "Prefers centralized standards for consistency, scale, and national coordination."
+  },
+  {
+    "id": "precautionary_ai_vs_permissive_ai",
+    "label_pos": "precautionary AI governance",
+    "label_neg": "permissive / pro-innovation AI",
+    "archetype_pos": "Seeks strong guardrails, audits, and liability to mitigate AI risks before wide deployment.",
+    "archetype_neg": "Seeks light-touch rules and rapid deployment to capture benefits and iterate on real-world feedback."
+  },
+  {
+    "id": "public_health_mandates_vs_personal_choice",
+    "label_pos": "public health mandates",
+    "label_neg": "personal choice & minimal mandates",
+    "archetype_pos": "Supports mandates (e.g., masking, vaccination requirements) and coordinated public health interventions.",
+    "archetype_neg": "Opposes broad mandates; emphasizes individual risk assessment and voluntary measures."
+  },
+  {
+    "id": "union_power_vs_management_flexibility",
+    "label_pos": "strong unions & worker power",
+    "label_neg": "management flexibility",
+    "archetype_pos": "Supports unionization, collective bargaining, and stronger labor protections.",
+    "archetype_neg": "Prioritizes flexible labor markets, individualized contracts, and managerial discretion."
+  },
+  {
+    "id": "tough_on_crime_vs_reform",
+    "label_pos": "tough-on-crime",
+    "label_neg": "justice reform & rehabilitation",
+    "archetype_pos": "Favors stricter penalties, broader policing tools, and deterrence-focused policy.",
+    "archetype_neg": "Favors decarceration, restorative justice, and addressing root causes of crime."
+  },
+  {
+    "id": "expansionary_vs_austerity",
+    "label_pos": "expansionary fiscal policy",
+    "label_neg": "austerity / deficit reduction",
+    "archetype_pos": "Supports increased public spending or deficits in downturns to stimulate demand.",
+    "archetype_neg": "Supports spending restraint and deficit reduction to maintain fiscal sustainability."
+  },
+  {
+    "id": "internationalism_vs_national_priority",
+    "label_pos": "international cooperation",
+    "label_neg": "national priority & sovereignty",
+    "archetype_pos": "Supports multilateral agreements, shared standards, and global institutions.",
+    "archetype_neg": "Supports domestic control, skepticism of supranational constraints, and prioritizing national interests."
+  },
+  {
+    "id": "precautionary_science_vs_techno_optimism",
+    "label_pos": "precautionary science policy",
+    "label_neg": "techno-optimism",
+    "archetype_pos": "Emphasizes careful risk evaluation, peer review, and slower rollout of novel tech.",
+    "archetype_neg": "Emphasizes rapid experimentation, entrepreneurship, and tolerance for calculated risk."
+  },
+  {
+    "id": "public_education_investment_vs_choice",
+    "label_pos": "public education investment",
+    "label_neg": "school choice & competition",
+    "archetype_pos": "Supports increased funding for public schools, teacher pay, and universal services.",
+    "archetype_neg": "Supports vouchers, charters, and parental choice to drive quality through competition."
+  },
+  {
+    "id": "cultural_progressivism_vs_traditionalism",
+    "label_pos": "cultural progressivism",
+    "label_neg": "cultural traditionalism",
+    "archetype_pos": "Advocates social change, inclusion, and updating norms to reflect contemporary values.",
+    "archetype_neg": "Advocates preserving long-standing customs, norms, and institutions; cautious about rapid change."
+  },
+  {
+    "id": "decarb_rapid_vs_gradual",
+    "label_pos": "rapid decarbonization",
+    "label_neg": "gradual / market-led decarbonization",
+    "archetype_pos": "Supports aggressive timelines, mandates, and public investment to cut emissions quickly.",
+    "archetype_neg": "Supports gradual transition guided by market signals and technology readiness."
+  },
+  {
+    "id": "nuclear_yes_vs_no",
+    "label_pos": "pro-nuclear energy",
+    "label_neg": "anti-nuclear energy",
+    "archetype_pos": "Treats nuclear as a key low-carbon baseload solution worthy of investment and streamlined permitting.",
+    "archetype_neg": "Highlights safety, waste, cost, and delays; prefers alternatives like renewables and storage."
+  },
+  {
+    "id": "gmo_acceptance_vs_skepticism",
+    "label_pos": "GMO acceptance",
+    "label_neg": "GMO skepticism",
+    "archetype_pos": "Supports biotechnology and genetically modified crops for yield, resilience, and nutrition.",
+    "archetype_neg": "Raises ecological, health, and corporate control concerns; prefers non-GMO or organic approaches."
+  },
+  {
+    "id": "animal_welfare_vs_industry_practice",
+    "label_pos": "animal welfare priority",
+    "label_neg": "industry practice priority",
+    "archetype_pos": "Supports stricter welfare standards and reduced industrial farming harms.",
+    "archetype_neg": "Prioritizes productivity, affordability, and existing livestock industry methods."
+  },
+  {
+    "id": "upzoning_vs_preservation",
+    "label_pos": "upzoning / build more housing",
+    "label_neg": "neighborhood preservation",
+    "archetype_pos": "Supports higher density, zoning reform, and supply growth to improve affordability.",
+    "archetype_neg": "Prioritizes neighborhood character, local control, and cautious growth."
+  },
+  {
+    "id": "rent_control_vs_market_rents",
+    "label_pos": "rent control / tenant protections",
+    "label_neg": "market-rate rents",
+    "archetype_pos": "Supports caps and protections to prevent displacement and exploitation.",
+    "archetype_neg": "Warns of supply distortions; prefers incentives to build more housing."
+  },
+  {
+    "id": "transit_vs_car_centric",
+    "label_pos": "transit / walkable cities",
+    "label_neg": "car-centric infrastructure",
+    "archetype_pos": "Invests in public transit, cycling, and pedestrian-friendly design.",
+    "archetype_neg": "Prioritizes road expansion, parking, and personal vehicle convenience."
+  },
+  {
+    "id": "free_trade_vs_protectionism",
+    "label_pos": "free trade & globalization",
+    "label_neg": "protectionism & reshoring",
+    "archetype_pos": "Supports open markets, comparative advantage, and global supply chains.",
+    "archetype_neg": "Supports tariffs, industrial policy, and domestic manufacturing security."
+  },
+  {
+    "id": "monetary_hawk_vs_dove",
+    "label_pos": "monetary hawk (tight policy)",
+    "label_neg": "monetary dove (loose policy)",
+    "archetype_pos": "Prioritizes inflation control via higher rates and balance-sheet restraint.",
+    "archetype_neg": "Prioritizes growth and employment, tolerating higher inflation risk."
+  },
+  {
+    "id": "copyright_strict_vs_remix_freedom",
+    "label_pos": "strict copyright enforcement",
+    "label_neg": "remix / fair-use freedom",
+    "archetype_pos": "Supports strong IP protections, anti-piracy, and enforcement for creators and rights holders.",
+    "archetype_neg": "Supports expansive fair use, transformative works, and accessible culture."
+  },
+  {
+    "id": "drug_decrim_vs_prohibition",
+    "label_pos": "decriminalization / harm reduction",
+    "label_neg": "prohibition / punitive approach",
+    "archetype_pos": "Supports decriminalization, treatment-first policies, and safe supply initiatives.",
+    "archetype_neg": "Supports strict enforcement, bans, and deterrence to reduce drug harms."
+  },
+  {
+    "id": "gun_control_vs_gun_rights",
+    "label_pos": "stricter gun control",
+    "label_neg": "gun rights priority",
+    "archetype_pos": "Supports background checks, restrictions on certain firearms, and red-flag laws.",
+    "archetype_neg": "Emphasizes constitutional rights, lawful ownership, and self-defense."
+  },
+  {
+    "id": "secularism_vs_religious_role",
+    "label_pos": "secular governance",
+    "label_neg": "greater religious role",
+    "archetype_pos": "Supports church-state separation and religion-neutral policies.",
+    "archetype_neg": "Supports accommodation of religious values and institutions in public life."
+  },
+  {
+    "id": "vaccine_ip_waiver_vs_patent_protection",
+    "label_pos": "IP waivers for access",
+    "label_neg": "patent protection priority",
+    "archetype_pos": "Supports waiving IP to expand global access during crises.",
+    "archetype_neg": "Warns that weakening IP undermines innovation and future R&D."
+  },
+  {
+    "id": "net_neutrality_strong_vs_light",
+    "label_pos": "strong net neutrality",
+    "label_neg": "light-touch broadband rules",
+    "archetype_pos": "Supports strict nondiscrimination and common-carrier style rules.",
+    "archetype_neg": "Prefers flexibility for ISPs and market-driven network management."
+  },
+  {
+    "id": "platform_liability_expand_vs_immunity",
+    "label_pos": "expand platform liability",
+    "label_neg": "platform immunity priority",
+    "archetype_pos": "Supports narrowing safe harbors and increasing accountability for harms.",
+    "archetype_neg": "Warns that liability chills speech and innovation; favors broad immunity."
+  },
+  {
+    "id": "ubi_vs_means_tested_welfare",
+    "label_pos": "universal basic income",
+    "label_neg": "means-tested welfare",
+    "archetype_pos": "Supports unconditional cash transfers for simplicity and dignity.",
+    "archetype_neg": "Supports targeted programs to focus resources on those most in need."
+  },
+  {
+    "id": "foreign_aid_generous_vs_restrictive",
+    "label_pos": "generous foreign aid",
+    "label_neg": "restrictive / domestic-first",
+    "archetype_pos": "Supports robust aid for development, health, and strategic stability.",
+    "archetype_neg": "Prioritizes domestic spending; favors limited, conditional aid."
+  },
+  {
+    "id": "artistic_freedom_vs_morality_censorship",
+    "label_pos": "artistic freedom",
+    "label_neg": "morality-driven censorship",
+    "archetype_pos": "Supports broad artistic expression and tolerance for provocative works.",
+    "archetype_neg": "Supports restricting content considered obscene, offensive, or socially harmful."
+  },
+  {
+    "id": "college_merit_only_vs_holistic",
+    "label_pos": "merit-only admissions",
+    "label_neg": "holistic / context-aware",
+    "archetype_pos": "Emphasizes test scores and measurable academic metrics.",
+    "archetype_neg": "Emphasizes broader criteria, context, and diversity goals."
+  },
+  {
+    "id": "testing_emphasis_vs_project_learning",
+    "label_pos": "standardized testing emphasis",
+    "label_neg": "project-based / experiential learning",
+    "archetype_pos": "Supports frequent standardized assessments for accountability.",
+    "archetype_neg": "Supports alternative assessments and deeper learning experiences."
+  },
+  {
+    "id": "tourism_growth_vs_local_preservation",
+    "label_pos": "tourism growth",
+    "label_neg": "local preservation",
+    "archetype_pos": "Encourages tourism expansion for jobs and revenue.",
+    "archetype_neg": "Prioritizes community character, environment, and anti-overtourism policies."
+  },
+  {
+    "id": "historic_preservation_vs_redevelopment",
+    "label_pos": "historic preservation",
+    "label_neg": "redevelopment priority",
+    "archetype_pos": "Protects heritage buildings and districts from alteration or demolition.",
+    "archetype_neg": "Favors redevelopment, density, and modern use of land."
+  },
+  {
+    "id": "data_ownership_personal_vs_platform",
+    "label_pos": "personal data ownership",
+    "label_neg": "platform data ownership",
+    "archetype_pos": "Supports data portability, user control, and limits on data exploitation.",
+    "archetype_neg": "Accepts platform-centric data control as enabling service quality and monetization."
+  },
+  {
+    "id": "remote_work_vs_return_office",
+    "label_pos": "remote / flexible work",
+    "label_neg": "return-to-office",
+    "archetype_pos": "Supports flexible schedules, remote options, and distributed teams.",
+    "archetype_neg": "Emphasizes co-location, office culture, and on-site collaboration."
+  },
+  {
+    "id": "carbon_pricing_vs_command_control",
+    "label_pos": "carbon pricing",
+    "label_neg": "command-and-control mandates",
+    "archetype_pos": "Prefers carbon taxes or cap-and-trade to internalize externalities.",
+    "archetype_neg": "Prefers direct standards, bans, and technology mandates."
+  },
+  {
+    "id": "housing_first_vs_enforcement_first",
+    "label_pos": "housing-first for homelessness",
+    "label_neg": "enforcement-first",
+    "archetype_pos": "Prioritizes immediate housing with wraparound services.",
+    "archetype_neg": "Prioritizes encampment clearance, law enforcement, and conditional services."
+  },
+  {
+    "id": "organic_regen_vs_conventional_farming",
+    "label_pos": "organic / regenerative",
+    "label_neg": "conventional / yield-max",
+    "archetype_pos": "Emphasizes soil health, biodiversity, and reduced inputs.",
+    "archetype_neg": "Emphasizes productivity, inputs, and supply chain scale."
+  },
+  {
+    "id": "arts_public_funding_vs_private",
+    "label_pos": "public arts funding",
+    "label_neg": "private philanthropy / market",
+    "archetype_pos": "Supports public funding to ensure access and cultural vitality.",
+    "archetype_neg": "Prefers private support and market demand to guide arts funding."
+  },
+  {
+    "id": "sports_parity_vs_superteam_markets",
+    "label_pos": "financial parity / salary caps",
+    "label_neg": "open-market superteams",
+    "archetype_pos": "Supports caps and revenue sharing to maintain competitive balance.",
+    "archetype_neg": "Supports market forces, star concentration, and fewer constraints."
+  }
+]
