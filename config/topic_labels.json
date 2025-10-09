@@ -1,0 +1,27 @@
+[
+  { "id": "climate",           "label": "Climate change",                 "desc": "global warming, emissions, mitigation, adaptation" },
+  { "id": "economy",           "label": "Economy & inflation",            "desc": "jobs, inflation, wages, interest rates, GDP" },
+  { "id": "health",            "label": "Public health",                  "desc": "healthcare systems, pandemic response, vaccines" },
+  { "id": "immigration",       "label": "Immigration & border policy",    "desc": "migration, asylum, border control, refugees" },
+  { "id": "foreign_policy",    "label": "Foreign policy & security",      "desc": "geopolitics, diplomacy, war, defense, alliances" },
+  { "id": "technology",        "label": "Technology & platforms",         "desc": "AI, social media, data privacy, cybersecurity" },
+  { "id": "environment",       "label": "Environment & biodiversity",     "desc": "conservation, wildlife, pollution, ecosystems" },
+  { "id": "politics",          "label": "Domestic politics & elections",  "desc": "parties, campaigns, legislation, governance" },
+  { "id": "justice",           "label": "Justice & civil liberties",      "desc": "courts, policing, free speech, rights" },
+  { "id": "business",          "label": "Business & markets",             "desc": "corporations, startups, trade, regulation" },
+  { "id": "sports",            "label": "Sports",                         "desc": "teams, leagues, tournaments, athletes, results" },
+  { "id": "culture",           "label": "Culture & arts",                 "desc": "literature, theater, visual arts, cultural trends" },
+  { "id": "fashion",           "label": "Fashion & style",                "desc": "designers, trends, runway, retail, streetwear" },
+  { "id": "music",             "label": "Music",                          "desc": "artists, albums, genres, concerts, industry" },
+  { "id": "entertainment",     "label": "Entertainment & media",          "desc": "film, TV, streaming, celebrities, awards" },
+  { "id": "education",         "label": "Education",                      "desc": "schools, universities, curriculum, student policy" },
+  { "id": "science_research",  "label": "Science & research",             "desc": "discoveries, studies, space, methodology" },
+  { "id": "housing",           "label": "Housing & urban development",    "desc": "affordability, zoning, homelessness, planning" },
+  { "id": "energy",            "label": "Energy",                         "desc": "renewables, oil & gas, grid, power markets" },
+  { "id": "transportation",    "label": "Transportation & infrastructure","desc": "transit, roads, rail, aviation, EVs" },
+  { "id": "labor",             "label": "Labor & work",                   "desc": "unions, wages, workplace policy, strikes" },
+  { "id": "inequality",        "label": "Inequality & poverty",           "desc": "income gaps, social mobility, welfare" },
+  { "id": "religion",          "label": "Religion & society",             "desc": "faith groups, ethics, secularism, interfaith" },
+  { "id": "agriculture_food",  "label": "Agriculture & food",             "desc": "farming, food systems, nutrition, supply chains" }
+]
+
