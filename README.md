@@ -5,6 +5,14 @@ This repository handles scraping, embedding, batching, and coordination for the 
 
 ---
 
+<a target="_blank" href="https://colab.research.google.com/github/AHMerrill/anti-echo-chamber/blob/main/scraper_artifacts.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+_Run this project directly in Google Colab using the badge above._
+
+---
+
 ## Overview
 
 This project collects news articles and opinion pieces (publicly accessible, full text kept local only), creates two kinds of vector spaces, and publishes compact embedding batches:
