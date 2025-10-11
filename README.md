@@ -43,7 +43,7 @@ anti-echo-chamber/
 ├── docs/
 │   ├── batch_manifest_schema.md     # formal schema for manifest.json
 │   └── validation_checklist.md      # pre-publish checks
-├── scraper_artifacts.ipynb          # initial scraping experiments
+├── scraper_artifacts.ipynb          # scraping notebook
 ├── .gitignore
 └── README.md
 ```
