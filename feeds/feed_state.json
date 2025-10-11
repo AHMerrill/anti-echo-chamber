@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "updated_at": null,
+  "feeds": {
+    "theguardian_uk": {
+      "feed_url": "https://www.theguardian.com/uk/rss",
+      "last_cursor_iso": null,
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 500,
+      "last_run_at": null,
+      "last_run_by": null,
+      "notes": "Guardian UK top feed"
+    },
+    "theguardian_world": {
+      "feed_url": "https://www.theguardian.com/world/rss",
+      "last_cursor_iso": null,
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 500,
+      "last_run_at": null,
+      "last_run_by": null,
+      "notes": "Guardian World feed"
+    },
+    "theguardian_politics": {
+      "feed_url": "https://www.theguardian.com/politics/rss",
+      "last_cursor_iso": null,
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 500,
+      "last_run_at": null,
+      "last_run_by": null,
+      "notes": "Guardian Politics feed"
+    },
+    "theguardian_environment": {
+      "feed_url": "https://www.theguardian.com/environment/rss",
+      "last_cursor_iso": null,
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 500,
+      "last_run_at": null,
+      "last_run_by": null,
+      "notes": "Guardian Environment feed"
+    },
+    "theguardian_commentisfree": {
+      "feed_url": "https://www.theguardian.com/commentisfree/rss",
+      "last_cursor_iso": null,
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": null,
+      "last_run_by": null,
+      "notes": "Guardian opinion feed. Larger ring buffer to minimize duplicates."
+    }
+  }
+}
