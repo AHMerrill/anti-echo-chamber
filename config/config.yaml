@@ -1,0 +1,52 @@
+# === anti-echo-chamber project config ===
+version: 1
+
+# Hugging Face dataset where batches are stored
+hf_dataset_id: "zanimal/anti-echo-artifacts"
+
+# Local Chroma collection names
+chroma_collections:
+  topic: "news_topic"
+  stance: "news_stance"
+
+# Embedding model configuration
+embeddings:
+  topic_model: "sentence-transformers/all-MiniLM-L6-v2"
+  stance_model: "sentence-transformers/all-MiniLM-L6-v2"
+  dim: 384
+  dtype: "float16"
+  pooling: "mean"
+  chunk_tokens: 512   # per text chunk before pooling
+
+# Summarizer used before stance embeddings
+summarizer:
+  model: "facebook/bart-large-cnn"
+  target_sentences: 5
+  truncation: 2048
+
+# Batch and manifest settings
+batch:
+  base_dir: "batches"
+  manifest_name: "manifest.json"
+  topic_file: "embeddings_topic.npz"
+  stance_file: "embeddings_stance.npz"
+  metadata_file: "metadata.jsonl"
+  compress: true
+  dtype: "float16"
+
+# ID and hashing policy
+ids:
+  scheme: "domain-slug-sha12"
+  hash: "sha256"
+  normalize_whitespace: true
+  lowercase: true
+
+# Chroma rebuild / persistence
+chroma:
+  dir: "chroma_db"
+  distance_metric: "cosine"
+
+# Logging and diagnostics
+logging:
+  level: "INFO"
+  save_dir: "logs"
