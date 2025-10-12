@@ -5,29 +5,5 @@
     "stance": "sentence-transformers/all-MiniLM-L6-v2",
     "dim": 384
   },
-  "batches": [
-    {
-      "batch_id": "batch_20251011T232938Z_283ca40f",
-      "created_at": "20251011T232938Z",
-      "models": {
-        "topic_model": "sentence-transformers/all-MiniLM-L6-v2",
-        "stance_model": "sentence-transformers/all-MiniLM-L6-v2",
-        "dim": 384,
-        "dtype": "float16",
-        "pooling": "mean",
-        "chunk_tokens": 512
-      },
-      "counts": {
-        "topic": 0,
-        "stance": 0
-      },
-      "hf_dataset_id": "zanimal/anti-echo-artifacts",
-      "paths": {
-        "embeddings_topic": "batches/batch_20251011T232938Z_283ca40f/embeddings_topic.npz",
-        "embeddings_stance": "batches/batch_20251011T232938Z_283ca40f/embeddings_stance.npz",
-        "metadata": "batches/batch_20251011T232938Z_283ca40f/metadata.jsonl",
-        "manifest": "batches/batch_20251011T232938Z_283ca40f/manifest.json"
-      }
-    }
-  ]
+  "batches": []
 }
