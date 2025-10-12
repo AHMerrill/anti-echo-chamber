@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2025-10-12T23:01:16.644750+00:00",
+  "updated_at": "2025-10-12T23:33:10.500062+00:00",
   "feeds": {
     "commentisfree": {
       "feed_url": null,
@@ -140,7 +140,7 @@
         "a7d9cef293a5"
       ],
       "recent_url_hashes_max": 1000,
-      "last_run_at": "2025-10-12T22:50:27.583147+00:00",
+      "last_run_at": "2025-10-12T23:31:39.664656+00:00",
       "last_run_by": "colab"
     },
     "brookings": {
@@ -154,7 +154,7 @@
       "feed_url": "https://theconversation.com/us/articles/feed",
       "recent_url_hashes": [],
       "recent_url_hashes_max": 1000,
-      "last_run_at": null,
+      "last_run_at": "2025-10-12T23:33:09.139187+00:00",
       "last_run_by": "colab"
     },
     "reason": {
@@ -201,10 +201,16 @@
         "7762bc760456",
         "4d2b7331afaa",
         "a772f2d37018",
-        "8b9e3348eee9"
+        "8b9e3348eee9",
+        "519bbab35f85",
+        "365ace51aa2e",
+        "7fadbc0eb1a3",
+        "0d842561c834",
+        "22d92729adff",
+        "8d9c2426ef5e"
       ],
       "recent_url_hashes_max": 1000,
-      "last_run_at": "2025-10-12T23:01:15.593875+00:00",
+      "last_run_at": "2025-10-12T23:11:00.957985+00:00",
       "last_run_by": "colab"
     },
     "cityjournal": {
