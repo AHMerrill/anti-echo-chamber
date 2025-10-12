@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2025-10-12T05:44:55.818249+00:00",
+  "updated_at": "2025-10-12T06:01:18.079834+00:00",
   "feeds": {
     "commentisfree": {
       "feed_url": null,
@@ -14,10 +14,20 @@
         "61737c505a54",
         "607cd5f7a0cf",
         "d54279cb34c2",
-        "251e80327ce6"
+        "251e80327ce6",
+        "a81c7591db6a",
+        "7756b28cf23e",
+        "0358d0041b4e",
+        "d5733215fbe1",
+        "29fb6db43e37",
+        "c29bf479f369",
+        "7e504ba9aa4f",
+        "ca40981de181",
+        "cefd49b488a6",
+        "88c3602eefae"
       ],
       "recent_url_hashes_max": 1000,
-      "last_run_at": "2025-10-12T05:44:55.818098+00:00"
+      "last_run_at": "2025-10-12T06:01:18.079653+00:00"
     },
     "theguardian": {
       "feed_url": null,
