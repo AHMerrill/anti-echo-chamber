@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-10-12T21:09:44.454296+00:00",
+  "last_updated": "2025-10-12T21:19:13.551756+00:00",
   "items": {
     "https://www.theguardian.com/commentisfree/2025/oct/12/the-guardian-view-on-labour-targeting-nature-the-problem-isnt-snails-but-a-broken-housing-model": {
       "status": "ok",
@@ -20,6 +20,26 @@
     "https://www.theguardian.com/law/2025/oct/12/tackling-the-lack-of-black-talent-in-the-legal-system": {
       "status": "ok",
       "fetched_at": "2025-10-12T21:09:44.454286+00:00"
+    },
+    "https://www.theguardian.com/travel/2025/oct/12/a-country-retreat-thats-off-grid-but-online": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:19:12.520865+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/picture/2025/oct/12/nicola-jennings-cartoon-israeli-hostages-donald-trump-egypt": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:19:12.960085+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/12/britain-youth-clubs-social-division-polarisation-loneliness": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:19:13.168761+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/12/parents-children-cry-clicks-big-feelings-tantrums": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:19:13.358100+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/12/france-crisis-political-faith-belief-democratic-world-vanishing": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:19:13.551747+00:00"
     }
   }
 }
