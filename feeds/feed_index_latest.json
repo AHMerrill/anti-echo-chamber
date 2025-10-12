@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-10-12T21:19:13.551756+00:00",
+  "last_updated": "2025-10-12T21:24:58.558312+00:00",
   "items": {
     "https://www.theguardian.com/commentisfree/2025/oct/12/the-guardian-view-on-labour-targeting-nature-the-problem-isnt-snails-but-a-broken-housing-model": {
       "status": "ok",
@@ -40,6 +40,26 @@
     "https://www.theguardian.com/commentisfree/2025/oct/12/france-crisis-political-faith-belief-democratic-world-vanishing": {
       "status": "ok",
       "fetched_at": "2025-10-12T21:19:13.551747+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/11/imax-70mm-vistavision-watch-movies-cinema": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:24:57.396956+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/11/reform-nigel-farage-hard-right-politics-gordon-brown-labour": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:24:57.599367+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/11/helen-serafinowicz-tv-comedy-motherhood-jokes": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:24:57.631177+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/11/labour-next-deputy-leader-guardian-readers-debate-candidates": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:24:58.349768+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/10/the-guardian-view-on-an-ai-bubble-capitalism-still-hasnt-evolved-to-protect-itself": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:24:58.558304+00:00"
     }
   }
 }
