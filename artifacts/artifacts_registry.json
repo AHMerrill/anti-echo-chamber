@@ -1,33 +1,5 @@
 {
-  "version": 3,
-  "models": {
-    "topic": "sentence-transformers/all-MiniLM-L6-v2",
-    "stance": "sentence-transformers/all-MiniLM-L6-v2",
-    "dim": 384
-  },
-  "batches": [
-    {
-      "batch_id": "batch_20251012T054627Z_25385fd8",
-      "created_at": "20251012T054627Z",
-      "models": {
-        "topic_model": "sentence-transformers/all-MiniLM-L6-v2",
-        "stance_model": "sentence-transformers/all-MiniLM-L6-v2",
-        "dim": 384,
-        "dtype": "float16",
-        "pooling": "mean",
-        "chunk_tokens": 512
-      },
-      "counts": {
-        "topic": 58,
-        "stance": 10
-      },
-      "hf_dataset_id": "zanimal/anti-echo-artifacts",
-      "paths": {
-        "embeddings_topic": "batches/batch_20251012T054627Z_25385fd8/embeddings_topic.npz",
-        "embeddings_stance": "batches/batch_20251012T054627Z_25385fd8/embeddings_stance.npz",
-        "metadata": "batches/batch_20251012T054627Z_25385fd8/metadata.jsonl",
-        "manifest": "batches/batch_20251012T054627Z_25385fd8/manifest.json"
-      }
-    }
-  ]
+  "version": 1,
+  "models": {},
+  "batches": []
 }
