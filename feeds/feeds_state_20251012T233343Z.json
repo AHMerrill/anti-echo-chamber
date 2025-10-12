@@ -1,0 +1,264 @@
+{
+  "version": 1,
+  "updated_at": "2025-10-12T23:33:10.500062+00:00",
+  "feeds": {
+    "commentisfree": {
+      "feed_url": null,
+      "recent_url_hashes": [
+        "e53bb3648b82",
+        "2d00d68c14da",
+        "d52f5c0d6b71",
+        "11ef6233eb58",
+        "edc4a5c4971d",
+        "bd2fce520ae8",
+        "ef683ef5277b",
+        "07430a910035",
+        "7ce90fc12359",
+        "69f8c879a1c0",
+        "c6bd3bd3cb9b",
+        "f29ccdc3d0c8",
+        "61737c505a54",
+        "607cd5f7a0cf",
+        "59d173617f95"
+      ],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-12T21:24:58.558507+00:00"
+    },
+    "theguardian": {
+      "feed_url": null,
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 500
+    },
+    "world": {
+      "feed_url": "https://www.theguardian.com/world/rss",
+      "last_cursor_iso": null,
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 500,
+      "last_run_at": null,
+      "last_run_by": "colab"
+    },
+    "uk-news": {
+      "feed_url": "https://www.theguardian.com/uk-news/rss",
+      "last_cursor_iso": null,
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 500,
+      "last_run_at": null,
+      "last_run_by": "colab"
+    },
+    "us-news": {
+      "feed_url": "https://www.theguardian.com/us-news/rss",
+      "last_cursor_iso": null,
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 500,
+      "last_run_at": null,
+      "last_run_by": "colab"
+    },
+    "politics": {
+      "feed_url": "https://www.theguardian.com/politics/rss",
+      "last_cursor_iso": null,
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 500,
+      "last_run_at": null,
+      "last_run_by": "colab"
+    },
+    "environment": {
+      "feed_url": "https://www.theguardian.com/uk/environment/rss",
+      "last_cursor_iso": null,
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 500,
+      "last_run_at": null,
+      "last_run_by": "colab"
+    },
+    "climate-crisis": {
+      "feed_url": "https://www.theguardian.com/environment/climate-crisis/rss",
+      "last_cursor_iso": null,
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 500,
+      "last_run_at": null,
+      "last_run_by": "colab"
+    },
+    "technology": {
+      "feed_url": "https://www.theguardian.com/uk/technology/rss",
+      "last_cursor_iso": null,
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 500,
+      "last_run_at": null,
+      "last_run_by": "colab"
+    },
+    "science": {
+      "feed_url": "https://www.theguardian.com/science/rss",
+      "last_cursor_iso": null,
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 500,
+      "last_run_at": null,
+      "last_run_by": "colab"
+    },
+    "business": {
+      "feed_url": "https://www.theguardian.com/uk/business/rss",
+      "last_cursor_iso": null,
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 500,
+      "last_run_at": null,
+      "last_run_by": "colab"
+    },
+    "culture": {
+      "feed_url": "https://www.theguardian.com/uk/culture/rss",
+      "last_cursor_iso": null,
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 500,
+      "last_run_at": null,
+      "last_run_by": "colab"
+    },
+    "guardian-opinion": {
+      "feed_url": "https://www.theguardian.com/commentisfree/rss",
+      "recent_url_hashes": [
+        "9da1c3c505c4",
+        "251e80327ce6",
+        "23a02c5b2aaf",
+        "d5733215fbe1",
+        "ca40981de181",
+        "91774bebc558",
+        "4c735902ff2f",
+        "2cbace135898",
+        "f9c542c19536",
+        "30cb9b1be402",
+        "d7eb4d3877fe",
+        "ca7a50ab90bf",
+        "c67f02c449fc",
+        "d86b23abe975",
+        "4ad0deaf10cd",
+        "158565d909d0",
+        "2415f31dd706"
+      ],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-12T22:50:27.477021+00:00",
+      "last_run_by": "colab"
+    },
+    "aljazeera-opinion": {
+      "feed_url": "https://www.aljazeera.com/xml/rss/opinion.xml",
+      "recent_url_hashes": [
+        "a7d9cef293a5"
+      ],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-12T23:31:39.664656+00:00",
+      "last_run_by": "colab"
+    },
+    "brookings": {
+      "feed_url": "https://www.brookings.edu/feed/",
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": null,
+      "last_run_by": "colab"
+    },
+    "theconversation": {
+      "feed_url": "https://theconversation.com/us/articles/feed",
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-12T23:33:09.139187+00:00",
+      "last_run_by": "colab"
+    },
+    "reason": {
+      "feed_url": "https://reason.com/feed/",
+      "recent_url_hashes": [
+        "faeb81373d6e",
+        "665c756bdf4e",
+        "c49ccc474557",
+        "d9459a7cd5ad",
+        "d51513c7e276",
+        "b28a6f5e145c",
+        "81ebcd8b9815",
+        "78ae58e39ad1",
+        "e7df586cab64",
+        "501e836e5f3f",
+        "07e312f7ded6",
+        "b7a3cc593eba",
+        "6982c30d25db",
+        "f96878f2c5d1",
+        "d49ceb6fdba0",
+        "73e64fdbe6be",
+        "8738c3531e19",
+        "f8f3bd5326c6",
+        "ac93595c6090",
+        "54ff54a394d2",
+        "a4bc54e9b17c",
+        "212727fa2613",
+        "9ad949407b00",
+        "9e0f15220532",
+        "40ee3aeb3271",
+        "e1b63ba71ecd",
+        "3b5b01e0228a",
+        "397fcb93f981",
+        "d608b6d26f5c",
+        "380fc116a085",
+        "6e3522f48963",
+        "429a56fed2a3",
+        "010d81f12fe8",
+        "aec6a3af3eac",
+        "ec5c89ba33a0",
+        "8cae08ef409e",
+        "7099d17dda45",
+        "fa4c87c5e4b2",
+        "7762bc760456",
+        "4d2b7331afaa",
+        "a772f2d37018",
+        "8b9e3348eee9",
+        "519bbab35f85",
+        "365ace51aa2e",
+        "7fadbc0eb1a3",
+        "0d842561c834",
+        "22d92729adff",
+        "8d9c2426ef5e"
+      ],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-12T23:11:00.957985+00:00",
+      "last_run_by": "colab"
+    },
+    "cityjournal": {
+      "feed_url": "https://www.city-journal.org/rss.xml",
+      "recent_url_hashes": [
+        "173fdf77e672",
+        "bb6771a4ffa7",
+        "f854f8f748d3",
+        "fa1285387f70",
+        "c8117af294f3",
+        "dade70d13468",
+        "d73c4d4a22c9",
+        "635b77351930",
+        "94c38de39e86",
+        "d639cbf783d3",
+        "b3564534d378"
+      ],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-12T22:50:41.203725+00:00",
+      "last_run_by": "colab"
+    },
+    "thefederalist": {
+      "feed_url": "https://thefederalist.com/feed/",
+      "recent_url_hashes": [
+        "70f4aecfb20c",
+        "44f8dda6b1bd",
+        "0baae2600e75",
+        "9f1fb3c4c6f7",
+        "491d6e9de327",
+        "4fdc8d6d229e",
+        "755fa926e534",
+        "19a67a3665bb",
+        "828289c5abce",
+        "1f14d6ebe642",
+        "cf180c1866cb",
+        "63983a929f5a",
+        "23db0527768b",
+        "64f09b383c8d",
+        "9100c7aa5679",
+        "5037a4a45588",
+        "587a9d3bacc4",
+        "65c75748b5a8",
+        "e3fabcb73d4a",
+        "5815048f28a5"
+      ],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-12T22:50:46.735215+00:00",
+      "last_run_by": "colab"
+    }
+  }
+}
