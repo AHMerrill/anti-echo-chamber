@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2025-10-12T22:50:46.735428+00:00",
+  "updated_at": "2025-10-12T23:01:16.644750+00:00",
   "feeds": {
     "commentisfree": {
       "feed_url": null,
@@ -187,10 +187,24 @@
         "40ee3aeb3271",
         "e1b63ba71ecd",
         "3b5b01e0228a",
-        "397fcb93f981"
+        "397fcb93f981",
+        "d608b6d26f5c",
+        "380fc116a085",
+        "6e3522f48963",
+        "429a56fed2a3",
+        "010d81f12fe8",
+        "aec6a3af3eac",
+        "ec5c89ba33a0",
+        "8cae08ef409e",
+        "7099d17dda45",
+        "fa4c87c5e4b2",
+        "7762bc760456",
+        "4d2b7331afaa",
+        "a772f2d37018",
+        "8b9e3348eee9"
       ],
       "recent_url_hashes_max": 1000,
-      "last_run_at": "2025-10-12T22:50:39.493536+00:00",
+      "last_run_at": "2025-10-12T23:01:15.593875+00:00",
       "last_run_by": "colab"
     },
     "cityjournal": {
