@@ -1,0 +1,565 @@
+{
+  "last_updated": "2025-10-12T22:50:46.734406+00:00",
+  "items": {
+    "https://www.theguardian.com/commentisfree/2025/oct/12/the-guardian-view-on-labour-targeting-nature-the-problem-isnt-snails-but-a-broken-housing-model": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:09:43.500888+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/12/the-guardian-view-on-gen-z-protests-these-movements-share-more-than-an-interest-in-anime": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:09:43.777465+00:00"
+    },
+    "https://www.theguardian.com/politics/2025/oct/12/looking-for-signs-of-life-in-centre-right-politics-in-britain": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:09:44.073155+00:00"
+    },
+    "https://www.theguardian.com/books/2025/oct/12/try-these-habits-to-reinvigorate-your-reading": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:09:44.260803+00:00"
+    },
+    "https://www.theguardian.com/law/2025/oct/12/tackling-the-lack-of-black-talent-in-the-legal-system": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:09:44.454286+00:00"
+    },
+    "https://www.theguardian.com/travel/2025/oct/12/a-country-retreat-thats-off-grid-but-online": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:19:12.520865+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/picture/2025/oct/12/nicola-jennings-cartoon-israeli-hostages-donald-trump-egypt": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:19:12.960085+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/12/britain-youth-clubs-social-division-polarisation-loneliness": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:19:13.168761+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/12/parents-children-cry-clicks-big-feelings-tantrums": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:19:13.358100+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/12/france-crisis-political-faith-belief-democratic-world-vanishing": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:19:13.551747+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/11/imax-70mm-vistavision-watch-movies-cinema": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:24:57.396956+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/11/reform-nigel-farage-hard-right-politics-gordon-brown-labour": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:24:57.599367+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/11/helen-serafinowicz-tv-comedy-motherhood-jokes": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:24:57.631177+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/11/labour-next-deputy-leader-guardian-readers-debate-candidates": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:24:58.349768+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/10/the-guardian-view-on-an-ai-bubble-capitalism-still-hasnt-evolved-to-protect-itself": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:24:58.558304+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/10/the-guardian-view-on-ac-milan-playing-a-home-game-in-perth-the-clue-should-be-in-the-name": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:35.318825+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/10/donald-trump-gaza-us-benjamin-netanyahu-israel": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:35.580896+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/10/sam-altman-copyright-ai-sora-2-video-generator": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:35.786880+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/10/local-government-democracy-axing-councillors-councils": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:36.094698+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/10/brexit-blame-crisis-uk-steel-keir-starmer": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:36.298549+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/10/tory-conference-manchester-labour-lib-dems-voters": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:36.538676+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/09/margaret-thatcher-born-100-years-ago-effect-country": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:36.746377+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/09/rising-bills-cost-of-living-patriotism-flags-keir-starmer": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:36.949716+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/09/the-eu-has-a-secret-weapon-to-counter-trumps-economic-bullying-its-time-to-use-it": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:37.156009+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/08/music-spiralling-concert-prices-arena-grassroots-tickets": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:37.475717+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/08/kemi-badenoch-tories-conservative-party-faragism": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:37.807093+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/07/tory-conference-boriswave-reform-electoral-annihilation": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:38.142051+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/jul/10/housing-crisis-in-europe-vienna-renters-social-housing": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:38.350029+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/jul/07/europe-financial-sector-house-prices-politics": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:38.569539+00:00"
+    },
+    "https://reason.com/volokh/2025/10/12/how-viewpoint-diversity-can-help-protect-academics-from-themselves-and-perhaps-help-heal-our-civic-culture-too/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:42.155583+00:00"
+    },
+    "https://reason.com/volokh/2025/10/12/today-in-supreme-court-history-october-12-1977-7/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:42.344094+00:00"
+    },
+    "https://reason.com/2025/10/12/terence-mckenna-the-would-be-jesus-of-psychedelics/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:42.540657+00:00"
+    },
+    "https://reason.com/2025/10/12/glenn-jacobs-on-the-gop/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:42.732320+00:00"
+    },
+    "https://reason.com/volokh/2025/10/12/sunday-open-thread-8/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:43.086972+00:00"
+    },
+    "https://reason.com/volokh/2025/10/12/even-with-a-skewed-sample-size-the-new-york-times-survey-of-federal-judges-reveals-a-brewing-judicial-crisis/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:43.275768+00:00"
+    },
+    "https://reason.com/volokh/2025/10/11/do-federal-judges-believe-we-are-in-the-midst-of-a-judicial-crisis/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:43.477540+00:00"
+    },
+    "https://reason.com/volokh/2025/10/11/today-in-supreme-court-history-october-11-1972-7/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:43.666660+00:00"
+    },
+    "https://reason.com/2025/10/11/new-york-doubles-down-on-delivery-wage-disaster/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:43.857769+00:00"
+    },
+    "https://reason.com/2025/10/11/californias-minimum-wage-law-cost-18000-jobs/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:44.045991+00:00"
+    },
+    "https://reason.com/volokh/2025/10/10/friday-open-thread-42/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:44.244563+00:00"
+    },
+    "https://reason.com/2025/10/10/video-shows-federal-agents-arresting-a-chicago-journalist-they-now-say-she-threw-objects-at-her-vehicle/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:44.433903+00:00"
+    },
+    "https://reason.com/2025/10/10/this-indiana-city-doesnt-have-to-pay-an-innocent-mom-16000-after-police-wrecked-her-home-court-rules/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:44.624107+00:00"
+    },
+    "https://reason.com/2025/10/10/trump-wont-invoke-the-insurrection-act-as-long-as-he-can-use-the-national-guard-however-he-wants/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:44.819314+00:00"
+    },
+    "https://www.city-journal.org/article/daniel-j-mahoney-persistence-ideological-lie": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:44.951848+00:00"
+    },
+    "https://www.city-journal.org/multimedia/the-wests-civilizational-inheritance": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:44.997830+00:00"
+    },
+    "https://www.city-journal.org/article/family-homes-real-estate-bedrooms-apartments": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:46.569655+00:00"
+    },
+    "https://www.city-journal.org/article/city-journal-daily-newsletter-oct-10-2025": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:46.633848+00:00"
+    },
+    "https://www.city-journal.org/article/new-york-city-gas-stoves-install-master-plumber": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:46.670151+00:00"
+    },
+    "https://www.city-journal.org/multimedia/bari-weiss-media-disruptor": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:48.290664+00:00"
+    },
+    "https://www.city-journal.org/article/charlie-kirk-two-americas-conservative-progressive": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:48.336411+00:00"
+    },
+    "https://www.city-journal.org/article/new-york-assisted-suicide-medical-aid-in-dying": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:48.371797+00:00"
+    },
+    "https://www.city-journal.org/article/judge-deborah-boardman-nicholas-roske-sentencing-brett-kavanaugh": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:48.409362+00:00"
+    },
+    "https://www.city-journal.org/article/can-the-anti-defamation-league-be-saved": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:48.459395+00:00"
+    },
+    "https://thefederalist.com/2025/10/10/spanberger-wont-condemn-school-board-member-for-sympathetic-emails-to-sex-offender-using-girls-bathroom/?utm_source=rss&utm_medium=rss&utm_campaign=spanberger-wont-condemn-school-board-member-for-sympathetic-emails-to-sex-offender-using-girls-bathroom": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:50.519499+00:00"
+    },
+    "https://thefederalist.com/2025/10/10/margaret-thatcher-docudrama-shows-what-media-corruption-stole-from-us/?utm_source=rss&utm_medium=rss&utm_campaign=margaret-thatcher-docudrama-shows-what-media-corruption-stole-from-us": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:51.041211+00:00"
+    },
+    "https://thefederalist.com/2025/10/10/trump-snub-proves-the-nobel-peace-prize-is-a-joke/?utm_source=rss&utm_medium=rss&utm_campaign=trump-snub-proves-the-nobel-peace-prize-is-a-joke": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:51.560603+00:00"
+    },
+    "https://thefederalist.com/2025/10/10/democrats-are-giving-up-on-democracy/?utm_source=rss&utm_medium=rss&utm_campaign=democrats-are-giving-up-on-democracy": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:52.077942+00:00"
+    },
+    "https://thefederalist.com/2025/10/10/katie-porters-nasty-abusive-attitude-is-standard-antisocial-democrat-behavior/?utm_source=rss&utm_medium=rss&utm_campaign=katie-porters-nasty-abusive-attitude-is-standard-antisocial-democrat-behavior": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:52.594077+00:00"
+    },
+    "https://thefederalist.com/2025/10/10/bidens-fbi-spying-on-political-enemies-is-what-weaponization-looks-like/?utm_source=rss&utm_medium=rss&utm_campaign=bidens-fbi-spying-on-political-enemies-is-what-weaponization-looks-like": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:53.113147+00:00"
+    },
+    "https://thefederalist.com/2025/10/10/a-criminal-ilegal-alien-superintendent-is-the-inevitable-result-of-leftists-controlling-public-schools/?utm_source=rss&utm_medium=rss&utm_campaign=a-criminal-ilegal-alien-superintendent-is-the-inevitable-result-of-leftists-controlling-public-schools": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:53.631177+00:00"
+    },
+    "https://thefederalist.com/2025/10/10/scotus-to-decide-if-free-speech-applies-to-biology-affirming-therapists-and-their-clients/?utm_source=rss&utm_medium=rss&utm_campaign=scotus-to-decide-if-free-speech-applies-to-biology-affirming-therapists-and-their-clients": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:54.147798+00:00"
+    },
+    "https://thefederalist.com/2025/10/10/the-rainbow-people-are-not-going-to-leave-your-kids-alone/?utm_source=rss&utm_medium=rss&utm_campaign=the-rainbow-people-are-not-going-to-leave-your-kids-alone": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:54.666086+00:00"
+    },
+    "https://thefederalist.com/2025/10/10/attorneys-very-optimistic-scotus-will-make-it-easier-to-challenge-bad-election-laws/?utm_source=rss&utm_medium=rss&utm_campaign=attorneys-very-optimistic-scotus-will-make-it-easier-to-challenge-bad-election-laws": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:55.181355+00:00"
+    },
+    "https://thefederalist.com/2025/10/10/51-gop-senators-urge-hhs-fda-to-end-distribution-of-dangerous-abortion-drug/?utm_source=rss&utm_medium=rss&utm_campaign=51-gop-senators-urge-hhs-fda-to-end-distribution-of-dangerous-abortion-drug": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:55.697765+00:00"
+    },
+    "https://thefederalist.com/2025/10/09/spanberger-refuses-5-times-to-withdraw-endorsement-of-jay-jones-over-assassination-fantasies/?utm_source=rss&utm_medium=rss&utm_campaign=spanberger-refuses-5-times-to-withdraw-endorsement-of-jay-jones-over-assassination-fantasies": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:56.219998+00:00"
+    },
+    "https://thefederalist.com/2025/10/09/letitia-no-one-is-above-the-law-james-indicted-for-mortgage-fraud/?utm_source=rss&utm_medium=rss&utm_campaign=letitia-no-one-is-above-the-law-james-indicted-for-mortgage-fraud": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:56.736746+00:00"
+    },
+    "https://thefederalist.com/2025/10/09/pa-elections-chief-asks-court-to-force-counties-to-use-unverified-voter-registrations/?utm_source=rss&utm_medium=rss&utm_campaign=pa-elections-chief-asks-court-to-force-counties-to-use-unverified-voter-registrations": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T21:46:57.251972+00:00"
+    },
+    "https://www.theguardian.com/global/2025/jun/26/sign-up-to-matters-of-opinion-a-weekly-discussion-from-our-columnists-and-writers": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:26.560179+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/jun/26/broken-housing-market-inequality-europe-far-right": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:27.140457+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/jul/04/hungary-budapest-renting-housing-crisis": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:27.476233+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/ng-interactive/2025/apr/25/brazil-right-precarious-workers-pay-conditions": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:48.600897+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/ng-interactive/2025/apr/18/how-to-beat-the-far-right-global-left-mexico-politics-morena": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:48.857426+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/ng-interactive/2025/apr/11/in-slovakia-our-grassroots-movement-helped-oust-a-neo-nazi-we-can-do-it-again": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:49.162008+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/ng-interactive/2025/apr/04/bnp-east-london-local-politics-margaret-hodge": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:49.458427+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/12/frances-macron-unveils-new-government-ahead-of-budget-deadline?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:49.599074+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/12/palestinian-journalist-saleh-aljafarawi-shot-dead-in-gaza-city-clashes?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:49.642563+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/12/death-toll-from-mexico-flooding-rises-to-44-dozens-more-missing?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:49.688339+00:00"
+    },
+    "https://www.aljazeera.com/video/inside-story/2025/10/12/why-does-israel-arrest-thousands-of-palestinians?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:50.256964+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/12/far-right-afd-party-may-win-first-german-city-mayor-post-in-run-off-vote?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:51.026284+00:00"
+    },
+    "https://www.aljazeera.com/sports/2025/10/12/australia-beat-india-by-three-wickets-in-womens-cricket-world-cup?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:51.071223+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/12/zelenskyy-vows-to-only-use-tomahawks-against-russian-military-targets?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:51.112810+00:00"
+    },
+    "https://www.aljazeera.com/opinions/2025/10/12/nato-is-not-prepared-for-war?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:27.582381+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/12/israel-expects-to-receive-all-living-captives-from-gaza-on-monday?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:51.681699+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/12/madagascar-president-warns-of-attempt-to-seize-power-what-to-know?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:51.729652+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/12/mali-imposes-retaliatory-visa-bond-fees-on-us-travellers?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:51.773701+00:00"
+    },
+    "https://www.aljazeera.com/video/quotable/2025/10/12/palestinians-in-gaza-need-access-to-nutritional?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:51.815027+00:00"
+    },
+    "https://www.aljazeera.com/video/talk-to-al-jazeera/2025/10/12/why-hasnt-new-zealand-recognised-palestine?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:51.925703+00:00"
+    },
+    "https://www.aljazeera.com/video/newsfeed/2025/10/12/taliban-and-pakistani-forces-exchange-heavy-fire-across-afghanistan-border?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:51.969869+00:00"
+    },
+    "https://www.aljazeera.com/gallery/2025/10/12/week-in-pictures-from-ceasefire-in-gaza-to-floods-in-mexico?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:52.008534+00:00"
+    },
+    "https://www.aljazeera.com/video/newsfeed/2025/10/12/crowd-boos-mention-of-netanyahu-during-witkoffs-speech-in-tel-aviv?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:52.060448+00:00"
+    },
+    "https://www.aljazeera.com/video/newsfeed/2025/10/12/madagascar-president-alleges-coup-attempt-as-soldiers-support-protesters?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:52.158756+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/12/bangladesh-rolls-out-typhoid-immunisation-drive-for-50-million-children?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:52.199490+00:00"
+    },
+    "https://www.aljazeera.com/video/quotable/2025/10/12/aje-onl-qt_yousef_daoud-121025?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:52.649315+00:00"
+    },
+    "https://www.aljazeera.com/gallery/2025/10/12/madagascar-soldiers-join-protesters-amid-coup-allegation?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:53.062177+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/12/afghanistan-pakistan-border-clashes-what-we-know-so-far?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:53.535955+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/12/china-slams-trumps-100-percent-tariff-threat-defends-rare-earth-curbs?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:53.575913+00:00"
+    },
+    "https://www.aljazeera.com/video/the-bottom-line/2025/10/12/why-is-trump-deploying-forces-to-us-cities?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:53.629503+00:00"
+    },
+    "https://www.aljazeera.com/video/newsfeed/2025/10/12/aftermath-of-rsf-drone-attack-which-killed-dozens-in-sudans-el-fasher?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:53.672690+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/12/cameroon-votes-in-presidential-election-as-paul-biya-92-seeks-eighth-term?traffic_source=rss": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:22:53.736340+00:00"
+    },
+    "https://reason.com/2025/10/10/the-trump-administration-begins-substantial-layoffs-of-federal-workers/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:30.691291+00:00"
+    },
+    "https://reason.com/2025/10/10/trumps-case-against-letitia-james-looks-a-lot-like-the-case-she-brought-against-him/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:31.377521+00:00"
+    },
+    "https://reason.com/volokh/2025/10/10/short-circuit-an-inexhaustive-weekly-compendium-of-rulings-from-the-federal-courts-of-appeal-29/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:32.054771+00:00"
+    },
+    "https://reason.com/2025/10/10/after-all-those-doge-cuts-federal-spending-still-increased-by-300-billion/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:32.728385+00:00"
+    },
+    "https://reason.com/2025/10/10/white-house-proposal-to-withhold-back-pay-from-federal-workers-is-more-rhetoric-than-reform/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:33.407818+00:00"
+    },
+    "https://reason.com/volokh/2025/10/10/a-discussion-of-campus-free-speech-after-october-7-at-nyu/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:34.075156+00:00"
+    },
+    "https://reason.com/volokh/2025/10/10/are-we-dating-the-same-vexatious-litigator-whose-filings-cite-nonexistent-cases/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:34.759413+00:00"
+    },
+    "https://reason.com/volokh/2025/10/10/turning-point-usa-chapter-at-univ-of-tennessee-chattanooga-approved-despite-student-government-opposition/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:35.429862+00:00"
+    },
+    "https://reason.com/2025/10/10/tennessee-man-arrested-gets-2-million-bond-for-posting-facebook-meme/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:36.104989+00:00"
+    },
+    "https://reason.com/volokh/2025/10/10/school-allowed-to-fire-teacher-whose-criticisms-of-school-policy-led-to-disruptive-criticism-and-insults-from-public/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:36.782093+00:00"
+    },
+    "https://reason.com/2025/10/10/venezuelas-maria-corina-machado-wins-the-nobel-peace-prize-for-standing-up-to-socialism/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:37.459896+00:00"
+    },
+    "https://reason.com/2025/10/10/tron-ares-is-a-bad-movie-but-a-great-nine-inch-nails-music-video/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:38.135913+00:00"
+    },
+    "https://reason.com/2025/10/10/ceasefire-working/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:38.818324+00:00"
+    },
+    "https://reason.com/2025/10/10/deploying-troops-to-american-cities-is-an-assault-on-the-constitution/": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:39.492798+00:00"
+    },
+    "https://reason.com/volokh/2025/10/10/today-in-supreme-court-history-october-10-2012-7/": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:23:00.389493+00:00"
+    },
+    "https://reason.com/2025/10/10/fbi-spied-on-republican-lawmakers-using-surveillance-powers-many-supported/": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:23:07.425500+00:00"
+    },
+    "https://reason.com/2025/10/10/too-much/": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:23:07.614979+00:00"
+    },
+    "https://reason.com/2025/10/10/dracula-a-love-tale/": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:23:07.801825+00:00"
+    },
+    "https://reason.com/2025/10/10/brickbat-justice-delayed-6/": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:23:07.987739+00:00"
+    },
+    "https://reason.com/volokh/2025/10/09/second-amendment-roundup-rug-pulled-out-from-under-antonyuk/": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:23:09.606040+00:00"
+    },
+    "https://reason.com/volokh/2025/10/09/n-y-federal-court-upholds-algorithmic-pricing-disclosure-act/": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:23:09.827597+00:00"
+    },
+    "https://reason.com/volokh/2025/10/09/judge-rejects-drakes-defamation-harassment-lawsuit-over-kendrick-lamars-not-like-us-diss-track/": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:23:10.019762+00:00"
+    },
+    "https://reason.com/2025/10/09/2-controversies-over-political-rhetoric-illustrate-the-perils-of-blaming-gun-control-critics-for-murder/": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:23:10.242860+00:00"
+    },
+    "https://reason.com/2025/10/09/bari-weiss-is-powerful-establishment-media-is-not/": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:23:10.465495+00:00"
+    },
+    "https://reason.com/2025/10/09/d-c-will-arrest-this-ceo-if-his-rideshare-alternative-doesnt-shut-down-by-friday/": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:23:10.690044+00:00"
+    },
+    "https://reason.com/2025/10/09/original-zyn-fda-failures-allow-fake-nicotine-pouches-to-flood-u-s-market/": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:23:10.909646+00:00"
+    },
+    "https://reason.com/2025/10/09/what-the-democrats-are-doing-right-now-wont-lower-health-care-costs-but-heres-what-actually-would/": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:23:11.101327+00:00"
+    },
+    "https://reason.com/2025/10/09/louisiana-lockup-detection-center-is-punishing-immigrants-for-the-same-crime-twice-new-lawsuit-says/": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:23:11.325736+00:00"
+    },
+    "https://reason.com/2025/10/09/what-changed-over-the-past-seven-months-of-war-in-the-middle-east/": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:23:11.525230+00:00"
+    },
+    "https://reason.com/2025/10/09/whats-really-at-stake-in-the-kilmar-abrego-garcia-case/": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:23:11.744023+00:00"
+    },
+    "https://reason.com/2025/10/09/texas-court-blocks-execution-of-robert-roberson-in-landmark-shaken-baby-case/": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:23:11.937547+00:00"
+    },
+    "https://reason.com/volokh/2025/10/09/louisiana-act-of-terror-claim-can-go-forward-based-on-alleged-violent-attack-on-pro-israel-demonstration/": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:23:12.127690+00:00"
+    },
+    "https://reason.com/2025/10/09/is-the-war-over/": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:23:12.327309+00:00"
+    },
+    "https://reason.com/volokh/2025/10/09/the-14th-annual-harlan-institute-virtual-supreme-court-competition-patriots-v-loyalists/": {
+      "status": "error",
+      "fetched_at": "2025-10-12T22:23:12.547962+00:00"
+    },
+    "https://thefederalist.com/2025/10/09/lawsuit-louisiana-demands-fda-end-bidens-illegal-mail-order-abortion-pill-permissions/?utm_source=rss&utm_medium=rss&utm_campaign=lawsuit-louisiana-demands-fda-end-bidens-illegal-mail-order-abortion-pill-permissions": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:43.185516+00:00"
+    },
+    "https://thefederalist.com/2025/10/09/rampant-doj-insurrection-should-lead-to-massive-housecleaning-especially-in-virginia-district/?utm_source=rss&utm_medium=rss&utm_campaign=rampant-doj-insurrection-should-lead-to-massive-housecleaning-especially-in-virginia-district": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:43.706357+00:00"
+    },
+    "https://thefederalist.com/2025/10/09/dems-rebelling-against-trump-resurrect-confederate-talking-points/?utm_source=rss&utm_medium=rss&utm_campaign=dems-rebelling-against-trump-resurrect-confederate-talking-points": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:44.690964+00:00"
+    },
+    "https://thefederalist.com/2025/10/09/exclusive-good-government-group-demands-irs-probe-splcs-tax-exempt-status-over-left-wing-political-activity/?utm_source=rss&utm_medium=rss&utm_campaign=exclusive-good-government-group-demands-irs-probe-splcs-tax-exempt-status-over-left-wing-political-activity": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:45.230235+00:00"
+    },
+    "https://thefederalist.com/2025/10/09/the-atlantic-fantasizes-about-military-treason-against-trump/?utm_source=rss&utm_medium=rss&utm_campaign=the-atlantic-fantasizes-about-military-treason-against-trump": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:45.758063+00:00"
+    },
+    "https://thefederalist.com/2025/10/09/jay-jones-and-katie-porter-say-the-quiet-part-out-loud/?utm_source=rss&utm_medium=rss&utm_campaign=jay-jones-and-katie-porter-say-the-quiet-part-out-loud": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:46.734395+00:00"
+    },
+    "https://www.city-journal.org/article/vladimir-kogan-no-adult-left-behind-schools-pandemic-closures": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T22:50:41.202962+00:00"
+    }
+  }
+}
