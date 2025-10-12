@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-10-12T05:44:55.817930+00:00",
+  "last_updated": "2025-10-12T06:01:18.079437+00:00",
   "items": {
     "https://www.theguardian.com/commentisfree/2025/oct/12/australian-politics-election-process-democratic-certainly-isnt-guaranteed": {
       "status": "ok",
@@ -40,6 +40,46 @@
     "https://www.theguardian.com/commentisfree/2025/oct/10/donald-trump-gaza-us-benjamin-netanyahu-israel": {
       "status": "ok",
       "fetched_at": "2025-10-12T05:44:55.817921+00:00"
+    },
+    "https://www.theguardian.com/technology/ng-interactive/2025/oct/10/peter-thiel-antichrist-lectures": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T06:01:17.047874+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/11/the-fledgling-un-tried-to-rein-in-mass-scale-misinformation-the-world-turned-its-back-and-is-now-paying-the-price": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T06:01:17.196302+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/10/benjamin-netanyahu-gaza-deal-israel-palestine": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T06:01:17.336750+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/10/local-government-democracy-axing-councillors-councils": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T06:01:17.377583+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/10/stephen-miller-trump-administration": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T06:01:17.417580+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/10/who-will-run-against-trump-in-2028-please-step-forward-now-dont-wait": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T06:01:17.633206+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/10/books-marketing-tiktok-publishing": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T06:01:17.676124+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/10/brexit-blame-crisis-uk-steel-keir-starmer": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T06:01:17.808576+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/06/the-guardian-view-on-trumps-gaza-plan-the-bloodshed-must-end-but-this-proposal-betrays-palestinians": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T06:01:17.848037+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/01/the-guardian-view-on-trumps-argentina-bailout-its-a-political-play-not-an-economic-plan": {
+      "status": "ok",
+      "fetched_at": "2025-10-12T06:01:18.079429+00:00"
     }
   }
 }
