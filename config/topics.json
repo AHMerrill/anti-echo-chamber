@@ -1,0 +1,162 @@
+{
+  "Climate & Environment": [
+    "climate change", "global warming", "carbon emissions", "renewable energy", "carbon neutrality",
+    "environmental policy", "biodiversity loss", "deforestation", "climate adaptation", "sustainability initiatives"
+  ],
+  "Energy & Industry": [
+    "oil and gas industry", "nuclear power", "electric vehicles", "solar energy", "wind energy",
+    "mining and extraction", "hydropower", "industrial pollution", "carbon capture", "energy transition"
+  ],
+  "Climate Activism & Policy": [
+    "climate protests", "environmental justice", "green new deal", "carbon tax", "climate diplomacy",
+    "un climate conferences", "net zero commitments", "youth climate movements", "corporate sustainability", "environmental NGOs"
+  ],
+  "Geopolitics & Conflict": [
+    "israel hamas conflict", "ukraine war", "russia sanctions", "china taiwan tensions", "nato alliance",
+    "global security", "diplomatic relations", "international law", "border disputes", "geopolitical strategy"
+  ],
+  "US Politics": [
+    "presidential elections", "congress", "supreme court decisions", "democrats and republicans", "state politics",
+    "domestic policy", "voting rights", "campaign finance", "political polarization", "immigration policy"
+  ],
+  "World Politics": [
+    "united nations", "european union", "british politics", "authoritarian regimes", "democracy movements",
+    "human rights diplomacy", "foreign aid", "trade relations", "international governance", "regional alliances"
+  ],
+  "Comparative Politics": [
+    "elections worldwide", "democracy vs autocracy", "parliamentary systems", "state capacity", "civil society",
+    "governance models", "constitutional reform", "federalism", "transparency", "political corruption"
+  ],
+  "Economic Policy": [
+    "inflation", "monetary policy", "federal reserve", "tax reform", "income inequality",
+    "fiscal stimulus", "minimum wage", "budget deficits", "public spending", "economic growth"
+  ],
+  "Macroeconomics": [
+    "global trade", "economic development", "emerging markets", "recession risk", "debt ceiling",
+    "exchange rates", "interest rates", "commodities markets", "supply chains", "economic indicators"
+  ],
+  "Labor & Employment": [
+    "unions", "labor rights", "remote work", "wage growth", "automation and jobs",
+    "gig economy", "unemployment", "workplace equity", "labor policy", "job creation"
+  ],
+  "Business & Finance": [
+    "corporate governance", "stock markets", "banking sector", "startups", "venture capital",
+    "cryptocurrency", "real estate", "mergers and acquisitions", "financial regulation", "corporate ethics"
+  ],
+  "Technology & Innovation": [
+    "artificial intelligence", "machine learning", "automation", "data privacy", "quantum computing",
+    "biotechnology", "nanotechnology", "robotics", "tech innovation", "digital transformation"
+  ],
+  "Internet & Society": [
+    "social media platforms", "internet regulation", "online censorship", "digital identity", "privacy laws",
+    "cybersecurity", "disinformation", "online harassment", "digital literacy", "tech monopolies"
+  ],
+  "Artificial Intelligence & Ethics": [
+    "ai governance", "algorithmic bias", "ai safety", "automation ethics", "deep learning applications",
+    "ai and jobs", "machine bias", "regulation of ai", "responsible ai", "tech transparency"
+  ],
+  "Science & Research": [
+    "medical research", "space exploration", "scientific innovation", "academic publishing", "climate science",
+    "biotechnology", "genomics", "neuroscience", "physics", "chemistry"
+  ],
+  "Public Health": [
+    "covid-19 pandemic", "vaccines", "public health infrastructure", "disease prevention", "mental health policy",
+    "opioid crisis", "healthcare reform", "nutrition", "global health equity", "pandemic preparedness"
+  ],
+  "Healthcare & Medicine": [
+    "healthcare access", "universal healthcare", "insurance reform", "drug pricing", "telemedicine",
+    "biopharmaceuticals", "mental health services", "medical innovation", "chronic disease management", "public hospitals"
+  ],
+  "Education & Academia": [
+    "education reform", "student debt", "curriculum standards", "higher education funding", "teacher unions",
+    "school choice", "academic freedom", "online learning", "STEM education", "education inequality"
+  ],
+  "Law & Justice": [
+    "criminal justice reform", "policing", "civil rights law", "gun control", "abortion law",
+    "privacy rights", "judicial appointments", "free speech cases", "immigration enforcement", "human rights law"
+  ],
+  "Society & Culture": [
+    "gender equality", "race relations", "identity politics", "LGBTQ rights", "family policy",
+    "religious freedom", "pop culture", "youth activism", "generational politics", "social movements"
+  ],
+  "Media & Information": [
+    "journalism", "media bias", "misinformation", "press freedom", "news literacy",
+    "censorship", "public broadcasting", "alternative media", "disinformation campaigns", "propaganda analysis"
+  ],
+  "Arts & Entertainment": [
+    "film industry", "music industry", "book publishing", "video games", "digital art",
+    "streaming media", "television", "celebrity culture", "comedy and satire", "art criticism"
+  ],
+  "Philosophy & Religion": [
+    "ethics", "philosophy of science", "spiritual movements", "religious conservatism", "atheism",
+    "moral philosophy", "religious freedom", "faith and politics", "interfaith dialogue", "religious extremism"
+  ],
+  "Defense & Security": [
+    "national defense", "military strategy", "counterterrorism", "intelligence agencies", "arms control",
+    "cyber warfare", "nuclear deterrence", "border security", "defense spending", "homeland security"
+  ],
+  "Cybersecurity & Warfare": [
+    "cyberattacks", "data breaches", "information warfare", "ransomware", "state-sponsored hacking",
+    "cyber defense", "digital espionage", "critical infrastructure security", "disinformation operations", "network resilience"
+  ],
+  "Energy & Infrastructure": [
+    "transportation policy", "public transit", "infrastructure spending", "urban development", "housing policy",
+    "smart cities", "construction industry", "water management", "energy grid", "public works"
+  ],
+  "Urban Development & Housing": [
+    "zoning policy", "affordable housing", "urban planning", "gentrification", "real estate markets",
+    "homelessness", "public housing", "city governance", "urban inequality", "transport systems"
+  ],
+  "Agriculture & Food Systems": [
+    "agriculture policy", "food security", "farming technology", "pesticide regulation", "sustainable agriculture",
+    "food supply chains", "meat alternatives", "agribusiness", "rural development", "climate-smart agriculture"
+  ],
+  "Trade & Globalization": [
+    "trade policy", "free trade agreements", "tariffs", "global supply chains", "outsourcing",
+    "industrial competition", "protectionism", "economic globalization", "export regulation", "multilateral trade"
+  ],
+  "Social Policy": [
+    "welfare programs", "universal basic income", "childcare policy", "poverty alleviation", "elder care",
+    "disability rights", "housing subsidies", "public assistance", "social insurance", "income redistribution"
+  ],
+  "Immigration & Demographics": [
+    "immigration reform", "border control", "refugee policy", "asylum seekers", "demographic change",
+    "multiculturalism", "population growth", "citizenship policy", "migration trends", "labor immigration"
+  ],
+  "Human Rights & Equality": [
+    "civil liberties", "racial justice", "gender equality", "freedom of expression", "disability rights",
+    "workers rights", "LGBTQ equality", "indigenous rights", "religious tolerance", "anti-discrimination"
+  ],
+  "Science & Technology Policy": [
+    "research funding", "science education", "innovation policy", "intellectual property", "open science",
+    "data governance", "public sector research", "technology transfer", "scientific collaboration", "ethics in research"
+  ],
+  "Transportation & Mobility": [
+    "electric vehicles", "public transportation", "aerospace industry", "supply chain logistics", "autonomous vehicles",
+    "aviation", "rail networks", "freight transport", "infrastructure maintenance", "urban mobility"
+  ],
+  "International Development": [
+    "foreign aid policy", "sustainable development goals", "poverty reduction", "microfinance", "NGO effectiveness",
+    "global education", "humanitarian response", "economic empowerment", "public health in developing countries", "global partnerships"
+  ],
+  "Crisis & Disaster Response": [
+    "disaster relief", "emergency management", "climate resilience", "pandemic response", "refugee aid",
+    "humanitarian logistics", "conflict recovery", "crisis coordination", "food aid", "natural disaster recovery"
+  ],
+  "Sports & Society": [
+    "sports politics", "athlete activism", "sports economics", "olympics", "gender in sports",
+    "college athletics", "sports medicine", "sports law", "sports broadcasting", "fan culture"
+  ],
+  "Ethics & Governance": [
+    "corporate responsibility", "political corruption", "transparency", "anti-corruption reform", "government ethics",
+    "public accountability", "whistleblowing", "lobbying reform", "conflicts of interest", "institutional trust"
+  ],
+  "Crime & Security": [
+    "organized crime", "policing methods", "gun violence", "criminal policy", "forensic technology",
+    "incarceration policy", "justice reform", "drug policy", "cybercrime", "surveillance technology"
+  ],
+  "Regional Studies": [
+    "latin america", "africa", "europe", "asia", "middle east",
+    "south america", "southeast asia", "north america", "arctic policy", "ocean governance"
+  ]
+}
