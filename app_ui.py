@@ -1,11 +1,12 @@
 import streamlit as st
-import tempfile, os, re, json, torch, chromadb, numpy as np, requests, yaml
+import tempfile, os, json, torch, chromadb, numpy as np, requests, yaml
 from pathlib import Path
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 from sentence_transformers import SentenceTransformer
 from huggingface_hub import hf_hub_download
 import trafilatura
 from PyPDF2 import PdfReader
+import shutil
 
 # =========================================================
 # CONFIG LOAD FROM GITHUB
@@ -41,14 +42,13 @@ CHROMA_DIR = PROJECT_ROOT / "chroma_db"
 HF_DATASET_ID = CONFIG["hf_dataset_id"]
 
 # =========================================================
-# AUTO-REBUILD CHROMA FROM HF (if missing)
+# FORCE CHROMA REBUILD EACH RUN
 # =========================================================
-def ensure_chroma_from_hf():
+def rebuild_chroma_from_hf():
+    st.info("Rebuilding Chroma from Hugging Face dataset — this may take a few minutes.")
     if CHROMA_DIR.exists():
-        return
-    st.info("Rebuilding Chroma from Hugging Face dataset — first startup only.")
+        shutil.rmtree(CHROMA_DIR)
     CHROMA_DIR.mkdir(parents=True, exist_ok=True)
-    import numpy as np
 
     client = chromadb.PersistentClient(path=str(CHROMA_DIR))
     topic_coll = client.get_or_create_collection(CONFIG["chroma_collections"]["topic"], metadata={"hnsw:space": "cosine"})
@@ -71,21 +71,18 @@ def ensure_chroma_from_hf():
         stance_coll.upsert(ids=s_ids, embeddings=s_vecs.tolist(), metadatas=s_meta)
     st.success("Chroma rebuild complete.")
 
-ensure_chroma_from_hf()
+rebuild_chroma_from_hf()
 
 # =========================================================
-# MODEL LOAD
+# LOAD MODELS (CPU ONLY)
 # =========================================================
-device = "cuda" if torch.cuda.is_available() else "cpu"
-topic_model = SentenceTransformer(CONFIG["embeddings"]["topic_model"], device=device)
-stance_model = SentenceTransformer(CONFIG["embeddings"]["stance_model"], device=device)
+topic_model = SentenceTransformer(CONFIG["embeddings"]["topic_model"])
 summarizer_name = CONFIG.get("summarizer", {}).get("model", "facebook/bart-large-cnn")
 tok_sum = AutoTokenizer.from_pretrained(summarizer_name)
-model_sum = AutoModelForSeq2SeqLM.from_pretrained(summarizer_name).to(device)
+model_sum = AutoModelForSeq2SeqLM.from_pretrained(summarizer_name)
 
 client = chromadb.PersistentClient(path=str(CHROMA_DIR))
 topic_coll = client.get_collection(CONFIG["chroma_collections"]["topic"])
-stance_coll = client.get_collection(CONFIG["chroma_collections"]["stance"])
 
 # =========================================================
 # HELPERS
@@ -102,7 +99,7 @@ def extract_text(uploaded_file):
         return uploaded_file.read().decode("utf-8", errors="ignore")
 
 def summarize_text(text):
-    inputs = tok_sum([text], return_tensors="pt", truncation=True, max_length=1024).to(device)
+    inputs = tok_sum([text], return_tensors="pt", truncation=True, max_length=1024)
     with torch.no_grad():
         out = model_sum.generate(**inputs, max_length=150, num_beams=4, early_stopping=True)
     return tok_sum.batch_decode(out, skip_special_tokens=True)[0]
@@ -111,10 +108,21 @@ def topic_embed(text):
     return topic_model.encode([text], convert_to_numpy=True)[0]
 
 # =========================================================
-# FIND ARTICLES BY TOPIC SIMILARITY (SPECTRUM)
+# RETRIEVAL AND GROUPING LOGIC
 # =========================================================
-def find_similarity_bands(topic_vec, top_n=30):
-    """Find articles across similarity bands using cosine similarity only."""
+def categorize_similarity(score):
+    if score < 0.3:
+        return "Dissimilar"
+    elif score < 0.5:
+        return "Somewhat dissimilar"
+    elif score < 0.7:
+        return "Somewhat similar"
+    elif score < 0.85:
+        return "Similar"
+    else:
+        return "Nearly identical"
+
+def find_similar_articles(topic_vec, top_n=100):
     res = topic_coll.query(
         query_embeddings=[topic_vec.tolist()],
         n_results=top_n,
@@ -124,28 +132,19 @@ def find_similarity_bands(topic_vec, top_n=30):
     for meta, tvec in zip(res["metadatas"][0], res["embeddings"][0]):
         sim = float(np.dot(topic_vec, tvec) / (np.linalg.norm(topic_vec) * np.linalg.norm(tvec)))
         results.append({"meta": meta, "similarity": sim})
-
-    # Categorize into bands
-    similar = [r for r in results if r["similarity"] >= 0.7]
-    moderate = [r for r in results if 0.4 <= r["similarity"] < 0.7]
-    dissimilar = [r for r in results if r["similarity"] < 0.4]
-
-    # Sort each band descending
-    similar.sort(key=lambda x: x["similarity"], reverse=True)
-    moderate.sort(key=lambda x: x["similarity"], reverse=True)
-    dissimilar.sort(key=lambda x: x["similarity"], reverse=True)
-
-    return {
-        "similar": similar[:5],
-        "moderate": moderate[:5],
-        "dissimilar": dissimilar[:5]
-    }
+    results.sort(key=lambda x: x["similarity"])  # ascending order (dissimilar → similar)
+    return results
 
 # =========================================================
 # STREAMLIT UI
 # =========================================================
 st.set_page_config(page_title="Anti Echo Chamber", layout="wide")
-st.title("Anti Echo Chamber: Topic Similarity Spectrum")
+st.title("Anti Echo Chamber: Topic Argument Spectrum")
+
+st.markdown("""
+This view lists **articles on similar topics**, ordered from **most dissimilar arguments to most similar ones**.
+If you don’t see clear counterpoints, our collection is continuously expanding — check back soon for more diverse perspectives.
+""")
 
 uploaded = st.file_uploader("Upload an article (.txt, .pdf, .html)", type=["txt", "pdf", "html"])
 
@@ -155,38 +154,39 @@ if uploaded:
     st.subheader("Extracted Text Preview")
     st.text_area("", text[:2000] + ("..." if len(text) > 2000 else ""), height=300)
 
-    if st.button("Analyze and Find Similar Topics"):
+    if st.button("Analyze and Find Related Topics"):
         with st.spinner("Summarizing and embedding..."):
             summary = summarize_text(text)
             topic_vec = topic_embed(text)
-        st.subheader("Summary (stance representation)")
+        st.subheader("Summary")
         st.write(summary)
 
-        with st.spinner("Finding topic similarity spectrum..."):
-            bands = find_similarity_bands(topic_vec, top_n=30)
+        with st.spinner("Retrieving related articles..."):
+            results = find_similar_articles(topic_vec, top_n=100)
 
-        st.subheader("Most Similar Articles (High Cosine Similarity ≥ 0.7)")
-        for r in bands["similar"]:
-            m = r["meta"]
-            st.markdown(f"### [{m.get('title','Untitled')}]({m.get('url','#')})")
-            st.write(f"**Source:** {m.get('source','?')} | **Similarity:** {r['similarity']:.2f}")
-            st.write(m.get("stance_summary") or m.get("title",""))
-            st.divider()
+        groups = {"Dissimilar": [], "Somewhat dissimilar": [], "Somewhat similar": [], "Similar": [], "Nearly identical": []}
+        for r in results:
+            cat = categorize_similarity(r["similarity"])
+            groups[cat].append(r)
 
-        st.subheader("Moderately Related Articles (0.4 ≤ Cosine < 0.7)")
-        for r in bands["moderate"]:
-            m = r["meta"]
-            st.markdown(f"### [{m.get('title','Untitled')}]({m.get('url','#')})")
-            st.write(f"**Source:** {m.get('source','?')} | **Similarity:** {r['similarity']:.2f}")
-            st.write(m.get("stance_summary") or m.get("title",""))
-            st.divider()
-
-        st.subheader("Distant Topics (Cosine < 0.4)")
-        for r in bands["dissimilar"]:
-            m = r["meta"]
-            st.markdown(f"### [{m.get('title','Untitled')}]({m.get('url','#')})")
-            st.write(f"**Source:** {m.get('source','?')} | **Similarity:** {r['similarity']:.2f}")
-            st.write(m.get("stance_summary") or m.get("title",""))
-            st.divider()
+        for label in ["Dissimilar", "Somewhat dissimilar", "Somewhat similar", "Similar", "Nearly identical"]:
+            items = groups[label]
+            if not items:
+                continue
+            with st.expander(f"{label} ({len(items)})", expanded=(label == "Dissimilar")):
+                for i, r in enumerate(items[:10]):
+                    m = r["meta"]
+                    st.markdown(f"### [{m.get('title','Untitled')}]({m.get('url','#')})")
+                    st.write(f"**Source:** {m.get('source','?')} | **Cosine similarity:** {r['similarity']:.3f}")
+                    st.write(m.get("stance_summary") or m.get("title",""))
+                    st.divider()
+                if len(items) > 10:
+                    if st.button(f"Show all {label}", key=f"show_{label}"):
+                        for r in items[10:]:
+                            m = r["meta"]
+                            st.markdown(f"### [{m.get('title','Untitled')}]({m.get('url','#')})")
+                            st.write(f"**Source:** {m.get('source','?')} | **Cosine similarity:** {r['similarity']:.3f}")
+                            st.write(m.get("stance_summary") or m.get("title",""))
+                            st.divider()
 else:
     st.info("Upload an article to begin analysis.")
