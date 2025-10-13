@@ -1,21 +1,46 @@
 import streamlit as st
-import tempfile, os, re, json, torch, chromadb, numpy as np
+import tempfile, os, re, json, torch, chromadb, numpy as np, requests, yaml
 from pathlib import Path
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 from sentence_transformers import SentenceTransformer
 import trafilatura
 from PyPDF2 import PdfReader
 
-# === PATHS ===
-PROJECT_ROOT = Path("/content/anti_echo").resolve()
-CONFIG_PATH = PROJECT_ROOT / "config_cache/config.yaml"
+# =========================================================
+# CONFIG LOADING (auto-fetch from your GitHub repo)
+# =========================================================
+REPO_OWNER = "AHMerrill"
+REPO_NAME = "anti-echo-chamber"
+BRANCH = "main"
+CONFIG_URL = f"https://raw.githubusercontent.com/{REPO_OWNER}/{REPO_NAME}/{BRANCH}/config/config.yaml"
+
+def fetch_config(url):
+    try:
+        txt = requests.get(url, timeout=20).text
+        if not txt.strip():
+            raise ValueError("empty config")
+        return yaml.safe_load(txt)
+    except Exception as e:
+        st.warning(f"Config fetch failed ({e}), using defaults.")
+        return {
+            "hf_dataset_id": "zanimal/anti-echo-artifacts",
+            "chroma_collections": {"topic": "topics", "stance": "stances"},
+            "embeddings": {
+                "topic_model": "sentence-transformers/all-MiniLM-L6-v2",
+                "stance_model": "sentence-transformers/all-mpnet-base-v2",
+                "dim": 384,
+                "dtype": "float32"
+            },
+            "summarizer": {"model": "facebook/bart-large-cnn"}
+        }
+
+CONFIG = fetch_config(CONFIG_URL)
+PROJECT_ROOT = Path(".").resolve()
 CHROMA_DIR = PROJECT_ROOT / "chroma_db"
 
-# === LOAD CONFIG ===
-import yaml
-CONFIG = yaml.safe_load(CONFIG_PATH.read_text(encoding="utf-8"))
-
-# === LOAD MODELS ===
+# =========================================================
+# MODEL LOADING
+# =========================================================
 device = "cuda" if torch.cuda.is_available() else "cpu"
 topic_model = SentenceTransformer(CONFIG["embeddings"]["topic_model"], device=device)
 stance_model = SentenceTransformer(CONFIG["embeddings"]["stance_model"], device=device)
@@ -23,11 +48,20 @@ summarizer_name = CONFIG.get("summarizer", {}).get("model", "facebook/bart-large
 tok_sum = AutoTokenizer.from_pretrained(summarizer_name)
 model_sum = AutoModelForSeq2SeqLM.from_pretrained(summarizer_name).to(device)
 
-# === CHROMA ===
-client = chromadb.PersistentClient(path=str(CHROMA_DIR))
-topic_coll = client.get_collection(CONFIG["chroma_collections"]["topic"])
-stance_coll = client.get_collection(CONFIG["chroma_collections"]["stance"])
+# =========================================================
+# CHROMA CLIENT
+# =========================================================
+try:
+    client = chromadb.PersistentClient(path=str(CHROMA_DIR))
+    topic_coll = client.get_collection(CONFIG["chroma_collections"]["topic"])
+    stance_coll = client.get_collection(CONFIG["chroma_collections"]["stance"])
+except Exception as e:
+    st.error("Chroma database not found. Make sure chroma_db/ exists or rebuild it from HF.")
+    st.stop()
 
+# =========================================================
+# HELPERS
+# =========================================================
 def extract_text(uploaded_file):
     suffix = Path(uploaded_file.name).suffix.lower()
     if suffix == ".pdf":
@@ -52,8 +86,11 @@ def stance_embed(summary):
     return stance_model.encode([summary], convert_to_numpy=True)[0]
 
 def find_contrasting_articles(topic_vec, stance_vec, top_n=5):
-    # Query top N topic neighbors
-    res = topic_coll.query(query_embeddings=[topic_vec.tolist()], n_results=top_n * 3, include=["metadatas", "embeddings"])
+    res = topic_coll.query(
+        query_embeddings=[topic_vec.tolist()],
+        n_results=top_n * 3,
+        include=["metadatas", "embeddings"]
+    )
     results = []
     for meta, tvec in zip(res["metadatas"][0], res["embeddings"][0]):
         sid = meta.get("id") + "::stance::0"
@@ -76,7 +113,9 @@ def find_contrasting_articles(topic_vec, stance_vec, top_n=5):
     results.sort(key=lambda x: x["contrast"], reverse=True)
     return results[:top_n]
 
-# === STREAMLIT UI ===
+# =========================================================
+# STREAMLIT UI
+# =========================================================
 st.set_page_config(page_title="Anti Echo Chamber", layout="wide")
 st.title("Anti Echo Chamber: Find Opposing Perspectives")
 
