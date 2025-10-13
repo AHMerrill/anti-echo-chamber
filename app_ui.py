@@ -3,11 +3,12 @@ import tempfile, os, re, json, torch, chromadb, numpy as np, requests, yaml
 from pathlib import Path
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 from sentence_transformers import SentenceTransformer
+from huggingface_hub import hf_hub_download
 import trafilatura
 from PyPDF2 import PdfReader
 
 # =========================================================
-# CONFIG LOADING (auto-fetch from your GitHub repo)
+# CONFIG LOAD FROM GITHUB
 # =========================================================
 REPO_OWNER = "AHMerrill"
 REPO_NAME = "anti-echo-chamber"
@@ -37,9 +38,43 @@ def fetch_config(url):
 CONFIG = fetch_config(CONFIG_URL)
 PROJECT_ROOT = Path(".").resolve()
 CHROMA_DIR = PROJECT_ROOT / "chroma_db"
+HF_DATASET_ID = CONFIG["hf_dataset_id"]
 
 # =========================================================
-# MODEL LOADING
+# AUTO-REBUILD CHROMA FROM HF (if missing)
+# =========================================================
+def ensure_chroma_from_hf():
+    if CHROMA_DIR.exists():
+        return
+    st.info("Rebuilding Chroma from Hugging Face dataset — first startup only.")
+    CHROMA_DIR.mkdir(parents=True, exist_ok=True)
+    import numpy as np
+
+    client = chromadb.PersistentClient(path=str(CHROMA_DIR))
+    topic_coll = client.get_or_create_collection(CONFIG["chroma_collections"]["topic"], metadata={"hnsw:space": "cosine"})
+    stance_coll = client.get_or_create_collection(CONFIG["chroma_collections"]["stance"], metadata={"hnsw:space": "cosine"})
+
+    REG_URL = f"https://raw.githubusercontent.com/{REPO_OWNER}/{REPO_NAME}/{BRANCH}/artifacts/artifacts_registry.json"
+    REGISTRY = requests.get(REG_URL, timeout=20).json()
+
+    for b in REGISTRY.get("batches", []):
+        paths = b.get("paths") or {}
+        if not all(k in paths for k in ["embeddings_topic","embeddings_stance","metadata_topic","metadata_stance"]):
+            continue
+        t_vecs = np.load(hf_hub_download(HF_DATASET_ID, paths["embeddings_topic"], repo_type="dataset"))["arr_0"]
+        s_vecs = np.load(hf_hub_download(HF_DATASET_ID, paths["embeddings_stance"], repo_type="dataset"))["arr_0"]
+        t_meta = [json.loads(l) for l in open(hf_hub_download(HF_DATASET_ID, paths["metadata_topic"], repo_type="dataset"), encoding="utf-8")]
+        s_meta = [json.loads(l) for l in open(hf_hub_download(HF_DATASET_ID, paths["metadata_stance"], repo_type="dataset"), encoding="utf-8")]
+        t_ids = [m.get("row_id", f"{m.get('id','?')}::topic::0") for m in t_meta]
+        s_ids = [m.get("row_id", f"{m.get('id','?')}::stance::0") for m in s_meta]
+        topic_coll.upsert(ids=t_ids, embeddings=t_vecs.tolist(), metadatas=t_meta)
+        stance_coll.upsert(ids=s_ids, embeddings=s_vecs.tolist(), metadatas=s_meta)
+    st.success("Chroma rebuild complete.")
+
+ensure_chroma_from_hf()
+
+# =========================================================
+# MODEL LOAD
 # =========================================================
 device = "cuda" if torch.cuda.is_available() else "cpu"
 topic_model = SentenceTransformer(CONFIG["embeddings"]["topic_model"], device=device)
@@ -48,16 +83,9 @@ summarizer_name = CONFIG.get("summarizer", {}).get("model", "facebook/bart-large
 tok_sum = AutoTokenizer.from_pretrained(summarizer_name)
 model_sum = AutoModelForSeq2SeqLM.from_pretrained(summarizer_name).to(device)
 
-# =========================================================
-# CHROMA CLIENT
-# =========================================================
-try:
-    client = chromadb.PersistentClient(path=str(CHROMA_DIR))
-    topic_coll = client.get_collection(CONFIG["chroma_collections"]["topic"])
-    stance_coll = client.get_collection(CONFIG["chroma_collections"]["stance"])
-except Exception as e:
-    st.error("Chroma database not found. Make sure chroma_db/ exists or rebuild it from HF.")
-    st.stop()
+client = chromadb.PersistentClient(path=str(CHROMA_DIR))
+topic_coll = client.get_collection(CONFIG["chroma_collections"]["topic"])
+stance_coll = client.get_collection(CONFIG["chroma_collections"]["stance"])
 
 # =========================================================
 # HELPERS
@@ -86,27 +114,22 @@ def stance_embed(summary):
     return stance_model.encode([summary], convert_to_numpy=True)[0]
 
 def find_contrasting_articles(topic_vec, stance_vec, top_n=5):
-    res = topic_coll.query(
-        query_embeddings=[topic_vec.tolist()],
-        n_results=top_n * 3,
-        include=["metadatas", "embeddings"]
-    )
+    res = topic_coll.query(query_embeddings=[topic_vec.tolist()], n_results=top_n*3, include=["metadatas","embeddings"])
     results = []
     for meta, tvec in zip(res["metadatas"][0], res["embeddings"][0]):
         sid = meta.get("id") + "::stance::0"
         try:
-            srec = stance_coll.get(ids=[sid], include=["embeddings", "metadatas"])
+            srec = stance_coll.get(ids=[sid], include=["embeddings","metadatas"])
             if not srec["embeddings"]:
                 continue
             stance_other = np.array(srec["embeddings"][0][0])
-            topic_sim = float(np.dot(topic_vec, tvec) / (np.linalg.norm(topic_vec) * np.linalg.norm(tvec)))
-            stance_sim = float(np.dot(stance_vec, stance_other) / (np.linalg.norm(stance_vec) * np.linalg.norm(stance_other)))
-            contrast = topic_sim - stance_sim
+            topic_sim = float(np.dot(topic_vec, tvec)/(np.linalg.norm(topic_vec)*np.linalg.norm(tvec)))
+            stance_sim = float(np.dot(stance_vec, stance_other)/(np.linalg.norm(stance_vec)*np.linalg.norm(stance_other)))
             results.append({
                 "meta": meta,
                 "topic_sim": topic_sim,
                 "stance_sim": stance_sim,
-                "contrast": contrast
+                "contrast": topic_sim - stance_sim
             })
         except Exception:
             continue
@@ -119,7 +142,7 @@ def find_contrasting_articles(topic_vec, stance_vec, top_n=5):
 st.set_page_config(page_title="Anti Echo Chamber", layout="wide")
 st.title("Anti Echo Chamber: Find Opposing Perspectives")
 
-uploaded = st.file_uploader("Upload an article (.txt, .pdf, .html)", type=["txt", "pdf", "html"])
+uploaded = st.file_uploader("Upload an article (.txt, .pdf, .html)", type=["txt","pdf","html"])
 
 if uploaded:
     with st.spinner("Extracting text..."):
