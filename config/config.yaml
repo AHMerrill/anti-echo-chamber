@@ -18,6 +18,12 @@ embeddings:
   pooling: "mean"
   chunk_tokens: 512
 
+# Topic anchoring
+topics:
+  source: "https://raw.githubusercontent.com/AHMerrill/anti-echo-chamber/main/config/topics.json"
+  max_topics_per_article: 5
+  similarity_threshold: 0.4
+
 # Summarizer used before stance embeddings
 summarizer:
   model: "facebook/bart-large-cnn"
