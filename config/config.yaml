@@ -1,36 +1,38 @@
-# === anti-echo-chamber project config ===
-version: 1
+# === anti-echo-chamber project config (v2: ideology-aware stance) ===
+version: 2
 
-# Hugging Face dataset where batches are stored
+# Hugging Face dataset where artifact batches are stored
 hf_dataset_id: "zanimal/anti-echo-artifacts"
 
-# Local Chroma collection names
+# Local persistent Chroma collections
 chroma_collections:
   topic: "news_topic"
   stance: "news_stance"
 
-# Embedding model configuration
+# === Embedding models ===
 embeddings:
-  topic_model: "intfloat/e5-base-v2"
-  stance_model: "intfloat/e5-base-v2"
-  dim: 768
-  dtype: "float16"        # keep this for storage efficiency
+  topic_model: "intfloat/e5-base-v2"           # high-performing topic model
+  stance_model: "Snowflake/snowflake-arctic-embed-l"  # ideology-aware stance model
+  dim: 1024                                   # stance model has larger dimensionality
+  dtype: "float16"                            # storage-efficient dtype
   pooling: "mean"
   chunk_tokens: 512
+  normalize: true
 
-# Topic anchoring
+# === Topic inference ===
 topics:
   source: "https://raw.githubusercontent.com/AHMerrill/anti-echo-chamber/main/config/topics.json"
   max_topics_per_article: 5
   similarity_threshold: 0.4
 
-# Summarizer used before stance embeddings
+# === Summarizer (for stance embeddings) ===
 summarizer:
-  model: "facebook/bart-large-cnn"
-  target_sentences: 5
-  truncation: 2048
+  model: "facebook/bart-large-cnn"            # stable summarizer; good coherence
+  target_sentences: 5                         # generate 3–5 sentences
+  truncation: 3072                            # allow broader sampling window
+  rhetorical_prompt: true                     # enable persuasion/ideology prompt mode
 
-# Batch and manifest settings
+# === Batch output + artifact management ===
 batch:
   base_dir: "batches"
   manifest_name: "manifest.json"
@@ -39,20 +41,31 @@ batch:
   metadata_file: "metadata.jsonl"
   compress: true
   dtype: "float16"
+  hf_push: true                               # automatically push to HF dataset
 
-# ID and hashing policy
+# === Identifier + hashing scheme ===
 ids:
   scheme: "domain-slug-sha12"
   hash: "sha256"
   normalize_whitespace: true
   lowercase: true
+  include_timestamp: true
 
-# Chroma rebuild / persistence
+# === Chroma persistence and similarity metric ===
 chroma:
   dir: "chroma_db"
   distance_metric: "cosine"
+  rebuild_if_missing: true
 
-# Logging and diagnostics
+# === Logging, diagnostics, and recovery ===
 logging:
   level: "INFO"
   save_dir: "logs"
+  record_failures: true
+  checkpoint_interval: 100
+
+# === Diagnostics ===
+diagnostics:
+  validate_embeddings: true
+  sample_summary_preview: true
+  max_preview_chars: 500
