@@ -57,19 +57,58 @@ def rebuild_chroma_from_hf():
     REG_URL = f"https://raw.githubusercontent.com/{REPO_OWNER}/{REPO_NAME}/{BRANCH}/artifacts/artifacts_registry.json"
     REGISTRY = requests.get(REG_URL, timeout=20).json()
 
+    def sanitize(meta):
+        clean = {}
+        for k, v in meta.items():
+            if isinstance(v, (str, int, float, bool)):
+                clean[k] = v
+            elif v is None:
+                clean[k] = ""
+            else:
+                clean[k] = str(v)
+        return clean
+
     for b in REGISTRY.get("batches", []):
         paths = b.get("paths") or {}
         if not all(k in paths for k in ["embeddings_topic","embeddings_stance","metadata_topic","metadata_stance"]):
             continue
         t_vecs = np.load(hf_hub_download(HF_DATASET_ID, paths["embeddings_topic"], repo_type="dataset"))["arr_0"]
         s_vecs = np.load(hf_hub_download(HF_DATASET_ID, paths["embeddings_stance"], repo_type="dataset"))["arr_0"]
-        t_meta = [json.loads(l) for l in open(hf_hub_download(HF_DATASET_ID, paths["metadata_topic"], repo_type="dataset"), encoding="utf-8")]
-        s_meta = [json.loads(l) for l in open(hf_hub_download(HF_DATASET_ID, paths["metadata_stance"], repo_type="dataset"), encoding="utf-8")]
+
+        if not np.isfinite(t_vecs).all():
+            t_vecs = np.nan_to_num(t_vecs)
+        if not np.isfinite(s_vecs).all():
+            s_vecs = np.nan_to_num(s_vecs)
+
+        t_meta = [sanitize(json.loads(l)) for l in open(hf_hub_download(HF_DATASET_ID, paths["metadata_topic"], repo_type="dataset"), encoding="utf-8")]
+        s_meta = [sanitize(json.loads(l)) for l in open(hf_hub_download(HF_DATASET_ID, paths["metadata_stance"], repo_type="dataset"), encoding="utf-8")]
         t_ids = [m.get("row_id", f"{m.get('id','?')}::topic::0") for m in t_meta]
         s_ids = [m.get("row_id", f"{m.get('id','?')}::stance::0") for m in s_meta]
-        topic_coll.upsert(ids=t_ids, embeddings=t_vecs.tolist(), metadatas=t_meta)
-        stance_coll.upsert(ids=s_ids, embeddings=s_vecs.tolist(), metadatas=s_meta)
+
+        if not (len(t_ids) == len(t_vecs) == len(t_meta)):
+            st.warning(f"Length mismatch in topic batch {b.get('batch_id')}")
+            continue
+        if not (len(s_ids) == len(s_vecs) == len(s_meta)):
+            st.warning(f"Length mismatch in stance batch {b.get('batch_id')}")
+            continue
+
+        chunk = 5000
+        for i in range(0, len(t_ids), chunk):
+            j = i + chunk
+            topic_coll.upsert(
+                ids=t_ids[i:j],
+                embeddings=t_vecs[i:j].tolist(),
+                metadatas=t_meta[i:j],
+            )
+        for i in range(0, len(s_ids), chunk):
+            j = i + chunk
+            stance_coll.upsert(
+                ids=s_ids[i:j],
+                embeddings=s_vecs[i:j].tolist(),
+                metadatas=s_meta[i:j],
+            )
     st.success("Chroma rebuild complete.")
+
 
 rebuild_chroma_from_hf()
 
