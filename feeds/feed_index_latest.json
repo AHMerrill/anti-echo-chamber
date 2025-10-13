@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-10-12T23:33:09.138336+00:00",
+  "last_updated": "2025-10-13T00:10:08.776517+00:00",
   "items": {
     "https://www.theguardian.com/commentisfree/2025/oct/12/the-guardian-view-on-labour-targeting-nature-the-problem-isnt-snails-but-a-broken-housing-model": {
       "status": "ok",
@@ -752,6 +752,54 @@
     "https://theconversation.com/as-an-ob-gyn-i-see-firsthand-how-misleading-statements-on-acetaminophen-leave-expectant-parents-confused-fearful-and-lacking-in-options-265947": {
       "status": "ok",
       "fetched_at": "2025-10-12T23:33:09.138327+00:00"
+    },
+    "https://www.vox.com/future-perfect/464352/harry-potter-jk-rowling-lgbtq": {
+      "status": "ok",
+      "fetched_at": "2025-10-13T00:10:07.552124+00:00"
+    },
+    "https://www.vox.com/future-perfect/464478/farming-crop-harvest-global-hunger-wheat-famine": {
+      "status": "ok",
+      "fetched_at": "2025-10-13T00:10:07.660179+00:00"
+    },
+    "https://www.vox.com/culture/464429/riyadh-comedy-festival-saudi-arabia-bill-burr-marc-maron": {
+      "status": "ok",
+      "fetched_at": "2025-10-13T00:10:07.723038+00:00"
+    },
+    "https://www.vox.com/today-explained-newsletter/464341/gaza-ceasefire-israel-hamas-trump-qatar-netanyahu": {
+      "status": "ok",
+      "fetched_at": "2025-10-13T00:10:07.786285+00:00"
+    },
+    "https://www.vox.com/politics/464395/trump-letitia-james-stephen-miller-soros-actblue-indivisible-retribution": {
+      "status": "ok",
+      "fetched_at": "2025-10-13T00:10:07.847298+00:00"
+    },
+    "https://www.vox.com/future-perfect/464356/mirror-life-risks-benefits-bacteria-catastrophic-biology": {
+      "status": "ok",
+      "fetched_at": "2025-10-13T00:10:07.913933+00:00"
+    },
+    "https://www.vox.com/politics/464138/zohran-mamdani-gifted-programs-education": {
+      "status": "ok",
+      "fetched_at": "2025-10-13T00:10:07.993771+00:00"
+    },
+    "https://www.vox.com/the-logoff-newsletter-trump/464378/letitia-james-indictment-virginia-donald-trump-lindsey-halligan": {
+      "status": "ok",
+      "fetched_at": "2025-10-13T00:10:08.045360+00:00"
+    },
+    "https://www.vox.com/politics/464291/national-guard-chicago-pritzker-trump": {
+      "status": "ok",
+      "fetched_at": "2025-10-13T00:10:08.104703+00:00"
+    },
+    "https://www.vox.com/politics/464298/israel-hamas-deal-peace-ceasefire-hostages": {
+      "status": "ok",
+      "fetched_at": "2025-10-13T00:10:08.163324+00:00"
+    },
+    "https://theconversation.com/what-past-education-technology-failures-can-teach-us-about-the-future-of-ai-in-schools-265172": {
+      "status": "ok",
+      "fetched_at": "2025-10-13T00:10:08.727193+00:00"
+    },
+    "https://theconversation.com/science-costs-money-research-is-guided-by-who-funds-it-and-why-262587": {
+      "status": "ok",
+      "fetched_at": "2025-10-13T00:10:08.776507+00:00"
     }
   }
 }
