@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "updated_at": "2025-10-13T19:40:20.516193+00:00",
+  "feeds": {
+    "commentisfree": {
+      "feed_url": null,
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 1000
+    },
+    "theguardian": {
+      "feed_url": null,
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 500
+    },
+    "vox": {
+      "feed_url": "https://www.vox.com/rss/index.xml",
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-13T19:37:58.801793+00:00"
+    },
+    "cnn-opinion": {
+      "feed_url": "http://rss.cnn.com/rss/cnn_opinion.rss",
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": null
+    },
+    "guardian": {
+      "feed_url": "https://www.theguardian.com/uk/rss",
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-13T19:38:39.780355+00:00"
+    },
+    "bbc": {
+      "feed_url": "https://feeds.bbci.co.uk/news/rss.xml",
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-13T19:39:03.013660+00:00"
+    },
+    "cityjournal": {
+      "feed_url": "https://www.city-journal.org/rss.xml",
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-13T19:39:05.237927+00:00"
+    },
+    "dailycaller": {
+      "feed_url": "https://dailycaller.com/feed/",
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-13T19:39:11.891163+00:00"
+    },
+    "theconversation": {
+      "feed_url": "https://theconversation.com/us/articles.atom",
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-13T19:39:17.777179+00:00"
+    },
+    "aljazeera": {
+      "feed_url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-13T19:39:23.968544+00:00"
+    },
+    "foxnews": {
+      "feed_url": "https://moxie.foxnews.com/google-publisher/latest.xml",
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-13T19:39:27.480724+00:00"
+    },
+    "npr": {
+      "feed_url": "https://feeds.npr.org/1001/rss.xml",
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-13T19:39:34.464107+00:00"
+    },
+    "reason": {
+      "feed_url": "https://reason.com/feed/",
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-13T19:39:45.793756+00:00"
+    },
+    "thefederalist": {
+      "feed_url": "https://thefederalist.com/feed/",
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-13T19:39:57.513415+00:00"
+    },
+    "msnbc": {
+      "feed_url": "https://feeds.nbcnews.com/msnbc/public/news",
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-13T19:40:06.465856+00:00"
+    },
+    "nypost": {
+      "feed_url": "https://nypost.com/feed/",
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-13T19:40:20.515938+00:00"
+    }
+  }
+}
