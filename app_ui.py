@@ -1,4 +1,5 @@
 # app_ui.py
+# Streamlit interface for Anti Echo Chamber (aligned with config.yaml)
 
 import streamlit as st
 import os
@@ -23,12 +24,16 @@ REPO_OWNER = "AHMerrill"
 REPO_NAME = "anti-echo-chamber"
 BRANCH = "main"
 
+# Embedding + summarization models (same as config.yaml)
+TOPIC_MODEL_NAME = "intfloat/e5-base-v2"
+STANCE_MODEL_NAME = "intfloat/e5-base-v2"
+SUMMARIZER_MODEL_NAME = "facebook/bart-large-cnn"
+
 st.set_page_config(page_title="Anti Echo Chamber", layout="wide")
 
 # ==============================
 # UTILITIES
 # ==============================
-
 def load_text(file):
     ext = Path(file.name).suffix.lower()
     if ext == ".txt":
@@ -63,7 +68,6 @@ def sanitize(meta):
 # ==============================
 # CACHED STARTUP: rebuild Chroma from HF
 # ==============================
-
 @st.cache_resource(show_spinner="Rebuilding Chroma from Hugging Face dataset (one-time per session)...")
 def build_chroma_from_hf():
     CHROMA_DIR = Path("chroma_db")
@@ -73,8 +77,8 @@ def build_chroma_from_hf():
     CHROMA_DIR.mkdir(parents=True, exist_ok=True)
 
     client = chromadb.PersistentClient(path=str(CHROMA_DIR))
-    topic_coll = client.get_or_create_collection("topic", metadata={"hnsw:space": "cosine"})
-    stance_coll = client.get_or_create_collection("stance", metadata={"hnsw:space": "cosine"})
+    topic_coll = client.get_or_create_collection("news_topic", metadata={"hnsw:space": "cosine"})
+    stance_coll = client.get_or_create_collection("news_stance", metadata={"hnsw:space": "cosine"})
 
     REGISTRY_URL = f"https://raw.githubusercontent.com/{REPO_OWNER}/{REPO_NAME}/{BRANCH}/artifacts/artifacts_registry.json"
     REGISTRY = requests.get(REGISTRY_URL, timeout=20).json()
@@ -112,10 +116,10 @@ client, topic_coll, stance_coll = build_chroma_from_hf()
 # ==============================
 @st.cache_resource
 def load_models():
-    topic_model = SentenceTransformer("all-mpnet-base-v2")
-    stance_model = SentenceTransformer("all-mpnet-base-v2")
-    summarizer_tokenizer = AutoTokenizer.from_pretrained("sshleifer/distilbart-cnn-12-6")
-    summarizer_model = AutoModelForSeq2SeqLM.from_pretrained("sshleifer/distilbart-cnn-12-6")
+    topic_model = SentenceTransformer(TOPIC_MODEL_NAME)
+    stance_model = SentenceTransformer(STANCE_MODEL_NAME)
+    summarizer_tokenizer = AutoTokenizer.from_pretrained(SUMMARIZER_MODEL_NAME)
+    summarizer_model = AutoModelForSeq2SeqLM.from_pretrained(SUMMARIZER_MODEL_NAME)
     return topic_model, stance_model, summarizer_tokenizer, summarizer_model
 
 topic_model, stance_model, tok_sum, model_sum = load_models()
@@ -141,7 +145,7 @@ if uploaded:
     with st.spinner("Analyzing and embedding your article..."):
         summary = summarize_text(text)
         stance_vec = stance_model.encode([summary])[0]
-        topic_vecs = topic_model.encode([summary, text])  # simple topic approximation
+        topic_vecs = topic_model.encode([summary, text])  # simplified topic representation
 
     with st.spinner("Querying database..."):
         results = topic_coll.query(
@@ -155,15 +159,15 @@ if uploaded:
         flat_results.extend(res)
 
     if not flat_results:
-        st.warning("No matching topics found. Our database is expanding — please check back later.")
+        st.warning("No matching topics found. Database may be rebuilding — check back soon.")
     else:
-        st.markdown("### Results: Similar Topics Sorted by Argument Dissimilarity")
+        st.markdown("### Results: Similar Topics, Contrasting Perspectives")
 
         stance_vectors = np.array([stance_model.encode([m.get("stance_summary","")])[0] for m in flat_results])
         stance_sims = cosine_similarity([stance_vec], stance_vectors)[0]
 
         pairs = list(zip(flat_results, stance_sims))
-        pairs.sort(key=lambda x: x[1])  # ascending: most dissimilar first
+        pairs.sort(key=lambda x: x[1])  # ascending → most dissimilar first
 
         def label(sim):
             if sim < 0.2: return "Very Dissimilar"
