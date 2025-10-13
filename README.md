@@ -1,3 +1,48 @@
+# anti echo chamber
+
+Builds a free, open embedding index of news and commentary for studying topic framing and sentiment polarity across sources.  
+This repository handles scraping, embedding, batching, and coordination for the Hugging Face dataset [`zanimal/anti-echo-artifacts`](https://huggingface.co/datasets/zanimal/anti-echo-artifacts).
+
+---
+
+## Colab notebooks
+
+### 1. Scraper and batch builder
+
+<a target="_blank" href="https://colab.research.google.com/github/AHMerrill/anti-echo-chamber/blob/main/scraper_artifacts.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+_Run this notebook to scrape, embed, and publish new batches to the Hugging Face dataset._
+
+---
+
+### 2. Analysis and stance comparison
+
+<a target="_blank" href="https://colab.research.google.com/github/AHMerrill/anti-echo-chamber/blob/main/anti_echo_chamber.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+_Run this notebook to rebuild the Chroma index from Hugging Face, upload an article, and find similar topics with opposing viewpoints._
+
+---
+
+## Overview
+
+This project collects news articles and opinion pieces (publicly accessible, full text kept local only), creates two kinds of vector spaces, and publishes compact embedding batches:
+
+1. **Topic space** – what the article is about  
+   384-dim vectors from `sentence-transformers/all-MiniLM-L6-v2`
+
+2. **Stance space** – how the article argues or frames an issue  
+   Article is summarized with `facebook/bart-large-cnn`, then embedded with the same MiniLM model
+
+Each batch of embeddings and metadata is uploaded to Hugging Face and can be used to rebuild a complete Chroma index for dense retrieval or RAG.
+
+---
+
+## Repository structure
+
 
 ---
 
