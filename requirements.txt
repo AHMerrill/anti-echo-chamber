@@ -1,0 +1,8 @@
+streamlit
+sentence-transformers
+chromadb
+transformers
+torch
+trafilatura
+PyPDF2
+pyyaml
