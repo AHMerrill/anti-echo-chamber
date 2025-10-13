@@ -1,5 +1,5 @@
 # app_ui.py
-# Streamlit interface for Anti Echo Chamber (aligned with config.yaml)
+# Streamlit interface for Anti Echo Chamber (aligned with config.yaml and e5-base-v2 embeddings)
 
 import streamlit as st
 import os
@@ -15,6 +15,9 @@ import chromadb
 import tempfile
 import fitz  # PyMuPDF for PDFs
 from bs4 import BeautifulSoup
+import warnings
+
+warnings.filterwarnings("ignore", message="Token indices sequence length is longer")
 
 # ==============================
 # CONFIGURATION
@@ -24,7 +27,7 @@ REPO_OWNER = "AHMerrill"
 REPO_NAME = "anti-echo-chamber"
 BRANCH = "main"
 
-# Embedding + summarization models (same as config.yaml)
+# Embedding + summarization models (must match config.yaml)
 TOPIC_MODEL_NAME = "intfloat/e5-base-v2"
 STANCE_MODEL_NAME = "intfloat/e5-base-v2"
 SUMMARIZER_MODEL_NAME = "facebook/bart-large-cnn"
@@ -92,10 +95,8 @@ def build_chroma_from_hf():
         # Load vectors
         t_vecs = np.load(hf_hub_download(HF_DATASET_ID, paths["embeddings_topic"], repo_type="dataset"))["arr_0"]
         s_vecs = np.load(hf_hub_download(HF_DATASET_ID, paths["embeddings_stance"], repo_type="dataset"))["arr_0"]
-        if not np.isfinite(t_vecs).all():
-            t_vecs = np.nan_to_num(t_vecs)
-        if not np.isfinite(s_vecs).all():
-            s_vecs = np.nan_to_num(s_vecs)
+        t_vecs = np.nan_to_num(t_vecs)
+        s_vecs = np.nan_to_num(s_vecs)
 
         # Load metadata
         t_meta = [sanitize(json.loads(l)) for l in open(hf_hub_download(HF_DATASET_ID, paths["metadata_topic"], repo_type="dataset"), encoding="utf-8")]
@@ -144,12 +145,16 @@ if uploaded:
 
     with st.spinner("Analyzing and embedding your article..."):
         summary = summarize_text(text)
-        stance_vec = stance_model.encode([summary])[0]
-        topic_vecs = topic_model.encode([summary, text])  # simplified topic representation
+        stance_vec = stance_model.encode([summary], normalize_embeddings=True)[0]
+
+        # topic embedding: combine summary + full text for richer topic capture
+        topic_chunks = [summary, text[:3000]]  # short + full-context mix
+        topic_vec = topic_model.encode(topic_chunks, normalize_embeddings=True)
+        topic_vec_mean = topic_vec.mean(axis=0)
 
     with st.spinner("Querying database..."):
         results = topic_coll.query(
-            query_embeddings=topic_vecs.tolist(),
+            query_embeddings=[topic_vec_mean.tolist()],
             n_results=100,
             include=["metadatas", "embeddings"]
         )
@@ -163,7 +168,14 @@ if uploaded:
     else:
         st.markdown("### Results: Similar Topics, Contrasting Perspectives")
 
-        stance_vectors = np.array([stance_model.encode([m.get("stance_summary","")])[0] for m in flat_results])
+        stance_vectors = []
+        for m in flat_results:
+            ssum = m.get("stance_summary", m.get("summary", ""))
+            if not ssum:
+                ssum = m.get("title", "")
+            stance_vectors.append(stance_model.encode([ssum], normalize_embeddings=True)[0])
+
+        stance_vectors = np.array(stance_vectors)
         stance_sims = cosine_similarity([stance_vec], stance_vectors)[0]
 
         pairs = list(zip(flat_results, stance_sims))
