@@ -1,27 +1,36 @@
 # app_ui.py
-# Streamlit interface for Anti Echo Chamber (multi-topic aware)
+# Streamlit UI for Anti Echo Chamber — optimized for memory and performance.
 
-import streamlit as st
 import os
 import json
 import numpy as np
 import requests
+import tempfile
+import gc
+import streamlit as st
 from pathlib import Path
 from huggingface_hub import hf_hub_download
 from sentence_transformers import SentenceTransformer
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 from sklearn.metrics.pairwise import cosine_similarity
-import chromadb
-import tempfile
-import fitz  # PyMuPDF for PDFs
 from bs4 import BeautifulSoup
+import fitz  # PyMuPDF for PDFs
+import chromadb
 import warnings
 
-warnings.filterwarnings("ignore", message="Token indices sequence length is longer")
+# ====================================================
+# ENVIRONMENT SETTINGS
+# ====================================================
 
-# ==============================
+warnings.filterwarnings("ignore", message="Token indices sequence length is longer")
+os.environ["CHROMA_TELEMETRY_ENABLED"] = "false"
+os.environ["ANONYMIZED_TELEMETRY"] = "false"
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+
+# ====================================================
 # CONFIGURATION
-# ==============================
+# ====================================================
+
 HF_DATASET_ID = "zanimal/anti-echo-artifacts"
 REPO_OWNER = "AHMerrill"
 REPO_NAME = "anti-echo-chamber"
@@ -33,10 +42,12 @@ SUMMARIZER_MODEL_NAME = "facebook/bart-large-cnn"
 
 st.set_page_config(page_title="Anti Echo Chamber", layout="wide")
 
-# ==============================
+# ====================================================
 # UTILITIES
-# ==============================
+# ====================================================
+
 def load_text(file):
+    """Handle text, PDF, and HTML uploads."""
     ext = Path(file.name).suffix.lower()
     if ext == ".txt":
         return file.read().decode("utf-8", errors="ignore")
@@ -57,6 +68,7 @@ def load_text(file):
         raise ValueError("Unsupported file type")
 
 def sanitize(meta):
+    """Ensure metadata is safe for JSON and Chroma."""
     clean = {}
     for k, v in meta.items():
         if isinstance(v, (str, int, float, bool)):
@@ -67,38 +79,28 @@ def sanitize(meta):
             clean[k] = str(v)
     return clean
 
-def extract_topic_labels(meta):
-    """Return list of topic strings from metadata JSON (handles old and new schema)."""
-    topics_field = meta.get("topic_labels") or meta.get("topic_label") or []
-    if isinstance(topics_field, str):
-        return [topics_field]
-    elif isinstance(topics_field, list):
-        return [t.get("topic_label", t) for t in topics_field if t]
-    else:
-        return []
+# ====================================================
+# CACHED RESOURCES
+# ====================================================
 
-# ==============================
-# CACHED STARTUP: rebuild Chroma from HF
-# ==============================
-@st.cache_resource(show_spinner="Rebuilding Chroma from Hugging Face dataset (one-time per session)...")
+@st.cache_resource(show_spinner="Building Chroma from Hugging Face dataset (first time only)...")
 def build_chroma_from_hf():
+    """Rebuild local Chroma from the HF dataset, cached for session reuse."""
     CHROMA_DIR = Path("chroma_db")
     if CHROMA_DIR.exists():
-        import shutil
-        shutil.rmtree(CHROMA_DIR)
-    CHROMA_DIR.mkdir(parents=True, exist_ok=True)
+        return chromadb.PersistentClient(path=str(CHROMA_DIR))
 
+    CHROMA_DIR.mkdir(parents=True, exist_ok=True)
     client = chromadb.PersistentClient(path=str(CHROMA_DIR))
     topic_coll = client.get_or_create_collection("news_topic", metadata={"hnsw:space": "cosine"})
     stance_coll = client.get_or_create_collection("news_stance", metadata={"hnsw:space": "cosine"})
 
     REGISTRY_URL = f"https://raw.githubusercontent.com/{REPO_OWNER}/{REPO_NAME}/{BRANCH}/artifacts/artifacts_registry.json"
-    REGISTRY = requests.get(REGISTRY_URL, timeout=20).json()
+    REGISTRY = requests.get(REGISTRY_URL, timeout=30).json()
 
     for b in REGISTRY.get("batches", []):
         paths = b.get("paths") or {}
-        need = ["embeddings_topic", "embeddings_stance", "metadata_topic", "metadata_stance"]
-        if not all(k in paths for k in need):
+        if not all(k in paths for k in ["embeddings_topic", "embeddings_stance", "metadata_topic", "metadata_stance"]):
             continue
 
         # Load vectors
@@ -111,28 +113,32 @@ def build_chroma_from_hf():
         t_meta = [sanitize(json.loads(l)) for l in open(hf_hub_download(HF_DATASET_ID, paths["metadata_topic"], repo_type="dataset"), encoding="utf-8")]
         s_meta = [sanitize(json.loads(l)) for l in open(hf_hub_download(HF_DATASET_ID, paths["metadata_stance"], repo_type="dataset"), encoding="utf-8")]
 
+        # Upsert
         t_ids = [m.get("row_id", f"{m.get('id','?')}::topic::0") for m in t_meta]
         s_ids = [m.get("row_id", f"{m.get('id','?')}::stance::0") for m in s_meta]
-
         topic_coll.upsert(ids=t_ids, embeddings=t_vecs.tolist(), metadatas=t_meta)
         stance_coll.upsert(ids=s_ids, embeddings=s_vecs.tolist(), metadatas=s_meta)
 
-    return client, topic_coll, stance_coll
+    return client
 
-client, topic_coll, stance_coll = build_chroma_from_hf()
-
-# ==============================
-# MODELS
-# ==============================
 @st.cache_resource
 def load_models():
+    """Load all models once per session."""
     topic_model = SentenceTransformer(TOPIC_MODEL_NAME)
     stance_model = SentenceTransformer(STANCE_MODEL_NAME)
-    summarizer_tokenizer = AutoTokenizer.from_pretrained(SUMMARIZER_MODEL_NAME)
-    summarizer_model = AutoModelForSeq2SeqLM.from_pretrained(SUMMARIZER_MODEL_NAME)
-    return topic_model, stance_model, summarizer_tokenizer, summarizer_model
+    tok_sum = AutoTokenizer.from_pretrained(SUMMARIZER_MODEL_NAME)
+    model_sum = AutoModelForSeq2SeqLM.from_pretrained(SUMMARIZER_MODEL_NAME)
+    return topic_model, stance_model, tok_sum, model_sum
+
+client = build_chroma_from_hf()
+topic_coll = client.get_collection("news_topic")
+stance_coll = client.get_collection("news_stance")
 
 topic_model, stance_model, tok_sum, model_sum = load_models()
+
+# ====================================================
+# SUMMARIZATION
+# ====================================================
 
 def summarize_text(text):
     inputs = tok_sum([text], return_tensors="pt", truncation=True, max_length=1024)
@@ -140,11 +146,12 @@ def summarize_text(text):
         summary_ids = model_sum.generate(**inputs, max_length=150, num_beams=4, early_stopping=True)
     return tok_sum.batch_decode(summary_ids, skip_special_tokens=True)[0].strip()
 
-# ==============================
-# APP UI
-# ==============================
-st.title("Anti Echo Chamber")
-st.caption("Find articles with similar topics but different perspectives")
+# ====================================================
+# STREAMLIT UI
+# ====================================================
+
+st.title("🧭 Anti Echo Chamber")
+st.caption("Explore articles with **similar topics** but **different perspectives**")
 
 uploaded = st.file_uploader("Upload an article (.txt, .pdf, or .html)", type=["txt", "pdf", "html"])
 
@@ -155,78 +162,70 @@ if uploaded:
     with st.spinner("Analyzing and embedding your article..."):
         summary = summarize_text(text)
         stance_vec = stance_model.encode([summary], normalize_embeddings=True)[0]
-        topic_chunks = [summary, text[:3000]]
-        topic_vec = topic_model.encode(topic_chunks, normalize_embeddings=True)
-        topic_vec_mean = topic_vec.mean(axis=0)
 
-    # ---- Topic interpretation (simple embedding-based proxy) ----
-    st.markdown("### Analysis Summary")
-    st.markdown("**Detected Topic Vector:** (embedding-based)")
-    st.markdown("> This vector represents what the model believes the article is primarily about, based on both the summary and main text.")
+        # Topic embedding: combine summary + main body
+        topic_chunks = [summary, text[:3000]]
+        topic_vecs = topic_model.encode(topic_chunks, normalize_embeddings=True)
+        topic_vec_mean = topic_vecs.mean(axis=0)
+
+    # === Display Analysis ===
+    st.markdown("### 🧠 Analysis Summary")
+    st.markdown("**Detected Topic Vector:** *(embedding-based)*")
+    st.markdown("> Represents what the model believes the article is about — combining summary and full text.")
     st.markdown(f"**Generated Summary for Stance Analysis:**\n\n> {summary}")
 
-    with st.spinner("Querying database..."):
+    with st.spinner("Finding similar topics..."):
         results = topic_coll.query(
             query_embeddings=[topic_vec_mean.tolist()],
-            n_results=150,
-            include=["metadatas", "embeddings"]
+            n_results=100,
+            include=["metadatas"]
         )
 
-    flat_results = []
-    for res in results["metadatas"]:
-        flat_results.extend(res)
+    all_results = [m for batch in results["metadatas"] for m in batch]
 
-    if not flat_results:
-        st.warning(
-            "No matching topics found. The database may still be synchronizing. "
-            "Please check back soon as new articles are continually being added."
-        )
+    if not all_results:
+        st.warning("No matching topics found yet. The database updates continuously — please check back later.")
     else:
-        st.markdown("### Results: Similar Topics, Contrasting Perspectives")
+        st.markdown("### 📰 Results: Similar Topics, Contrasting Perspectives")
         st.caption(
-            "Articles are retrieved by overlapping **topic labels** (most shared first), then ranked by **increasing stance similarity** — "
+            "Articles are retrieved by **topic similarity**, then ranked by **increasing stance similarity** — "
             "so those listed first are most likely to present opposing viewpoints. "
-            "If your desired topic or stance isn't visible yet, please check back later as the database updates regularly."
+            "If your desired topic or stance isn't visible yet, please check back later as the database expands."
         )
 
-        # Compute stance similarities
-        stance_vectors = []
-        for m in flat_results:
-            ssum = m.get("stance_summary", m.get("summary", ""))
-            if not ssum:
-                ssum = m.get("title", "")
-            stance_vectors.append(stance_model.encode([ssum], normalize_embeddings=True)[0])
+        stance_summaries = [m.get("stance_summary", m.get("summary", m.get("title", ""))) for m in all_results]
+        stance_embeddings = np.array([stance_model.encode([s], normalize_embeddings=True)[0] for s in stance_summaries])
+        stance_sims = cosine_similarity([stance_vec], stance_embeddings)[0]
 
-        stance_vectors = np.array(stance_vectors)
-        stance_sims = cosine_similarity([stance_vec], stance_vectors)[0]
+        pairs = sorted(zip(all_results, stance_sims), key=lambda x: x[1])
 
-        # Topic overlap weighting
-        # You’ll later replace this with the uploaded article's own detected topic list from anchors
-        uploaded_topics = ["(embedding-based)"]  # placeholder until anchor matching is active
+        def sim_label(s):
+            if s < 0.2: return "🟥 Very Dissimilar"
+            elif s < 0.4: return "🟧 Dissimilar"
+            elif s < 0.6: return "🟨 Somewhat Similar"
+            elif s < 0.8: return "🟩 Similar"
+            else: return "🟦 Very Similar"
 
-        def overlap_score(meta):
-            topics = set(extract_topic_labels(meta))
-            return len(topics.intersection(set(uploaded_topics)))
-
-        pairs = [(meta, stance_sims[i], overlap_score(meta)) for i, meta in enumerate(flat_results)]
-
-        # Sort by: topic overlap (descending), then stance similarity (ascending)
-        pairs.sort(key=lambda x: (-x[2], x[1]))
-
-        def label(sim):
-            if sim < 0.2: return "Very Dissimilar"
-            elif sim < 0.4: return "Dissimilar"
-            elif sim < 0.6: return "Somewhat Similar"
-            elif sim < 0.8: return "Similar"
-            else: return "Very Similar"
-
-        for meta, sim, overlap in pairs[:10]:
-            topic_display = ", ".join(extract_topic_labels(meta)) or "(topic unknown)"
+        for meta, sim in pairs[:10]:
+            topic_display = meta.get("topic_label") or meta.get("inferred_topic") or "(topic unknown)"
             st.markdown(
                 f"**{meta.get('title','(untitled)')}**  \n"
                 f"Source: {meta.get('domain','unknown')}  \n"
-                f"Topics: *{topic_display}*  \n"
-                f"Shared Topics with Uploaded Article: {overlap}  \n"
-                f"Stance Similarity: {sim:.2f} ({label(sim)})  \n"
+                f"Topic: *{topic_display}*  \n"
+                f"Stance Similarity: {sim:.2f} ({sim_label(sim)})  \n"
                 f"[Read original article]({meta.get('url','#')})"
             )
+
+    # Cleanup after processing
+    del text, summary, stance_vec, topic_vec_mean
+    gc.collect()
+
+# ====================================================
+# RESET BUTTON
+# ====================================================
+
+st.divider()
+if st.button("🧹 Clear memory / restart app"):
+    st.cache_resource.clear()
+    st.session_state.clear()
+    st.experimental_rerun()
