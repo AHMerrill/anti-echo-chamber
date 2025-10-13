@@ -1,52 +1,3 @@
-# anti echo chamber
-
-Builds a free, open embedding index of news and commentary for studying topic framing and sentiment polarity across sources.  
-This repository handles scraping, embedding, batching, and coordination for the Hugging Face dataset [`zanimal/anti-echo-artifacts`](https://huggingface.co/datasets/zanimal/anti-echo-artifacts).
-
----
-
-<a target="_blank" href="https://colab.research.google.com/github/AHMerrill/anti-echo-chamber/blob/main/scraper_artifacts.ipynb">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>
-
-_Run this project directly in Google Colab using the badge above._
-
----
-
-## Overview
-
-This project collects news articles and opinion pieces (publicly accessible, full text kept local only), creates two kinds of vector spaces, and publishes compact embedding batches:
-
-1. **Topic space** – what the article is about  
-   384-dim vectors from `sentence-transformers/all-MiniLM-L6-v2`
-
-2. **Stance space** – how the article argues or frames an issue  
-   Article is summarized with `facebook/bart-large-cnn`, then embedded with the same MiniLM model
-
-Each batch of embeddings and metadata is uploaded to Hugging Face and can be used to rebuild a complete Chroma index for dense retrieval or RAG.
-
----
-
-## Repository structure
-
-```
-anti-echo-chamber/
-├── artifacts/
-│   └── artifacts_registry.json      # record of published batches
-├── config/
-│   ├── config.yaml                  # global constants
-│   ├── stance_axes                  # ideological axes catalog
-│   └── topic_labels                 # topic taxonomy
-├── feeds/
-│   ├── index.json                   # local feed index used by scrapers
-│   └── feeds_state.json             # collaborative feed cursors
-├── docs/
-│   ├── batch_manifest_schema.md     # formal schema for manifest.json
-│   └── validation_checklist.md      # pre-publish checks
-├── scraper_artifacts.ipynb          # scraping notebook
-├── .gitignore
-└── README.md
-```
 
 ---
 
@@ -122,7 +73,7 @@ Every Colab run is stateless. Each collaborator follows this sequence:
 
 1. Edit your scraper to include the new RSS URL.  
 2. Run it once — the feed will be auto-added to `feeds/feeds_state.json`.  
-3. Commit the updated file with a short message like “add reuters_world feed”.
+3. Commit the updated file with a short message such as “add reuters_world feed”.
 
 ---
 
@@ -146,7 +97,7 @@ Follow [docs/validation_checklist.md](docs/validation_checklist.md) before publi
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed policies, ID conventions, and workflow requirements.
+See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for detailed policies, ID conventions, and workflow requirements.
 
 ---
 
