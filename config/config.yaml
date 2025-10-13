@@ -11,12 +11,12 @@ chroma_collections:
 
 # Embedding model configuration
 embeddings:
-  topic_model: "sentence-transformers/all-MiniLM-L6-v2"
-  stance_model: "sentence-transformers/all-MiniLM-L6-v2"
-  dim: 384
-  dtype: "float16"
+  topic_model: "intfloat/e5-base-v2"
+  stance_model: "intfloat/e5-base-v2"
+  dim: 768
+  dtype: "float16"        # keep this for storage efficiency
   pooling: "mean"
-  chunk_tokens: 512   # per text chunk before pooling
+  chunk_tokens: 512
 
 # Summarizer used before stance embeddings
 summarizer:
