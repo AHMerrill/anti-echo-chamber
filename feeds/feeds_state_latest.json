@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2025-10-12T23:33:10.500062+00:00",
+  "updated_at": "2025-10-13T00:10:09.441404+00:00",
   "feeds": {
     "commentisfree": {
       "feed_url": null,
@@ -154,7 +154,7 @@
       "feed_url": "https://theconversation.com/us/articles/feed",
       "recent_url_hashes": [],
       "recent_url_hashes_max": 1000,
-      "last_run_at": "2025-10-12T23:33:09.139187+00:00",
+      "last_run_at": "2025-10-13T00:10:08.777463+00:00",
       "last_run_by": "colab"
     },
     "reason": {
@@ -259,6 +259,12 @@
       "recent_url_hashes_max": 1000,
       "last_run_at": "2025-10-12T22:50:46.735215+00:00",
       "last_run_by": "colab"
+    },
+    "vox-policy": {
+      "feed_url": "https://www.vox.com/rss/index.xml",
+      "recent_url_hashes": [],
+      "recent_url_hashes_max": 1000,
+      "last_run_at": "2025-10-13T00:10:08.164280+00:00"
     }
   }
 }
