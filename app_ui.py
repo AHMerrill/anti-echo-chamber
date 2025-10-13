@@ -110,39 +110,44 @@ def summarize_text(text):
 def topic_embed(text):
     return topic_model.encode([text], convert_to_numpy=True)[0]
 
-def stance_embed(summary):
-    return stance_model.encode([summary], convert_to_numpy=True)[0]
-
-def find_contrasting_articles(topic_vec, stance_vec, top_n=5):
-    res = topic_coll.query(query_embeddings=[topic_vec.tolist()], n_results=top_n*3, include=["metadatas","embeddings"])
+# =========================================================
+# FIND ARTICLES BY TOPIC SIMILARITY (SPECTRUM)
+# =========================================================
+def find_similarity_bands(topic_vec, top_n=30):
+    """Find articles across similarity bands using cosine similarity only."""
+    res = topic_coll.query(
+        query_embeddings=[topic_vec.tolist()],
+        n_results=top_n,
+        include=["metadatas", "embeddings"]
+    )
     results = []
     for meta, tvec in zip(res["metadatas"][0], res["embeddings"][0]):
-        sid = meta.get("id") + "::stance::0"
-        try:
-            srec = stance_coll.get(ids=[sid], include=["embeddings","metadatas"])
-            if not srec["embeddings"]:
-                continue
-            stance_other = np.array(srec["embeddings"][0][0])
-            topic_sim = float(np.dot(topic_vec, tvec)/(np.linalg.norm(topic_vec)*np.linalg.norm(tvec)))
-            stance_sim = float(np.dot(stance_vec, stance_other)/(np.linalg.norm(stance_vec)*np.linalg.norm(stance_other)))
-            results.append({
-                "meta": meta,
-                "topic_sim": topic_sim,
-                "stance_sim": stance_sim,
-                "contrast": topic_sim - stance_sim
-            })
-        except Exception:
-            continue
-    results.sort(key=lambda x: x["contrast"], reverse=True)
-    return results[:top_n]
+        sim = float(np.dot(topic_vec, tvec) / (np.linalg.norm(topic_vec) * np.linalg.norm(tvec)))
+        results.append({"meta": meta, "similarity": sim})
+
+    # Categorize into bands
+    similar = [r for r in results if r["similarity"] >= 0.7]
+    moderate = [r for r in results if 0.4 <= r["similarity"] < 0.7]
+    dissimilar = [r for r in results if r["similarity"] < 0.4]
+
+    # Sort each band descending
+    similar.sort(key=lambda x: x["similarity"], reverse=True)
+    moderate.sort(key=lambda x: x["similarity"], reverse=True)
+    dissimilar.sort(key=lambda x: x["similarity"], reverse=True)
+
+    return {
+        "similar": similar[:5],
+        "moderate": moderate[:5],
+        "dissimilar": dissimilar[:5]
+    }
 
 # =========================================================
 # STREAMLIT UI
 # =========================================================
 st.set_page_config(page_title="Anti Echo Chamber", layout="wide")
-st.title("Anti Echo Chamber: Find Opposing Perspectives")
+st.title("Anti Echo Chamber: Topic Similarity Spectrum")
 
-uploaded = st.file_uploader("Upload an article (.txt, .pdf, .html)", type=["txt","pdf","html"])
+uploaded = st.file_uploader("Upload an article (.txt, .pdf, .html)", type=["txt", "pdf", "html"])
 
 if uploaded:
     with st.spinner("Extracting text..."):
@@ -150,24 +155,38 @@ if uploaded:
     st.subheader("Extracted Text Preview")
     st.text_area("", text[:2000] + ("..." if len(text) > 2000 else ""), height=300)
 
-    if st.button("Analyze and Find Opposing Articles"):
+    if st.button("Analyze and Find Similar Topics"):
         with st.spinner("Summarizing and embedding..."):
             summary = summarize_text(text)
             topic_vec = topic_embed(text)
-            stance_vec = stance_embed(summary)
         st.subheader("Summary (stance representation)")
         st.write(summary)
 
-        with st.spinner("Searching for contrasting perspectives..."):
-            results = find_contrasting_articles(topic_vec, stance_vec, top_n=5)
+        with st.spinner("Finding topic similarity spectrum..."):
+            bands = find_similarity_bands(topic_vec, top_n=30)
 
-        st.subheader("Contrasting Articles")
-        for r in results:
+        st.subheader("Most Similar Articles (High Cosine Similarity ≥ 0.7)")
+        for r in bands["similar"]:
             m = r["meta"]
             st.markdown(f"### [{m.get('title','Untitled')}]({m.get('url','#')})")
-            st.write(f"**Source:** {m.get('source','?')} | **Topic Sim:** {r['topic_sim']:.2f} | **Stance Sim:** {r['stance_sim']:.2f} | **Contrast:** {r['contrast']:.2f}")
-            snippet = m.get("stance_summary") or (m.get("title") or "")[:400]
-            st.write(snippet)
+            st.write(f"**Source:** {m.get('source','?')} | **Similarity:** {r['similarity']:.2f}")
+            st.write(m.get("stance_summary") or m.get("title",""))
+            st.divider()
+
+        st.subheader("Moderately Related Articles (0.4 ≤ Cosine < 0.7)")
+        for r in bands["moderate"]:
+            m = r["meta"]
+            st.markdown(f"### [{m.get('title','Untitled')}]({m.get('url','#')})")
+            st.write(f"**Source:** {m.get('source','?')} | **Similarity:** {r['similarity']:.2f}")
+            st.write(m.get("stance_summary") or m.get("title",""))
+            st.divider()
+
+        st.subheader("Distant Topics (Cosine < 0.4)")
+        for r in bands["dissimilar"]:
+            m = r["meta"]
+            st.markdown(f"### [{m.get('title','Untitled')}]({m.get('url','#')})")
+            st.write(f"**Source:** {m.get('source','?')} | **Similarity:** {r['similarity']:.2f}")
+            st.write(m.get("stance_summary") or m.get("title",""))
             st.divider()
 else:
     st.info("Upload an article to begin analysis.")
