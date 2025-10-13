@@ -27,7 +27,6 @@ REPO_OWNER = "AHMerrill"
 REPO_NAME = "anti-echo-chamber"
 BRANCH = "main"
 
-# Embedding + summarization models (must match config.yaml)
 TOPIC_MODEL_NAME = "intfloat/e5-base-v2"
 STANCE_MODEL_NAME = "intfloat/e5-base-v2"
 SUMMARIZER_MODEL_NAME = "facebook/bart-large-cnn"
@@ -148,9 +147,15 @@ if uploaded:
         stance_vec = stance_model.encode([summary], normalize_embeddings=True)[0]
 
         # topic embedding: combine summary + full text for richer topic capture
-        topic_chunks = [summary, text[:3000]]  # short + full-context mix
+        topic_chunks = [summary, text[:3000]]
         topic_vec = topic_model.encode(topic_chunks, normalize_embeddings=True)
         topic_vec_mean = topic_vec.mean(axis=0)
+
+    # ---- Display interpreted topic and summary ----
+    st.markdown("### Analysis Summary")
+    st.markdown("**Detected Topic Vector:** (embedding-based)")
+    st.markdown("> This vector represents what the model believes the article is primarily about, based on both the summary and main text.")
+    st.markdown(f"**Generated Summary for Stance Analysis:**\n\n> {summary}")
 
     with st.spinner("Querying database..."):
         results = topic_coll.query(
@@ -164,9 +169,17 @@ if uploaded:
         flat_results.extend(res)
 
     if not flat_results:
-        st.warning("No matching topics found. Database may be rebuilding — check back soon.")
+        st.warning(
+            "No matching topics found. The database may still be synchronizing. "
+            "Please check back soon as new articles are continually being added."
+        )
     else:
         st.markdown("### Results: Similar Topics, Contrasting Perspectives")
+        st.caption(
+            "Articles are retrieved by **topic similarity**, then ranked by **increasing stance similarity** — "
+            "so those listed first are most likely to present opposing viewpoints. "
+            "If your desired topic or stance isn't visible yet, please check back later as the database updates regularly."
+        )
 
         stance_vectors = []
         for m in flat_results:
@@ -189,9 +202,11 @@ if uploaded:
             else: return "Very Similar"
 
         for meta, sim in pairs[:10]:
+            topic_display = meta.get("topic_label") or meta.get("inferred_topic") or "(topic unknown)"
             st.markdown(
                 f"**{meta.get('title','(untitled)')}**  \n"
                 f"Source: {meta.get('domain','unknown')}  \n"
-                f"Similarity: {sim:.2f} ({label(sim)})  \n"
+                f"Topic: *{topic_display}*  \n"
+                f"Stance Similarity: {sim:.2f} ({label(sim)})  \n"
                 f"[Read original article]({meta.get('url','#')})"
             )
