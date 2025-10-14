@@ -1,20 +1,20 @@
-# === anti-echo-chamber project config (v2: ideology-aware stance, CUDA 12.1 build) ===
-version: 2
+# === anti-echo-chamber project config (v3: hybrid stance inference, FLAN-T5, CUDA 12.1) ===
+version: 3
 
-# Hugging Face dataset where artifact batches are stored
+# === Hugging Face dataset for artifact storage ===
 hf_dataset_id: "zanimal/anti-echo-artifacts"
 
-# Local persistent Chroma collections
+# === Local Chroma collections ===
 chroma_collections:
   topic: "news_topic"
   stance: "news_stance"
 
 # === Embedding models ===
 embeddings:
-  topic_model: "intfloat/e5-base-v2"                 # high-performing topic model
-  stance_model: "Snowflake/snowflake-arctic-embed-l" # ideology-aware stance model
-  dim: 1024                                          # stance model dimensionality
-  dtype: "float16"                                   # storage-efficient dtype
+  topic_model: "intfloat/e5-base-v2"                 # strong topic model (dense retrieval)
+  stance_model: "Snowflake/snowflake-arctic-embed-l" # ideology-aware stance encoder
+  dim: 1024                                          # stance embedding dimensionality
+  dtype: "float16"                                   # efficient precision for Chroma
   pooling: "mean"
   chunk_tokens: 512
   normalize: true
@@ -25,14 +25,24 @@ topics:
   max_topics_per_article: 5
   similarity_threshold: 0.4
 
-# === Summarizer (for stance embeddings) ===
-summarizer:
-  model: "facebook/bart-large-cnn"                   # full BART; best quality on CUDA 12.1 (Torch 2.2.2)
-  target_sentences: 5                                # generate 3–5 sentences
-  truncation: 3072                                   # broad sampling window
-  rhetorical_prompt: true                            # enable persuasion/ideology prompt mode
+# === Stance summarization and ideological mapping ===
+stance_processing:
+  mode: "hybrid"                                     # hybrid = label + summary embeddings
+  variants: ["label", "summary"]                     # two stance representations per article
+  summarizer_model: "google/flan-t5-large"           # instruction-tuned model (replaces BART)
+  target_sentences: 2                                # concise 1–2 sentence analytical summaries
+  truncation: 3072                                   # input window in characters
+  ideological_guidance:
+    political_leanings: "https://raw.githubusercontent.com/AHMerrill/anti-echo-chamber/main/config/political_leanings.json"
+    implied_stances: "https://raw.githubusercontent.com/AHMerrill/anti-echo-chamber/main/config/implied_stances.json"
+  prompt_style:
+    type: "constrained"
+    description: >
+      FLAN-T5 instruction prompt that forces a discrete choice of political
+      leaning and implied stance from predefined JSON anchors before generating
+      a short rhetorical summary. Designed for stance polarity and contrastive retrieval.
 
-# === Batch output + artifact management ===
+# === Batch artifact management ===
 batch:
   base_dir: "batches"
   manifest_name: "manifest.json"
@@ -41,9 +51,9 @@ batch:
   metadata_file: "metadata.jsonl"
   compress: true
   dtype: "float16"
-  hf_push: true                                      # automatically push to HF dataset
+  hf_push: true                                      # push processed batches to HF dataset
 
-# === Identifier + hashing scheme ===
+# === Identifier and hashing scheme ===
 ids:
   scheme: "domain-slug-sha12"
   hash: "sha256"
@@ -64,8 +74,10 @@ logging:
   record_failures: true
   checkpoint_interval: 100
 
-# === Diagnostics ===
+# === Diagnostics and validation ===
 diagnostics:
   validate_embeddings: true
   sample_summary_preview: true
   max_preview_chars: 500
+  verify_stance_variants: true                       # ensure both label and summary vectors exist
+  check_json_integrity: true                         # confirm ideological JSONs load correctly
