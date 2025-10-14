@@ -1,5 +1,5 @@
-# === anti-echo-chamber project config (v3: hybrid stance inference, FLAN-T5, CUDA 12.1) ===
-version: 3
+# === anti-echo-chamber project config (v4: dual-model stance system, FLAN-T5 + BART, CUDA 12.1) ===
+version: 4
 
 # === Hugging Face dataset for artifact storage ===
 hf_dataset_id: "zanimal/anti-echo-artifacts"
@@ -25,22 +25,44 @@ topics:
   max_topics_per_article: 5
   similarity_threshold: 0.4
 
-# === Stance summarization and ideological mapping ===
+# === Stance inference pipeline (dual-model hybrid) ===
 stance_processing:
-  mode: "hybrid"                                     # hybrid = label + summary embeddings
+  mode: "dual-model-hybrid"                          # FLAN for classification, BART for summary
   variants: ["label", "summary"]                     # two stance representations per article
-  summarizer_model: "google/flan-t5-large"           # instruction-tuned model (replaces BART)
-  target_sentences: 2                                # concise 1–2 sentence analytical summaries
-  truncation: 3072                                   # input window in characters
-  ideological_guidance:
-    political_leanings: "https://raw.githubusercontent.com/AHMerrill/anti-echo-chamber/main/config/political_leanings.json"
-    implied_stances: "https://raw.githubusercontent.com/AHMerrill/anti-echo-chamber/main/config/implied_stances.json"
-  prompt_style:
-    type: "constrained"
+
+  # --- Stage 1: Ideological classification (FLAN-T5) ---
+  classifier:
+    model: "google/flan-t5-large"                    # instruction-tuned for discrete label control
+    max_tokens: 1024
+    truncation: 2500                                 # short window for efficiency
+    output_lines: 2                                  # political leaning + implied stance
+    ideological_guidance:
+      political_leanings: "https://raw.githubusercontent.com/AHMerrill/anti-echo-chamber/main/config/political_leanings.json"
+      implied_stances: "https://raw.githubusercontent.com/AHMerrill/anti-echo-chamber/main/config/implied_stances.json"
+    prompt_style:
+      type: "categorical"
+      description: >
+        FLAN-T5 generates exactly two lines: the author's implied political
+        leaning and stance, selected from predefined JSON anchor lists.
+
+  # --- Stage 2: Rhetorical summarization (BART) ---
+  summarizer:
+    model: "facebook/bart-large-cnn"                 # fluent abstractive summarizer
+    target_sentences: 1                              # one-sentence summary of article argument
+    max_input_chars: 3000
+    do_sample: false
     description: >
-      FLAN-T5 instruction prompt that forces a discrete choice of political
-      leaning and implied stance from predefined JSON anchors before generating
-      a short rhetorical summary. Designed for stance polarity and contrastive retrieval.
+      Produces one concise, natural-sounding sentence summarizing the article's
+      argument, tone, or worldview without explicit labeling.
+
+  # --- Stage 3: Hybrid embedding configuration ---
+  hybrid_embedding:
+    concatenate_order: ["political_leaning", "implied_stance", "summary"]
+    max_length_chars: 4096
+    description: >
+      Concatenates ideological classification and single-sentence summary into
+      one text block for stance embeddings. Captures both structured worldview
+      and rhetorical framing for high-contrast cosine retrieval.
 
 # === Batch artifact management ===
 batch:
@@ -81,3 +103,4 @@ diagnostics:
   max_preview_chars: 500
   verify_stance_variants: true                       # ensure both label and summary vectors exist
   check_json_integrity: true                         # confirm ideological JSONs load correctly
+  verify_dual_model: true                            # confirm both FLAN and BART stages executed
