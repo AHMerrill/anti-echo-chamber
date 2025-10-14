@@ -1,4 +1,4 @@
-# === anti-echo-chamber project config (v2: ideology-aware stance) ===
+# === anti-echo-chamber project config (v2: ideology-aware stance, CUDA 12.1 build) ===
 version: 2
 
 # Hugging Face dataset where artifact batches are stored
@@ -27,7 +27,7 @@ topics:
 
 # === Summarizer (for stance embeddings) ===
 summarizer:
-  model: "sshleifer/distilbart-cnn-12-6"             # distilled BART (fast, stable on A100 + CUDA 12.x)
+  model: "facebook/bart-large-cnn"                   # full BART; best quality on CUDA 12.1 (Torch 2.2.2)
   target_sentences: 5                                # generate 3–5 sentences
   truncation: 3072                                   # broad sampling window
   rhetorical_prompt: true                            # enable persuasion/ideology prompt mode
