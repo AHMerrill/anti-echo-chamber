@@ -1,0 +1,1741 @@
+{
+  "last_updated": "2025-10-14T18:22:46.570543+00:00",
+  "items": {
+    "https://www.vox.com/explain-it-to-me/464294/kids-media-youtube-ai-slop": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:54.077851+00:00"
+    },
+    "https://www.vox.com/future-perfect/464468/lenacapavir-hiv-drug-pepfar-foreign-aid-gilead-drug": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:54.149800+00:00"
+    },
+    "https://www.vox.com/politics/464459/trump-american-democracy-u-turns": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:54.205044+00:00"
+    },
+    "https://www.vox.com/politics/464480/supreme-court-voting-rights-act-trump-maga-federalism": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:54.272470+00:00"
+    },
+    "https://www.vox.com/politics/464298/israel-hamas-deal-peace-ceasefire-hostages": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:54.322657+00:00"
+    },
+    "https://www.vox.com/podcasts/464170/what-humans-might-learn-from-natures-real-life-zombies": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:54.378466+00:00"
+    },
+    "https://www.vox.com/politics/464354/barbara-walter-charlie-kirk-gray-area-violence": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:54.441717+00:00"
+    },
+    "https://www.vox.com/future-perfect/464352/harry-potter-jk-rowling-lgbtq": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:54.498681+00:00"
+    },
+    "https://www.vox.com/future-perfect/464478/farming-crop-harvest-global-hunger-wheat-famine": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:54.551159+00:00"
+    },
+    "https://www.vox.com/culture/464429/riyadh-comedy-festival-saudi-arabia-bill-burr-marc-maron": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:54.592566+00:00"
+    },
+    "https://www.theguardian.com/us-news/live/2025/oct/14/donald-trump-government-shutdown-national-guard-javier-milei-charlie-kirk-us-politics-live-news-updates": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:56.245182+00:00"
+    },
+    "https://www.theguardian.com/uk-news/2025/oct/14/secret-dna-test-confirmed-alleged-stalker-was-not-madeleine-mccann-says-officer": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:56.284750+00:00"
+    },
+    "https://www.theguardian.com/football/2025/oct/14/graham-potter-sweden-manager-job-jon-dahl-tomasson-sacking": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:56.568998+00:00"
+    },
+    "https://www.theguardian.com/us-news/2025/oct/14/trump-six-killed-us-strike-boat-venezuela": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:56.851533+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/14/the-guardian-view-on-the-imfs-warning-britains-economy-runs-hot-for-profits-cold-for-pay": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:57.217751+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/14/the-guardian-view-on-the-rising-risk-from-flooding-uninsurable-buildings-should-focus-minds-on-climate-adaptation": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:57.245419+00:00"
+    },
+    "https://www.theguardian.com/football/live/2025/oct/14/latvia-v-england-world-cup-2026-qualifier-live": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:57.578440+00:00"
+    },
+    "https://www.theguardian.com/world/2025/oct/14/french-pm-sebastien-lecornu-suspends-macron-pension-plan-before-no-confidence-vote": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:57.979125+00:00"
+    },
+    "https://www.theguardian.com/politics/2025/oct/14/keir-starmer-back-on-familiar-ground-after-walk-on-part-in-the-trump-show-in-egypt": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:58.008764+00:00"
+    },
+    "https://www.theguardian.com/world/2025/oct/14/israel-limits-aid-keeps-rafah-crossing-closed-dispute-hostage-remains": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:58.319943+00:00"
+    },
+    "https://www.theguardian.com/film/2025/oct/14/drew-struzan-poster-designer-dies": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:58.510757+00:00"
+    },
+    "https://www.theguardian.com/world/2025/oct/14/elite-military-unit-says-it-has-seized-power-in-madagascar": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:58.883044+00:00"
+    },
+    "https://www.theguardian.com/music/2025/oct/14/dangelo-dead": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:59.074826+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/picture/2025/oct/14/ben-jennings-donald-trump-peace-middle-east-cartoon": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:59.114235+00:00"
+    },
+    "https://www.theguardian.com/technology/2025/oct/14/chatgpt-upgrade-giving-more-harmful-answers-than-previously-tests-find": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:59.142650+00:00"
+    },
+    "https://www.theguardian.com/business/2025/oct/14/jp-morgan-jamie-dimon-losses-private-credit-sector": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:59.340086+00:00"
+    },
+    "https://www.theguardian.com/uk-news/2025/oct/14/uk-us-sanctions-leaders-cambodia-scam-centres": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:59.368273+00:00"
+    },
+    "https://www.theguardian.com/business/2025/oct/14/uk-faces-highest-inflation-in-g7-this-year-and-next-imf-warns": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:59.407849+00:00"
+    },
+    "https://www.theguardian.com/fashion/2025/oct/14/vivienne-westwood-riyadh-fashion-week-against-values": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:59.436968+00:00"
+    },
+    "https://www.theguardian.com/music/2025/oct/14/spotify-fake-bands-spinal-tap-commitments-flaming-dildos-stereophonic-scott-pilgrim": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:59.473640+00:00"
+    },
+    "https://www.theguardian.com/us-news/2025/oct/14/alex-jones-supreme-court-appeal-rejected": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:59.501367+00:00"
+    },
+    "https://www.theguardian.com/lifeandstyle/2025/oct/14/running-on-empty-why-are-so-many-marathon-runners-so-miserable": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:59.690432+00:00"
+    },
+    "https://www.theguardian.com/sport/2025/oct/14/broad-brands-australias-team-as-their-worst-since-2010-as-pre-ashes-barbs-fly": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:20:59.889498+00:00"
+    },
+    "https://www.theguardian.com/world/2025/oct/14/the-israel-gaza-war-has-no-winners-only-victims": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:00.121175+00:00"
+    },
+    "https://www.theguardian.com/lifeandstyle/2025/oct/14/late-night-pub-openings-arent-in-the-right-spirit": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:00.681439+00:00"
+    },
+    "https://www.theguardian.com/politics/2025/oct/14/farage-not-marxism-risks-poisoning-our-kids": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:00.707936+00:00"
+    },
+    "https://www.theguardian.com/wellness/2025/oct/14/pillow-type-best-side-back-stomach-sleepers": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:00.742584+00:00"
+    },
+    "https://www.theguardian.com/politics/2025/oct/14/national-grooming-gangs-inquiry-stalls-over-remit-wrangles-and-lack-of-chair": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:00.771773+00:00"
+    },
+    "https://www.theguardian.com/uk-news/2025/oct/14/nothing-to-fear-in-london-but-loud-lamborghinis": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:00.968440+00:00"
+    },
+    "https://www.theguardian.com/uk-news/2025/oct/14/police-stopped-tommy-robinson-reasonable-suspicion-far-right-links": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:00.995534+00:00"
+    },
+    "https://www.theguardian.com/environment/2025/oct/14/ed-miliband-approves-uk-biggest-solar-farm-at-lincolnshire-site": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:01.032509+00:00"
+    },
+    "https://www.theguardian.com/film/2025/oct/14/most-stressful-movies-ever": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:01.233943+00:00"
+    },
+    "https://www.theguardian.com/stage/2025/oct/14/royal-ballet-school-old-rules-next-generation-dancer-future": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:01.263011+00:00"
+    },
+    "https://www.theguardian.com/politics/2025/oct/14/former-lord-speaker-frances-dsouza-faces-suspension-improper-influence-speeding-offence": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:01.290246+00:00"
+    },
+    "https://www.theguardian.com/film/2025/oct/14/diane-keaton-remembered-by-her-final-director-cameramen-dissolved-into-puddles-at-her-feet": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:01.477445+00:00"
+    },
+    "https://www.theguardian.com/music/2025/oct/14/albert-herring-review-eno-britten-london-coliseum-english-national-opera": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:01.758245+00:00"
+    },
+    "https://www.theguardian.com/football/2025/oct/14/sweden-jon-dahl-tomasson-sacked-football-daily-newsletter": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:01.957714+00:00"
+    },
+    "https://www.theguardian.com/film/2025/oct/14/roofman-movie-jeffrey-manchester": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:02.383253+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/14/trump-halting-gaza-suffering-self-interest": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:02.417588+00:00"
+    },
+    "https://www.theguardian.com/business/2025/oct/14/us-raised-concerns-chinese-boss-nexperia-dutch-takeover": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:02.455849+00:00"
+    },
+    "https://www.theguardian.com/football/2025/oct/14/tranmere-rovers-results-investment-suporters-trust-mark-nicola-palios": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:02.487781+00:00"
+    },
+    "https://www.theguardian.com/uk-news/2025/oct/14/new-allegations-sexual-domestic-abuse-jesus-army-cult": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:02.675950+00:00"
+    },
+    "https://www.theguardian.com/culture/2025/oct/14/france-wondermum-app-trademark-battle-dc-comics": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:02.986742+00:00"
+    },
+    "https://www.theguardian.com/tv-and-radio/2025/oct/14/boots-netflix-homophobia-military-greg-cope-white-pink-marine": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:03.015691+00:00"
+    },
+    "https://www.theguardian.com/uk-news/2025/oct/14/former-premier-league-ref-david-coote-admits-making-indecent-image-of-child": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:03.553154+00:00"
+    },
+    "https://www.theguardian.com/us-news/2025/oct/14/california-storm-los-angeles-evacuations": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:04.118353+00:00"
+    },
+    "https://www.theguardian.com/lifeandstyle/2025/oct/14/my-petty-gripe-my-coupled-friends-refuse-to-set-me-up-with-a-potential-mate-its-not-good-enough": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:04.158788+00:00"
+    },
+    "https://www.theguardian.com/film/2025/oct/15/twilight-20th-anniversary-marathon-fan-watches-all-films": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:04.207116+00:00"
+    },
+    "https://www.theguardian.com/culture/2025/oct/15/louder-than-bombs-film-joachim-trier-isabelle-huppert": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:04.250844+00:00"
+    },
+    "https://www.theguardian.com/thefilter/2024/dec/27/best-electric-blankets-heated-throws": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:04.323258+00:00"
+    },
+    "https://www.theguardian.com/artanddesign/2025/oct/14/paradigm-shift-review-video-art-180-studios-london": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:04.518231+00:00"
+    },
+    "https://www.theguardian.com/uk-news/2025/oct/14/anonymity-firearms-officers-harm-public-confidence-shabana-mahmood-told": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:04.717080+00:00"
+    },
+    "https://www.theguardian.com/world/2025/oct/14/released-israeli-hostages-speak-of-torture-torment-and-co-existence": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:04.753319+00:00"
+    },
+    "https://www.theguardian.com/politics/2025/oct/14/sustainability-professors-talk-at-uk-party-conferences-cancelled": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:04.789188+00:00"
+    },
+    "https://www.theguardian.com/sport/2025/oct/14/emma-raducanu-slumps-to-third-straight-defeat-after-fresh-injury-scare-in-china": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:05.074442+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/14/good-news-men-have-stopped-disrupting-womens-sport-with-dildos-bad-news-now-theyre-betting-on-their-periods": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:05.273253+00:00"
+    },
+    "https://www.theguardian.com/politics/2025/oct/14/fayaz-khan-sentenced-tiktok-video-threat-kill-nigel-farage": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:05.549186+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/14/donald-trump-taylor-swift-peace-deal-star": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:05.860073+00:00"
+    },
+    "https://www.theguardian.com/news/gallery/2025/oct/14/subway-style-protests-mountain-mists-photos-of-the-day-tuesday": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:06.116151+00:00"
+    },
+    "https://www.theguardian.com/sport/2025/oct/14/mps-warned-over-shameful-lack-of-funding-for-gb-athletes-at-deaf-olympics": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:06.404017+00:00"
+    },
+    "https://www.theguardian.com/food/2025/oct/14/should-you-wash-mushrooms-kitchen-aide": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:06.432650+00:00"
+    },
+    "https://www.theguardian.com/film/2025/oct/14/the-house-at-hallow-end-review": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:06.996399+00:00"
+    },
+    "https://www.theguardian.com/business/2025/oct/14/easyjet-shares-jump-takeover-bid-msc": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:07.035219+00:00"
+    },
+    "https://www.theguardian.com/football/2025/oct/14/taylor-hinds-lucia-kendall-katie-reid-england-women-lionesses-football-millie-bright": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:07.233347+00:00"
+    },
+    "https://www.theguardian.com/tv-and-radio/2025/oct/14/blue-lights-series-three-bbc-one-iplayer-best-cop-show": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:07.265560+00:00"
+    },
+    "https://www.theguardian.com/uk-news/2025/oct/14/steve-reed-muslim-charity-run-london-excluded-women": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:07.293406+00:00"
+    },
+    "https://www.theguardian.com/money/2025/oct/14/people-in-the-uk-have-you-been-shocked-at-food-prices-in-the-supermarket": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:07.491531+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/14/horrors-gaza-west-history-empire": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:07.522954+00:00"
+    },
+    "https://www.theguardian.com/music/2025/oct/14/tell-us-have-ticket-prices-affected-your-love-of-live-music": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:07.552838+00:00"
+    },
+    "https://www.theguardian.com/artanddesign/2025/oct/14/sagarika-sundaram-solo-show-london": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:07.583488+00:00"
+    },
+    "https://www.theguardian.com/uk-news/2025/oct/14/peace-why-palestinian-forgives-israeli-soldier-shot-him": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:07.612088+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/14/gaza-palestinians-trump-peace-plan": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:07.645345+00:00"
+    },
+    "https://www.theguardian.com/football/ng-interactive/2025/oct/14/next-generation-2025-60-of-the-best-young-talents-in-world-football": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:08.196366+00:00"
+    },
+    "https://www.theguardian.com/music/2025/oct/14/dance-music-divided-cultural-boycotts-boiler-room-israel": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:08.233605+00:00"
+    },
+    "https://www.theguardian.com/thefilter/2025/oct/14/how-to-make-bike-last-longer": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:08.279252+00:00"
+    },
+    "https://www.theguardian.com/lifeandstyle/2025/oct/14/houseplant-clinic-cactus-too-tall-euphorbia": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:08.306254+00:00"
+    },
+    "https://www.theguardian.com/commentisfree/2025/oct/14/bills-reform-labour-cost-of-living-britain": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:08.500822+00:00"
+    },
+    "https://www.theguardian.com/games/2025/oct/14/space-harrier-at-40-sega-arcade-yu-suzuki": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:08.530035+00:00"
+    },
+    "https://www.theguardian.com/business/2025/oct/14/young-people-uk-jobs-market-unemployment-taxes-minimum-wages": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:08.830831+00:00"
+    },
+    "https://www.theguardian.com/film/2025/oct/14/keanu-reeves-diane-keaton-tribute": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:09.377566+00:00"
+    },
+    "https://www.theguardian.com/books/2025/oct/14/finding-my-way-by-malala-yousafzai-review-growing-up-in-public": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:09.742834+00:00"
+    },
+    "https://www.theguardian.com/football/2025/oct/14/breathtaking-san-siro-faces-end-as-inter-and-milan-try-to-keep-up-with-modern-game": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:09.777424+00:00"
+    },
+    "https://www.theguardian.com/lifeandstyle/2025/oct/14/my-wife-and-i-dont-have-sex-and-she-refuses-to-talk-about-it-should-i-just-give-up": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:09.803666+00:00"
+    },
+    "https://www.theguardian.com/environment/2025/oct/14/millions-more-homes-in-great-britain-at-risk-of-flooding-investigation-finds": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:09.837658+00:00"
+    },
+    "https://www.theguardian.com/books/2025/oct/14/big-kiss-bye-bye-by-claire-louise-bennett-review-remembering-terrible-men": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:09.865086+00:00"
+    },
+    "https://www.theguardian.com/lifeandstyle/ng-interactive/2025/oct/14/risky-is-the-best-way-to-be-tim-curry-sexuality-surviving-stroke-50-years-stardom": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:09.913571+00:00"
+    },
+    "https://www.theguardian.com/artanddesign/gallery/2025/oct/14/an-unseen-side-of-black-britain-memories-of-1980s-bradford-in-pictures": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:09.974037+00:00"
+    },
+    "https://www.theguardian.com/travel/2025/oct/14/urban-trail-racing-in-nimes-roman-arena-france": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:10.010518+00:00"
+    },
+    "https://www.theguardian.com/money/2025/oct/14/mg-mg5-electric-car-safety-check": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:10.041416+00:00"
+    },
+    "https://www.theguardian.com/technology/2025/oct/14/bose-quietcomfort-ultra-2-review-the-most-comfortable-noise-cancelling-headphones": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:10.079084+00:00"
+    },
+    "https://www.theguardian.com/food/2025/oct/14/mushroom-linguine-poached-pears-recipes-hazelnut-crumble-thomasina-miers": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:10.112747+00:00"
+    },
+    "https://www.theguardian.com/world/2025/oct/14/wang-jian-china-journalist-reports-united-states-donald-trump-xi-jinping": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:10.160634+00:00"
+    },
+    "https://www.theguardian.com/lifeandstyle/audio/2025/oct/14/s10-ep12-fatiha-el-ghorri-comedian": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:10.198080+00:00"
+    },
+    "https://www.theguardian.com/environment/2025/oct/14/external-insulation-previous-government-scheme-repair-replacing-report-finds": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:10.230849+00:00"
+    },
+    "https://www.theguardian.com/artanddesign/2025/oct/13/maret-anne-sara-turbine-hall-review-tate-modern-london": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:10.432154+00:00"
+    },
+    "https://www.theguardian.com/thefilter/2025/oct/10/what-filter-writers-have-learned-past-year": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:10.470733+00:00"
+    },
+    "https://www.theguardian.com/music/2025/oct/13/the-fiery-furnaces-reissue-a-cult-classic-we-knew-we-wouldnt-seem-like-an-also-ran-nyc-band-in-leather-jackets": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:10.676153+00:00"
+    },
+    "https://www.theguardian.com/food/2025/oct/13/quick-easy-lime-dal-recipe-roast-squash-chilli-cashews-rukmini-iyer": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:10.706044+00:00"
+    },
+    "https://www.theguardian.com/stage/2025/oct/13/get-down-tonight-review-kc-and-the-sunshine-band-musical": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:10.734416+00:00"
+    },
+    "https://www.theguardian.com/world/2025/oct/13/these-men-think-theyve-done-nothing-wrong-philosopher-tried-understand-gisele-pelicot-rapists": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:10.769827+00:00"
+    },
+    "https://www.theguardian.com/tv-and-radio/2025/oct/13/like-losing-a-friend-farewell-to-marc-marons-pioneering-podcast-wtf": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:10.800879+00:00"
+    },
+    "https://www.theguardian.com/books/2025/oct/13/poem-of-the-week-my-mother-by-claude-mckay": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:10.832237+00:00"
+    },
+    "https://www.theguardian.com/games/2025/oct/13/battlefield-6-review-operatic-ear-shattering-all-encompassing-warfare": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:11.137492+00:00"
+    },
+    "https://www.theguardian.com/lifeandstyle/2025/oct/13/the-one-change-that-worked-i-swapped-single-parent-holiday-hell-for-pet-sitting-heaven": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:11.165564+00:00"
+    },
+    "https://www.theguardian.com/music/2025/oct/13/bruce-springsteen-nebraska-82-expanded-edition-review-fabled-album-falls-short-of-expectations": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:11.193952+00:00"
+    },
+    "https://www.theguardian.com/lifeandstyle/2025/oct/13/is-it-true-that-cutting-out-carbs-helps-you-lose-weight": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:11.220827+00:00"
+    },
+    "https://www.theguardian.com/books/2025/oct/13/after-oscar-by-merlin-holland-review-wildes-grandson-on-the-legacy-of-a-scandal": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:11.252341+00:00"
+    },
+    "https://www.theguardian.com/travel/2025/oct/13/hebden-bridge-yorkshire-riot-women-sally-wainwright": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:11.286154+00:00"
+    },
+    "https://www.theguardian.com/business/ng-interactive/2025/oct/13/most-of-great-britains-major-rail-operators-are-back-in-public-hands-is-it-working": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:11.334339+00:00"
+    },
+    "https://www.theguardian.com/tv-and-radio/2025/oct/13/iggy-pop-is-mother-nature-best-podcasts-of-the-week": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:11.363850+00:00"
+    },
+    "https://www.theguardian.com/money/2025/oct/13/ba-stalls-over-paying-out-220-flight-compensation": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:11.392151+00:00"
+    },
+    "https://www.theguardian.com/travel/2025/oct/13/hiking-walking-new-coast-path-south-west-scotland-galloway-stranraer": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:11.424800+00:00"
+    },
+    "https://www.theguardian.com/fashion/2025/oct/12/rashes-pain-blisters-and-bleeding-are-we-glossing-over-the-dangers-of-manicures": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:11.457506+00:00"
+    },
+    "https://www.theguardian.com/world/2025/oct/12/malala-yousafzai-memoir-exclusive-extract-smoking-bong-trauma-shot-taliban": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:11.492847+00:00"
+    },
+    "https://www.theguardian.com/lifeandstyle/2025/oct/12/this-is-how-we-do-it-worried-kinks-relax-playful": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:11.694625+00:00"
+    },
+    "https://www.theguardian.com/thefilter/2025/oct/12/do-you-need-new-laptop-how-to-get-the-most-out-of-current": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:11.909217+00:00"
+    },
+    "https://www.theguardian.com/money/2025/oct/12/scammers-exploiting-driving-test-delays-great-britain": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:12.207355+00:00"
+    },
+    "https://www.theguardian.com/travel/2025/oct/12/10-beautiful-remote-getaways-uk-scotland-cottages-cabins": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:12.245187+00:00"
+    },
+    "https://www.theguardian.com/lifeandstyle/2025/oct/12/chatgpt-ed-into-bed-chatfishing-on-dating-apps": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:12.286987+00:00"
+    },
+    "https://www.theguardian.com/lifeandstyle/2025/oct/12/i-apologise-too-much-how-can-i-stop": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:12.318663+00:00"
+    },
+    "https://www.theguardian.com/lifeandstyle/2025/oct/12/moment-i-knew-relationship-story-open-vulnerable-even-as-blokes-bloke": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:12.367577+00:00"
+    },
+    "https://www.theguardian.com/lifeandstyle/2025/oct/12/brigid-delaney-gym-too-much-effort-until-moved-in": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:12.590551+00:00"
+    },
+    "https://www.theguardian.com/fashion/2025/oct/11/baggy-skinny-or-neither-why-goldilocks-jeans-are-having-a-moment": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:12.623439+00:00"
+    },
+    "https://www.theguardian.com/money/2025/oct/11/uk-supermarket-loyalty-cards-prices-rated-clubcard-nectar": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:12.665409+00:00"
+    },
+    "https://www.theguardian.com/travel/2025/oct/11/off-grid-cottage-herefordshire-west-england-fishing-hiking": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:12.973514+00:00"
+    },
+    "https://www.theguardian.com/money/2025/oct/11/tiktok-influencers-telegram-whatsapp-parallel-market-unlicensed-weight-loss-drug-retatrutide-uk": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:13.195009+00:00"
+    },
+    "https://www.theguardian.com/games/2025/oct/10/scott-pilgrim-anamanaguchi-soundtrack": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:13.227408+00:00"
+    },
+    "https://www.theguardian.com/thefilter/2025/oct/10/the-filter-turns-one-favourite-products-tried-tested": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:13.502205+00:00"
+    },
+    "https://www.theguardian.com/fashion/gallery/2025/oct/10/what-to-wear-make-basic-t-shirt-outfit-focal-point": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:13.718648+00:00"
+    },
+    "https://www.theguardian.com/games/2025/oct/09/igda-the-non-profit-helping-people-from-all-over-the-world-to-become-successful-game-developers": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:13.914457+00:00"
+    },
+    "https://www.theguardian.com/lifeandstyle/2025/oct/09/look-out-for-number-one-selfish-self-help-books-are-booming-but-will-they-improve-your-life": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:13.951367+00:00"
+    },
+    "https://www.theguardian.com/global/2025/oct/08/people-in-the-uk-tell-us-how-much-money-you-have-managed-to-save": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:14.237709+00:00"
+    },
+    "https://www.theguardian.com/fashion/2025/oct/08/jess-cartner-morley-ladylike-fashion-is-back-but-its-been-given-a-modern-twist": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:14.269672+00:00"
+    },
+    "https://www.theguardian.com/business/2025/oct/01/airline-industry-workers-share-your-experiences": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:14.468171+00:00"
+    },
+    "https://www.theguardian.com/world/ng-interactive/2025/oct/01/you-dont-think-it-will-happen-to-you-documentary": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:14.813344+00:00"
+    },
+    "https://www.theguardian.com/info/2024/oct/10/sign-up-for-the-filter-newsletter-our-free-weekly-buying-advice": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:14.841467+00:00"
+    },
+    "https://www.theguardian.com/global/2022/sep/20/sign-up-for-the-guide-newsletter-our-free-pop-culture-email": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:14.870183+00:00"
+    },
+    "https://www.theguardian.com/global/2022/sep/20/sign-up-for-the-first-edition-newsletter-our-free-news-email": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:14.906433+00:00"
+    },
+    "https://www.theguardian.com/food/2019/jul/09/sign-up-for-the-feast-newsletter-our-free-guardian-food-email": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:14.933946+00:00"
+    },
+    "https://www.bbc.com/news/articles/c8679q0pe57o?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:15.260104+00:00"
+    },
+    "https://www.bbc.com/news/articles/cwy902djzv2o?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:15.296755+00:00"
+    },
+    "https://www.bbc.com/sport/football/articles/crl28r7kwlko?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:15.347499+00:00"
+    },
+    "https://www.bbc.com/news/articles/cn8xjjdgl8vo?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:17.120049+00:00"
+    },
+    "https://www.bbc.com/news/articles/cwynv40ly4vo?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:17.147822+00:00"
+    },
+    "https://www.bbc.com/news/articles/ce86118q6ego?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:17.192856+00:00"
+    },
+    "https://www.bbc.com/news/articles/c2056729058o?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:18.527814+00:00"
+    },
+    "https://www.bbc.com/news/videos/cev1yyzve3ro?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:19.954807+00:00"
+    },
+    "https://www.bbc.com/news/articles/c5y4558r5gko?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:20.442264+00:00"
+    },
+    "https://www.bbc.com/news/articles/cy0kllzqk1vo?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:20.839400+00:00"
+    },
+    "https://www.bbc.com/news/articles/crkldd02xg8o?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:21.388994+00:00"
+    },
+    "https://www.bbc.com/news/articles/c30v3938qz7o?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:21.786559+00:00"
+    },
+    "https://www.bbc.com/news/articles/ckgk2g94ll0o?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:22.205722+00:00"
+    },
+    "https://www.bbc.com/sport/football/articles/cvg73308qygo?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:22.243860+00:00"
+    },
+    "https://www.bbc.com/news/articles/c93xprvdy23o?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:22.282083+00:00"
+    },
+    "https://www.bbc.com/news/articles/c0ex18xx9xeo?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:22.732756+00:00"
+    },
+    "https://www.bbc.com/sport/cricket/articles/c9wvjw58gvlo?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:22.778098+00:00"
+    },
+    "https://www.bbc.com/sport/darts/articles/cy5qy49d04yo?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:22.817546+00:00"
+    },
+    "https://www.bbc.com/news/articles/cn092p27xn0o?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:23.136338+00:00"
+    },
+    "https://www.bbc.com/sport/tennis/articles/cn51r5xpl2go?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:23.175588+00:00"
+    },
+    "https://www.bbc.com/news/articles/c0rpwkp9xz2o?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:23.489435+00:00"
+    },
+    "https://www.bbc.com/news/articles/c9865l8540eo?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:23.544982+00:00"
+    },
+    "https://www.bbc.com/news/articles/cj97lkmd23po?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:23.887138+00:00"
+    },
+    "https://www.bbc.com/news/articles/cn51r07ez56o?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:24.298577+00:00"
+    },
+    "https://www.bbc.com/news/articles/cd7r31p0eyyo?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:24.645678+00:00"
+    },
+    "https://www.bbc.com/news/articles/cn51r017656o?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:25.059420+00:00"
+    },
+    "https://www.bbc.com/news/articles/cj9zmeerp1xo?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:25.300430+00:00"
+    },
+    "https://www.bbc.com/sport/football/articles/c0ex8xgjp4go?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:25.347069+00:00"
+    },
+    "https://www.bbc.com/weather/articles/cwy5r7xwq8xo?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:25.371786+00:00"
+    },
+    "https://www.bbc.com/news/articles/cn8vl1kye4yo?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:25.790817+00:00"
+    },
+    "https://www.bbc.co.uk/sounds/play/p0m8f3sw?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:25.894702+00:00"
+    },
+    "https://www.bbc.co.uk/news/10628994?at_medium=RSS&at_campaign=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:25.919856+00:00"
+    },
+    "https://www.city-journal.org/article/portland-voting-proportional-representation-elections-city-council": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:26.050696+00:00"
+    },
+    "https://www.city-journal.org/article/new-york-city-mayoral-race-curtis-sliwa-zohran-mamdani-andrew-cuomo": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:26.092240+00:00"
+    },
+    "https://www.city-journal.org/article/vladimir-kogan-no-adult-left-behind-schools-pandemic-closures": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:26.128479+00:00"
+    },
+    "https://www.city-journal.org/article/daniel-j-mahoney-persistence-ideological-lie": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:27.808259+00:00"
+    },
+    "https://www.city-journal.org/multimedia/the-wests-civilizational-inheritance": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:27.856254+00:00"
+    },
+    "https://www.city-journal.org/article/family-homes-real-estate-bedrooms-apartments": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:27.897163+00:00"
+    },
+    "https://www.city-journal.org/article/city-journal-daily-newsletter-oct-10-2025": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:29.600527+00:00"
+    },
+    "https://www.city-journal.org/article/new-york-city-gas-stoves-install-master-plumber": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:31.308211+00:00"
+    },
+    "https://www.city-journal.org/multimedia/bari-weiss-media-disruptor": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:31.369723+00:00"
+    },
+    "https://www.city-journal.org/article/charlie-kirk-two-americas-conservative-progressive": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:33.087748+00:00"
+    },
+    "https://dailycaller.com/2025/10/14/nfl-fans-fight-brawl-washington-commanders-metallica-enter-sandman/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:34.155177+00:00"
+    },
+    "https://dailycaller.com/2025/10/14/donald-trump-barack-obama-national-guard-deployment-federal-power-franklin-delano-roosevelt-precedent-insurrection-act/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:34.629194+00:00"
+    },
+    "https://dailycaller.com/2025/10/14/barack-obama-james-talarico-texas-senate-race-beto-orourke/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:35.114199+00:00"
+    },
+    "https://dailycaller.com/2025/10/14/jack-smith-called-testify-house-judiciary-committee/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:35.591607+00:00"
+    },
+    "https://dailycaller.com/2025/10/14/hasan-piker-allegations-dog-abuse-collar-streaming-leftist/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:36.067056+00:00"
+    },
+    "https://dailycaller.com/2025/10/14/former-california-student-stabs-3-bomb-threat/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:36.543352+00:00"
+    },
+    "https://dailycaller.com/2025/10/14/ava-ahlander-red-west-music-festival-severe-weather-freak-accident-death/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:37.019331+00:00"
+    },
+    "https://dailycaller.com/2025/10/14/jerome-powell-federal-reserve-interest-rates/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:37.496945+00:00"
+    },
+    "https://dailycaller.com/2025/10/14/rooke-obama-rajiv-shah-administrator-usaid-doge-trump-dfc-greenland-rubio-black/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:37.976003+00:00"
+    },
+    "https://dailycaller.com/2025/10/14/cody-balmer-pleads-guilty-arson-governors-mansion-josh-shapiro/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:38.232001+00:00"
+    },
+    "https://dailycaller.com/2025/10/14/rb-star-dangelo-dead-pancreatic-cancer-51-obituary-snoop-dogg/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:38.492526+00:00"
+    },
+    "https://dailycaller.com/2025/10/14/the-view-co-hosts-cheryl-hines-rfk-jr/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:38.749235+00:00"
+    },
+    "https://dailycaller.com/2025/10/14/katy-perry-cheeky-comment-romance-justin-trudeau-canadian-prime-minister-concert/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:39.005213+00:00"
+    },
+    "https://dailycaller.com/2025/10/14/scotus-may-end-disastrous-legal-standards-forcing-states-to-draw-congressional-districts-just-for-minorities/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:39.282180+00:00"
+    },
+    "https://dailycaller.com/2025/10/14/kremlin-donald-trump-time-magazine-editors-photo-israel-hamas-ceasfire/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:39.538286+00:00"
+    },
+    "https://dailycaller.com/2025/10/14/exclusive-everyday-americans-chuck-schumer-democrats-white-house-government-shutdown/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:39.795576+00:00"
+    },
+    "https://dailycaller.com/2025/10/14/c-span-caller-tells-no-kings-organizer-the-movements-message-is-very-poorly-constructed/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:40.052635+00:00"
+    },
+    "https://dailycaller.com/2025/10/14/anarchist-blm-revolt-anti-trump/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:40.312444+00:00"
+    },
+    "https://dailycaller.com/2025/10/14/defense-titan-unveils-massive-helmet-upgrade-for-troops-straight-from-sci-fi/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:40.568373+00:00"
+    },
+    "https://dailycaller.com/2025/10/14/alec-baldwin-car-crash-tree-hamptons-garbage-truck-dashcam/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:40.827845+00:00"
+    },
+    "https://theconversation.com/typhoon-leaves-flooded-alaska-villages-facing-a-storm-recovery-far-tougher-than-most-americans-will-ever-experience-267423": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.361476+00:00"
+    },
+    "https://theconversation.com/the-limits-of-free-speech-protections-in-american-broadcasting-266206": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.396644+00:00"
+    },
+    "https://theconversation.com/what-the-first-amendment-doesnt-protect-when-it-comes-to-professors-speaking-out-on-politics-266128": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.425651+00:00"
+    },
+    "https://theconversation.com/new-student-loan-limits-could-change-who-gets-to-become-a-professor-doctor-or-lawyer-262008": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.450533+00:00"
+    },
+    "https://theconversation.com/in-defense-of-surveillance-pricing-why-personalized-prices-could-be-an-unexpected-force-for-equity-266293": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.474627+00:00"
+    },
+    "https://theconversation.com/starbucks-wants-you-to-stay-awhile-but-shuttering-its-mobile-only-pickup-locations-could-be-a-risky-move-262591": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.496958+00:00"
+    },
+    "https://theconversation.com/industrial-facilities-owned-by-profitable-companies-release-more-of-their-toxic-waste-into-the-environment-265227": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.523076+00:00"
+    },
+    "https://theconversation.com/supreme-court-redistricting-ruling-could-upend-decades-of-voting-rights-law-and-tilt-the-balance-of-power-in-washington-267269": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.549842+00:00"
+    },
+    "https://theconversation.com/space-tornadoes-could-cause-geomagnetic-storms-but-these-phenomena-spun-off-ejections-from-the-sun-arent-easy-to-study-266567": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.577340+00:00"
+    },
+    "https://theconversation.com/far-fewer-americans-support-political-violence-than-recent-polls-suggest-266113": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.603522+00:00"
+    },
+    "https://theconversation.com/3-legged-lizards-can-thrive-against-all-odds-challenging-assumptions-about-how-evolution-works-in-the-wild-262467": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.628494+00:00"
+    },
+    "https://theconversation.com/why-are-elements-like-radium-dangerous-a-chemist-explains-radioactivity-and-its-health-effects-262923": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.656457+00:00"
+    },
+    "https://theconversation.com/what-are-climate-tipping-points-they-sound-scary-especially-for-ice-sheets-and-oceans-but-theres-still-room-for-optimism-265183": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.686253+00:00"
+    },
+    "https://theconversation.com/how-the-government-shutdown-is-making-the-air-traffic-controller-shortage-worse-and-leading-to-flight-delays-267093": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.712389+00:00"
+    },
+    "https://theconversation.com/natural-world-heritage-sites-under-growing-threat-but-bright-spots-remain-266548": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.739735+00:00"
+    },
+    "https://theconversation.com/maria-corina-machados-peace-prize-follows-nobel-tradition-of-awarding-recipients-for-complex-reasons-267268": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.768541+00:00"
+    },
+    "https://theconversation.com/from-artificial-atoms-to-quantum-information-machines-inside-the-2025-nobel-prize-in-physics-266976": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.795867+00:00"
+    },
+    "https://theconversation.com/government-shutdown-hasnt-left-consumers-glum-about-the-economy-for-now-at-least-267264": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.819113+00:00"
+    },
+    "https://theconversation.com/a-white-poet-and-a-sioux-doctor-fell-in-love-after-wounded-knee-racism-and-sexism-would-drive-them-apart-263175": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.850682+00:00"
+    },
+    "https://theconversation.com/the-new-president-of-the-church-of-jesus-christ-of-latter-day-saints-will-inherit-a-global-faith-far-more-diverse-than-many-realize-266337": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.879103+00:00"
+    },
+    "https://theconversation.com/trump-is-cutting-funding-to-universities-with-large-hispanic-student-populations-heres-what-to-know-251202": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.906628+00:00"
+    },
+    "https://theconversation.com/political-violence-what-can-happen-when-first-amendment-free-speech-meets-second-amendment-gun-rights-265223": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.933088+00:00"
+    },
+    "https://theconversation.com/our-engineering-team-is-making-versatile-tiny-sensors-from-the-nobel-winning-metal-organic-frameworks-267103": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:42.960335+00:00"
+    },
+    "https://theconversation.com/friendships-arent-just-about-keeping-score-new-psychology-research-looks-at-why-we-help-our-friends-when-they-need-it-258549": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:43.337813+00:00"
+    },
+    "https://theconversation.com/how-pollution-and-the-microbiome-interact-with-tregs-the-immune-system-regulators-whose-discovery-was-honored-with-the-nobel-prize-266865": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:43.366157+00:00"
+    },
+    "https://theconversation.com/flu-season-has-arrived-and-so-have-updated-flu-vaccines-267058": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:43.395465+00:00"
+    },
+    "https://theconversation.com/can-you-really-be-addicted-to-food-researchers-are-uncovering-convincing-similarities-to-drug-addiction-261727": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:43.753865+00:00"
+    },
+    "https://theconversation.com/for-war-weary-syria-potential-benefits-of-security-pact-with-israel-comes-with-big-risks-265785": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:43.782951+00:00"
+    },
+    "https://theconversation.com/a-denver-md-has-spent-2-decades-working-with-hospitalized-patients-experiencing-homelessness-heres-what-she-fears-and-what-gives-her-hope-261234": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:43.814434+00:00"
+    },
+    "https://theconversation.com/refinery-fires-other-chemical-disasters-may-no-longer-get-safety-investigations-265546": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:43.841934+00:00"
+    },
+    "https://theconversation.com/in-1776-thomas-paine-made-the-best-case-for-fighting-kings-and-for-being-skeptical-266448": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:43.868661+00:00"
+    },
+    "https://theconversation.com/gaza-peace-plan-risks-borrowing-more-from-tony-blairs-failures-in-the-middle-east-than-his-success-in-northern-ireland-266742": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:43.898685+00:00"
+    },
+    "https://theconversation.com/metal-organic-frameworks-nobel-winning-tiny-sponge-crystals-with-an-astonishing-amount-of-inner-space-267089": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:43.925365+00:00"
+    },
+    "https://theconversation.com/nobel-prize-in-physics-awarded-for-ultracold-electronics-research-that-launched-a-quantum-technology-266979": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:43.950692+00:00"
+    },
+    "https://theconversation.com/for-trumps-perceived-enemies-the-process-may-be-the-punishment-266747": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:43.979406+00:00"
+    },
+    "https://theconversation.com/james-comeys-indictment-is-a-trademark-tactic-of-authoritarians-266214": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:44.011358+00:00"
+    },
+    "https://theconversation.com/why-higher-eds-ai-rush-could-put-corporate-interests-over-public-service-and-independence-260902": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:44.038153+00:00"
+    },
+    "https://theconversation.com/jane-fonda-other-stars-revive-the-committee-for-the-first-amendment-a-group-that-emerged-when-the-anti-communist-panic-came-for-hollywood-266751": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:44.069942+00:00"
+    },
+    "https://theconversation.com/winning-a-bidding-war-isnt-always-a-win-research-on-14-million-home-sales-shows-266723": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:44.092967+00:00"
+    },
+    "https://theconversation.com/geothermal-energy-has-huge-potential-to-generate-clean-power-including-from-used-oil-and-gas-wells-266555": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:44.124676+00:00"
+    },
+    "https://theconversation.com/seasonal-allergies-may-increase-suicide-risk-new-research-266459": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:44.149956+00:00"
+    },
+    "https://theconversation.com/federal-shutdown-deals-blow-to-already-hobbled-cybersecurity-agency-266862": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:44.178547+00:00"
+    },
+    "https://theconversation.com/1-gene-1-disease-no-more-acknowledging-the-full-complexity-of-genetics-could-improve-and-personalize-medicine-266558": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:44.205381+00:00"
+    },
+    "https://theconversation.com/from-the-pulpit-to-the-picket-line-for-many-miners-religion-and-labor-rights-have-long-been-connected-in-coal-country-262472": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:44.624169+00:00"
+    },
+    "https://theconversation.com/even-small-drops-in-vaccination-rates-for-us-children-can-lead-to-disease-outbreaks-265555": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:44.653055+00:00"
+    },
+    "https://theconversation.com/tribal-colleges-and-universities-arent-well-known-but-are-a-crucial-steppingstone-for-native-students-261222": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:44.683210+00:00"
+    },
+    "https://theconversation.com/the-supreme-court-is-headed-toward-a-radically-new-vision-of-unlimited-presidential-power-265840": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:44.714968+00:00"
+    },
+    "https://theconversation.com/why-free-speech-rights-got-left-out-of-the-constitution-and-added-in-later-via-the-first-amendment-266639": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:44.745492+00:00"
+    },
+    "https://theconversation.com/wings-booze-and-heartbreak-what-my-research-says-about-the-hidden-costs-of-sports-fandom-265158": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:44.777053+00:00"
+    },
+    "https://theconversation.com/more-young-adults-are-living-with-their-parents-than-previous-generations-did-264570": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:44.808116+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/14/control-choke-points-the-battle-lines-in-southern-sudan?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:44.990201+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/14/tens-of-thousands-rally-in-brussels-to-protest-austerity-plans?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:45.045551+00:00"
+    },
+    "https://www.aljazeera.com/economy/2025/10/14/gm-takes-1-6bn-hit-as-ev-tax-credit-expires-in-us?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:45.092433+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/14/us-court-rules-trump-violated-order-by-placing-conditions-on-fema-grants?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:45.517048+00:00"
+    },
+    "https://www.aljazeera.com/video/quotable/2025/10/14/peace-summit-was-a-middle-east-wedding-for?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:45.566799+00:00"
+    },
+    "https://www.aljazeera.com/video/newsfeed/2025/10/14/dramatic-day-sees-army-unit-claim-power-in-madagascar?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:45.649380+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/14/french-prime-minister-backs-suspending-unpopular-pension-reform-law?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:45.708431+00:00"
+    },
+    "https://www.aljazeera.com/sports/2025/10/14/cas-rejects-israels-appeal-to-join-artistic-gymnastics-worlds-in-indonesia?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:45.790647+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/14/suspect-in-us-arson-attack-at-pennsylvania-governors-mansion-pleads-guilty?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:45.853774+00:00"
+    },
+    "https://www.aljazeera.com/video/people-power/2025/10/14/forever-chemicals-a-toxic-legacy?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:45.904969+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/14/supreme-court-declines-alex-jones-challenge-to-defamation-judgement?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:45.943029+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/14/russia-strikes-kharkiv-hospital-un-convoy-as-ukraine-seeks-us-tomahawks?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:45.992198+00:00"
+    },
+    "https://www.aljazeera.com/economy/2025/10/14/imf-says-ai-investment-bubble-could-burst-comparable-to-dot-com-bubble?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:46.049022+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/14/mapping-the-rise-in-israeli-settler-attacks-across-the-occupied-west-bank?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:46.097302+00:00"
+    },
+    "https://www.aljazeera.com/video/newsfeed/2025/10/14/gaza-journalist-buried-as-brother-is-freed-from-israeli-prison?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:46.148671+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/14/gaza-ceasefire-tested-as-israeli-forces-kill-five-palestinians?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:46.194512+00:00"
+    },
+    "https://www.aljazeera.com/news/longform/2025/10/14/they-could-have-killed-me-protesters-condemn-state-violence-in-argentina?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:46.259985+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/14/who-is-in-charge-of-madagascar-after-president-rajoelina-flees?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:46.322471+00:00"
+    },
+    "https://www.aljazeera.com/video/newsfeed/2025/10/14/colonel-says-military-has-taken-charge-in-madagascar?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:46.373023+00:00"
+    },
+    "https://www.aljazeera.com/video/newsfeed/2025/10/14/freed-palestinian-detainees-allege-torture-in-israeli-jail?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:47.021057+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/14/why-has-dutch-government-taken-control-of-china-owned-chipmaker-nexperia?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:47.085361+00:00"
+    },
+    "https://www.aljazeera.com/video/newsfeed/2025/10/14/deadly-storm-batters-alaska-leaving-thousands-displaced?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:47.153640+00:00"
+    },
+    "https://www.aljazeera.com/news/2025/10/14/madagascar-president-dissolves-parliament-after-fleeing-army-backed-protest?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:47.204570+00:00"
+    },
+    "https://www.aljazeera.com/video/newsfeed/2025/10/14/video-opposition-candidate-declares-victory-in-cameroon-election?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:47.253240+00:00"
+    },
+    "https://www.aljazeera.com/sports/liveblog/2025/10/14/live-nigeria-vs-benin-caf-world-cup-qualifierfollo?traffic_source=rss": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:47.293640+00:00"
+    },
+    "https://www.foxnews.com/sports/long-island-county-executive-vows-protect-womens-sports-after-appeals-court-halts-trans-athlete-ban": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:47.557863+00:00"
+    },
+    "https://www.foxnews.com/politics/trump-touts-another-us-strike-near-venezuela-killed-six-alleged-drug-smugglers": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:47.634528+00:00"
+    },
+    "https://www.foxnews.com/us/woman-23-dies-after-devastating-freak-accident-utah-music-festival-family-says": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:47.723154+00:00"
+    },
+    "https://www.foxnews.com/entertainment/amy-duggar-king-claims-grandfather-nearly-murdered-her-mother-shocking-family-memoir": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:47.813450+00:00"
+    },
+    "https://www.foxnews.com/world/african-island-nation-plunged-political-chaos-president-flees-country-military-seizes-control": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:47.888244+00:00"
+    },
+    "https://www.foxnews.com/politics/mike-johnson-world-leaders-nominate-trump-nobel-peace-prize-after-israel-hamas-deal": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:47.974737+00:00"
+    },
+    "https://www.foxnews.com/world/details-emerge-about-freed-israeli-hostages-medical-conditions-what-endured-captivity": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:48.061167+00:00"
+    },
+    "https://www.foxnews.com/media/the-view-co-host-doesnt-keep-promise-wear-maga-hat-trump-got-israeli-hostages-home": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:48.161637+00:00"
+    },
+    "https://www.foxnews.com/travel/terrifying-video-shows-gorilla-smash-glass-crowd-reacts-disbelief": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:48.243108+00:00"
+    },
+    "https://www.foxnews.com/world/trump-admin-pulls-visas-50-mexican-officials-effort-crush-drug-cartels-report": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:48.332430+00:00"
+    },
+    "https://www.foxnews.com/us/squatters-take-over-yosemite-shutdown-leaves-popular-national-park-few-rangers-report": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:48.424028+00:00"
+    },
+    "https://www.foxnews.com/politics/democrats-threaten-see-trump-team-in-court-over-illegal-firings-shutdown-battle-escalates": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:48.513026+00:00"
+    },
+    "https://www.foxnews.com/politics/trump-calls-xis-rare-earth-move-bad-moment-why-matters-us-national-security-china-ties": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:48.612060+00:00"
+    },
+    "https://www.foxnews.com/politics/judge-sides-comey-fight-over-protected-discovery-materials": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:48.701483+00:00"
+    },
+    "https://www.foxnews.com/us/army-vet-dad-runs-sheriff-while-charged-gunning-down-daughters-alleged-sexual-predator": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:48.785465+00:00"
+    },
+    "https://www.foxnews.com/politics/ilhan-omar-refuses-credit-trump-gaza-ceasefire": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:48.866592+00:00"
+    },
+    "https://www.foxnews.com/media/trump-slams-time-magazine-cover-photo-worst-all-time-after-gaza-peace-deal-story": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:48.948305+00:00"
+    },
+    "https://www.foxnews.com/entertainment/grammy-winning-singer-dangelo-dead-51": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:49.033040+00:00"
+    },
+    "https://www.foxnews.com/sports/olympian-simone-biles-shares-3-word-reaction-husbands-bears-dramatic-comeback-victory-over-commanders": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:49.123968+00:00"
+    },
+    "https://www.foxnews.com/politics/jordan-asks-jack-smith-testify-over-partisan-politically-motivated-trump-prosecutions": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:49.202122+00:00"
+    },
+    "https://www.foxnews.com/media/democrat-calls-giving-trump-credit-great-american-leadership-after-gaza-peace-deal": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:49.283902+00:00"
+    },
+    "https://www.foxnews.com/us/state-department-employee-allegedly-removed-classified-docs-met-chinese-officials": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:49.367799+00:00"
+    },
+    "https://www.foxnews.com/entertainment/selma-blair-exposes-how-doctors-missed-her-ms-decades-despite-clear-warning-signs": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:49.478832+00:00"
+    },
+    "https://www.foxnews.com/media/fox-news-martha-maccallum-interview-new-york-mayoral-candidate-zohran-mamdani": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:49.565366+00:00"
+    },
+    "https://www.foxnews.com/sports/blue-jays-rookie-pitcher-trey-yesavage-calls-out-fan-harassment-after-defeating-yankees-alds": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:49.644370+00:00"
+    },
+    "https://www.npr.org/2025/10/14/nx-s1-5574215/military-madagascar-gen-z": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:49.881679+00:00"
+    },
+    "https://www.npr.org/2025/10/14/nx-s1-5574057/israel-hamas-ceasefire-gaza": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:49.939528+00:00"
+    },
+    "https://www.npr.org/2025/10/14/g-s1-93331/up-first-newsletter-gaza-israel-trump-middle-east-ice": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:50.011792+00:00"
+    },
+    "https://www.npr.org/2025/10/14/nx-s1-5570893/janet-mills-susan-collins-maine-senate": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:50.061681+00:00"
+    },
+    "https://www.npr.org/2025/10/14/g-s1-93307/a-nobel-prize-for-explaining-when-technology-leads-to-growth": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:50.114612+00:00"
+    },
+    "https://www.npr.org/2025/10/14/nx-s1-5565147/google-ai-data-centers-growth-environment-electricity": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:50.221625+00:00"
+    },
+    "https://www.npr.org/2025/10/14/g-s1-93297/pentagon-reporter-opinion-press-policy": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:50.269211+00:00"
+    },
+    "https://www.npr.org/2025/10/14/nx-s1-5570756/test-scores-math-reading-students-pandemic": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:50.348161+00:00"
+    },
+    "https://www.npr.org/2025/10/14/nx-s1-5564056/security-mi-6-uk-secrets-foreign-intelligence-silent-courier": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:50.407384+00:00"
+    },
+    "https://www.npr.org/2025/10/14/g-s1-93322/death-toll-torrential-rains-mexico": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:50.449040+00:00"
+    },
+    "https://reason.com/volokh/2025/10/14/colorado-child-porn-law-didnt-ban-deepfake-porn-until-recent-amendments-court-holds/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:52.139852+00:00"
+    },
+    "https://reason.com/2025/10/14/the-zoning-theory-of-everything-abortion-edition/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:52.344340+00:00"
+    },
+    "https://reason.com/volokh/2025/10/14/the-lowly-stay-takes-center-stage/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:52.565636+00:00"
+    },
+    "https://reason.com/volokh/2025/10/14/viewpoint-diversity-requirements-as-a-new-fairness-doctrine-why-countervailing-pressures-to-protect-controversial-views-are-likely-to-be-inadequate/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:52.757161+00:00"
+    },
+    "https://reason.com/volokh/2025/10/14/justice-gorsuch-argues-that-the-seventh-amendment-should-apply-to-the-states/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:52.950280+00:00"
+    },
+    "https://reason.com/2025/10/14/the-agony-of-defeat-not-winning-is-what-makes-sports-exciting/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:53.166508+00:00"
+    },
+    "https://reason.com/2025/10/14/can-police-enter-your-home-without-a-warrant-the-supreme-court-will-soon-decide/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:53.362407+00:00"
+    },
+    "https://reason.com/2025/10/14/war-is-over/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:53.560981+00:00"
+    },
+    "https://reason.com/volokh/2025/10/14/viewpoint-diversity-requirements-as-a-new-fairness-doctrine-chilling-effect-on-controversial-faculty-speech/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:53.762184+00:00"
+    },
+    "https://reason.com/2025/10/14/is-the-supreme-courts-shadow-docket-causing-a-judicial-crisis/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:53.958527+00:00"
+    },
+    "https://reason.com/volokh/2025/10/14/today-in-supreme-court-history-october-14-1911-7/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:54.152840+00:00"
+    },
+    "https://reason.com/2025/10/14/brickbat-pinned-blame/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:54.342721+00:00"
+    },
+    "https://reason.com/volokh/2025/10/13/from-october-7-2023-to-october-13-2025/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:54.681706+00:00"
+    },
+    "https://reason.com/podcast/2025/10/13/trumps-art-of-the-deal-for-peace-in-the-middle-east/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:56.140023+00:00"
+    },
+    "https://reason.com/2025/10/13/this-years-nobel-winners-for-economics-explained-how-innovation-makes-us-rich/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:56.340624+00:00"
+    },
+    "https://reason.com/volokh/2025/10/13/thoughts-on-case-v-montana-and-the-standards-for-the-emergency-aid-exception/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:56.535651+00:00"
+    },
+    "https://reason.com/volokh/2025/10/13/hostages-and-hostages/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:56.727978+00:00"
+    },
+    "https://reason.com/volokh/2025/10/13/forum-shopping-in-the-first-circuit/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:56.923684+00:00"
+    },
+    "https://reason.com/volokh/2025/10/13/viewpoint-diversity-requirements-as-a-new-fairness-doctrine-regulators-motivations/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:57.115424+00:00"
+    },
+    "https://reason.com/2025/10/13/california-wants-to-punish-social-platforms-for-aiding-and-abetting-the-first-amendment/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:57.322737+00:00"
+    },
+    "https://reason.com/volokh/2025/10/13/friday-oct-17-1230pm-130pm-zoom-event-trump-the-media-and-the-first-amendment/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:57.513536+00:00"
+    },
+    "https://reason.com/2025/10/13/the-u-s-military-is-helping-arab-dictatorships-run-psyops/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:57.717307+00:00"
+    },
+    "https://reason.com/volokh/2025/10/13/dcchs-oral-history-of-justice-ruth-bader-ginsburg/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:57.909535+00:00"
+    },
+    "https://reason.com/2025/10/13/all-20-surviving-hostages-freed/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:58.108798+00:00"
+    },
+    "https://reason.com/volokh/2025/10/13/viewpoint-diversity-requirements-as-a-new-fairness-doctrine/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:58.312696+00:00"
+    },
+    "https://reason.com/volokh/2025/10/13/what-alleged-behavior-was-constitutionally-protected-against-harassment-liability-in-cuny-hunter-college-case/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:58.514141+00:00"
+    },
+    "https://reason.com/volokh/2025/10/13/what-alleged-behavior-could-lead-to-liability-for-anti-semitic-harassment-in-cuny-hunter-college-case/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:58.711843+00:00"
+    },
+    "https://reason.com/volokh/2025/10/13/first-amendment-limits-on-workplace-harassment-liability-in-claim-of-anti-semitic-harassment-at-cuny-hunter-college-following-october-7-attacks/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:58.909581+00:00"
+    },
+    "https://reason.com/2025/10/13/6-months-in-jail-for-mountain-running/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:59.102692+00:00"
+    },
+    "https://reason.com/volokh/2025/10/13/today-in-supreme-court-history-october-13-1890-7/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:59.297501+00:00"
+    },
+    "https://reason.com/2025/10/13/algorithmic-censorship-changes-the-way-we-talk/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:59.494301+00:00"
+    },
+    "https://reason.com/2025/10/13/archives-november-2025/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:59.687642+00:00"
+    },
+    "https://reason.com/2025/10/13/brickbat-tough-luck-grandma/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:21:59.909877+00:00"
+    },
+    "https://reason.com/volokh/2025/10/13/monday-open-thread-127/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:00.113591+00:00"
+    },
+    "https://reason.com/volokh/2025/10/12/how-viewpoint-diversity-can-help-protect-academics-from-themselves-and-perhaps-help-heal-our-civic-culture-too/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:00.318723+00:00"
+    },
+    "https://reason.com/volokh/2025/10/12/today-in-supreme-court-history-october-12-1977-7/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:00.512275+00:00"
+    },
+    "https://reason.com/2025/10/12/terence-mckenna-the-would-be-jesus-of-psychedelics/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:00.712466+00:00"
+    },
+    "https://reason.com/2025/10/12/glenn-jacobs-on-the-gop/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:00.909217+00:00"
+    },
+    "https://reason.com/volokh/2025/10/12/sunday-open-thread-8/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:01.111457+00:00"
+    },
+    "https://reason.com/volokh/2025/10/12/even-with-a-skewed-sample-size-the-new-york-times-survey-of-federal-judges-reveals-a-brewing-judicial-crisis/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:01.308832+00:00"
+    },
+    "https://reason.com/volokh/2025/10/11/do-federal-judges-believe-we-are-in-the-midst-of-a-judicial-crisis/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:01.506688+00:00"
+    },
+    "https://reason.com/volokh/2025/10/11/today-in-supreme-court-history-october-11-1972-7/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:01.703033+00:00"
+    },
+    "https://reason.com/2025/10/11/new-york-doubles-down-on-delivery-wage-disaster/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:01.911654+00:00"
+    },
+    "https://reason.com/2025/10/11/californias-minimum-wage-law-cost-18000-jobs/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:02.131419+00:00"
+    },
+    "https://reason.com/volokh/2025/10/10/friday-open-thread-42/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:02.334446+00:00"
+    },
+    "https://reason.com/2025/10/10/video-shows-federal-agents-arresting-a-chicago-journalist-they-now-say-she-threw-objects-at-her-vehicle/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:02.528935+00:00"
+    },
+    "https://reason.com/2025/10/10/this-indiana-city-doesnt-have-to-pay-an-innocent-mom-16000-after-police-wrecked-her-home-court-rules/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:02.726274+00:00"
+    },
+    "https://reason.com/2025/10/10/trump-wont-invoke-the-insurrection-act-as-long-as-he-can-use-the-national-guard-however-he-wants/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:02.928179+00:00"
+    },
+    "https://thefederalist.com/2025/10/14/local-democrat-party-to-host-solidarity-fundraiser-with-jay-jones-after-assassination-fantasies-scandal/?utm_source=rss&utm_medium=rss&utm_campaign=local-democrat-party-to-host-solidarity-fundraiser-with-jay-jones-after-assassination-fantasies-scandal": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:05.035632+00:00"
+    },
+    "https://thefederalist.com/2025/10/14/the-man-the-left-calls-a-nazi-just-signed-a-peace-deal-protecting-millions-of-jews/?utm_source=rss&utm_medium=rss&utm_campaign=the-man-the-left-calls-a-nazi-just-signed-a-peace-deal-protecting-millions-of-jews": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:05.583462+00:00"
+    },
+    "https://thefederalist.com/2025/10/14/valor-virtue-and-manliness-can-rescue-civilization/?utm_source=rss&utm_medium=rss&utm_campaign=valor-virtue-and-manliness-can-rescue-civilization": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:06.123337+00:00"
+    },
+    "https://thefederalist.com/2025/10/14/2025-budget-review-shows-we-cant-afford-to-extend-temporary-obamacare-subsidies/?utm_source=rss&utm_medium=rss&utm_campaign=2025-budget-review-shows-we-cant-afford-to-extend-temporary-obamacare-subsidies": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:06.653979+00:00"
+    },
+    "https://thefederalist.com/2025/10/14/tiktok-pushes-sexual-content-to-minors-while-censoring-christian-games-report/?utm_source=rss&utm_medium=rss&utm_campaign=tiktok-pushes-sexual-content-to-minors-while-censoring-christian-games-report": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:07.189430+00:00"
+    },
+    "https://thefederalist.com/2025/10/14/woman-finds-250-ballots-in-amazon-box-as-maine-dems-fight-voter-id-law/?utm_source=rss&utm_medium=rss&utm_campaign=woman-finds-250-ballots-in-amazon-box-as-maine-dems-fight-voter-id-law": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:07.721912+00:00"
+    },
+    "https://thefederalist.com/2025/10/14/democrats-dont-care-that-mamdani-allegedly-broke-election-laws-because-hes-one-of-them/?utm_source=rss&utm_medium=rss&utm_campaign=democrats-dont-care-that-mamdani-allegedly-broke-election-laws-because-hes-one-of-them": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:08.263251+00:00"
+    },
+    "https://thefederalist.com/2025/10/14/fraud-charges-against-real-housewives-star-wendy-osefo-are-a-reminder-the-blm-movement-is-led-by-scammers/?utm_source=rss&utm_medium=rss&utm_campaign=fraud-charges-against-real-housewives-star-wendy-osefo-are-a-reminder-the-blm-movement-is-led-by-scammers": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:08.796030+00:00"
+    },
+    "https://thefederalist.com/2025/10/14/spanberger-refuses-to-say-if-men-should-be-allowed-into-girls-locker-rooms-again/?utm_source=rss&utm_medium=rss&utm_campaign=spanberger-refuses-to-say-if-men-should-be-allowed-into-girls-locker-rooms-again": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:09.330038+00:00"
+    },
+    "https://thefederalist.com/2025/10/13/if-anyones-causing-a-judicial-crisis-its-rogue-lower-court-judges/?utm_source=rss&utm_medium=rss&utm_campaign=if-anyones-causing-a-judicial-crisis-its-rogue-lower-court-judges": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:09.873149+00:00"
+    },
+    "https://thefederalist.com/2025/10/13/california-law-requires-government-schools-to-do-free-pr-for-radical-trans-group/?utm_source=rss&utm_medium=rss&utm_campaign=california-law-requires-government-schools-to-do-free-pr-for-radical-trans-group": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:10.411606+00:00"
+    },
+    "https://thefederalist.com/2025/10/13/the-medal-of-freedom-was-created-for-people-exactly-like-charlie-kirk/?utm_source=rss&utm_medium=rss&utm_campaign=the-medal-of-freedom-was-created-for-people-exactly-like-charlie-kirk": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:10.946569+00:00"
+    },
+    "https://thefederalist.com/2025/10/13/punishing-propagandists-like-stephanopoulos-for-playing-dirty-starts-with-starving-them-of-gop-guests/?utm_source=rss&utm_medium=rss&utm_campaign=punishing-propagandists-like-stephanopoulos-for-playing-dirty-starts-with-starving-them-of-gop-guests": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:11.477665+00:00"
+    },
+    "https://thefederalist.com/2025/10/13/welker-suggests-trump-weaponized-doj-to-go-after-comey-letitia-james-all-the-questions-from-meet-the-press/?utm_source=rss&utm_medium=rss&utm_campaign=welker-suggests-trump-weaponized-doj-to-go-after-comey-letitia-james-all-the-questions-from-meet-the-press": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:12.071244+00:00"
+    },
+    "https://thefederalist.com/2025/10/13/brennan-makes-jab-at-biden-over-israel-peace-deal-all-the-question-from-face-the-nation/?utm_source=rss&utm_medium=rss&utm_campaign=brennan-makes-jab-at-biden-over-israel-peace-deal-all-the-question-from-face-the-nation": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:12.634565+00:00"
+    },
+    "https://thefederalist.com/2025/10/13/stephanopoulos-cuts-off-j-d-vance-mid-interview-discredits-his-own-show-all-the-questions-from-abcs-this-week/?utm_source=rss&utm_medium=rss&utm_campaign=stephanopoulos-cuts-off-j-d-vance-mid-interview-discredits-his-own-show-all-the-questions-from-abcs-this-week": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:13.178729+00:00"
+    },
+    "https://thefederalist.com/2025/10/13/why-democrats-demonize-christopher-columbus-and-lionize-che-guevara/?utm_source=rss&utm_medium=rss&utm_campaign=why-democrats-demonize-christopher-columbus-and-lionize-che-guevara": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:13.720138+00:00"
+    },
+    "https://thefederalist.com/2025/10/13/californias-gerrymandering-scam-raises-election-integrity-concerns/?utm_source=rss&utm_medium=rss&utm_campaign=californias-gerrymandering-scam-raises-election-integrity-concerns": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:14.261009+00:00"
+    },
+    "https://thefederalist.com/2025/10/13/trump-is-the-best-statesman-of-our-time-because-hes-a-realist/?utm_source=rss&utm_medium=rss&utm_campaign=trump-is-the-best-statesman-of-our-time-because-hes-a-realist": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:14.790503+00:00"
+    },
+    "https://thefederalist.com/2025/10/13/the-biggest-obstacle-to-trumps-israel-hamas-peace-deal-is-jihadi-ideology/?utm_source=rss&utm_medium=rss&utm_campaign=the-biggest-obstacle-to-trumps-israel-hamas-peace-deal-is-jihadi-ideology": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:15.328294+00:00"
+    },
+    "https://www.msnbc.com/top-stories/latest/man-pleads-guilty-attempted-murder-shapiro-governors-mansion-arson-rcna237566": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:16.036183+00:00"
+    },
+    "https://www.msnbc.com/opinion/msnbc-opinion/trump-russell-vought-disabilities-special-education-doe-rcna237496": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:16.177876+00:00"
+    },
+    "https://www.msnbc.com/deadline-white-house/deadline-legal-blog/appeals-supreme-court-cases-tragic-rcna237541": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:18.159764+00:00"
+    },
+    "https://www.msnbc.com/rachel-maddow-show/maddowblog/middle-east-trump-invests-energy-misguided-attacks-democratic-critics-rcna237599": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:18.590764+00:00"
+    },
+    "https://www.msnbc.com/rachel-maddow-show/maddowblog/sudden-republican-fixation-sharia-law-getting-increasingly-weird-rcna237580": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:18.716332+00:00"
+    },
+    "https://www.msnbc.com/morning-joe/watch/more-aid-flows-into-gaza-after-ceasefire-249861701575": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:19.196614+00:00"
+    },
+    "https://www.msnbc.com/news/news-analysis/trump-national-guard-insurrection-act-project-47-newsletter-rcna237558": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:19.674315+00:00"
+    },
+    "https://www.msnbc.com/rachel-maddow-show/maddowblog/future-affordable-care-act-republican-leaders-are-proving-democrats-po-rcna237559": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:20.177764+00:00"
+    },
+    "https://www.msnbc.com/deadline-white-house/deadline-legal-blog/comey-indictment-trump-doj-discovery-ruling-rcna237506": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:24.688765+00:00"
+    },
+    "https://www.msnbc.com/ana-cabrera-reports/watch/shutdown-day-14-federal-workers-set-to-lose-out-on-pay-249846341999": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:25.182493+00:00"
+    },
+    "https://www.msnbc.com/rachel-maddow-show/maddowblog/north-carolina-republicans-gerrymander-rcna237519": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:25.638191+00:00"
+    },
+    "https://www.msnbc.com/deadline-white-house/deadline-legal-blog/supreme-court-alex-jones-appeal-libel-infowars-rcna236691": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:26.155053+00:00"
+    },
+    "https://www.msnbc.com/rachel-maddow-show/maddowblog/hot-mic-catches-indonesian-president-asking-trump-meeting-son-eric-rcna237501": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:26.416625+00:00"
+    },
+    "https://www.msnbc.com/opinion/msnbc-opinion/israel-gaza-war-ceasefire-netanyahu-hamas-peace-plan-rcna236989": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:26.842099+00:00"
+    },
+    "https://www.msnbc.com/opinion/msnbc-opinion/mike-johnsons-house-shutdown-epstein-files-rcna237374": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:26.981396+00:00"
+    },
+    "https://www.msnbc.com/opinion/msnbc-opinion/katie-porter-videos-california-governor-race-rcna236993": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:28.367591+00:00"
+    },
+    "https://www.msnbc.com/opinion/msnbc-opinion/trump-israel-hamas-deal-nobel-peace-prize-media-rcna236988": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:28.848846+00:00"
+    },
+    "https://www.msnbc.com/msnbc/news/trump-immigrants-violent-crime-chicago-illinois-ice-rcna237272": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:28.991103+00:00"
+    },
+    "https://www.msnbc.com/msnbc/news/two-words-democrats-avoiding-israel-hamas-peace-deal-rcna237382": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:29.468061+00:00"
+    },
+    "https://www.msnbc.com/top-stories/latest/child-abuse-confession-washington-state-catholic-church-rcna237368": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:29.592179+00:00"
+    },
+    "https://www.msnbc.com/rachel-maddow-show/maddowblog/kristi-noem-stars-partisan-video-shutdown-shown-airports-rcna237369": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:30.100291+00:00"
+    },
+    "https://www.msnbc.com/top-stories/latest/hostage-deal-israel-hamas-gaza-ceasefire-hersh-goldberg-polin-rcna237336": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:30.555677+00:00"
+    },
+    "https://www.msnbc.com/opinion/msnbc-opinion/democrats-government-shutdown-trump-authoritarianism-rcna236960": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:30.981030+00:00"
+    },
+    "https://www.msnbc.com/opinion/msnbc-opinion/shutdown-ice-detention-trump-rcna236397": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:31.408275+00:00"
+    },
+    "https://www.msnbc.com/chris-jansing-reports/watch/trump-teases-major-announcement-on-autism-248085573854": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:31.910083+00:00"
+    },
+    "https://nypost.com/2025/10/14/entertainment/busy-philipps-calls-out-dawsons-creek-for-insanely-inappropriate-affair-plot/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:32.825311+00:00"
+    },
+    "https://nypost.com/2025/10/14/us-news/charlie-kirk-honored-with-national-day-of-remembrance-heres-everything-to-know/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:33.948450+00:00"
+    },
+    "https://nypost.com/2025/10/14/entertainment/dramatic-video-shows-moment-alec-baldwin-rams-head-on-into-tree-in-hamptons-car-crash/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:34.852526+00:00"
+    },
+    "https://pagesix.com/2025/10/14/style/skims-just-launched-bush-thongs-and-the-internet-is-going-crazy/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:34.954542+00:00"
+    },
+    "https://nypost.com/2025/10/14/business/goldman-sachs-warns-of-looming-layoffs-as-ai-reshapes-operations/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:35.002423+00:00"
+    },
+    "https://decider.com/2025/10/14/dancing-with-the-stars-what-time-tonight-dwts-streaming-abc-hulu/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:36.348445+00:00"
+    },
+    "https://nypost.com/2025/10/14/us-news/house-judiciary-committee-demands-ex-special-counsel-jack-smith-explain-partisan-and-politically-motivated-trump-probes/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:37.277875+00:00"
+    },
+    "https://nypost.com/2025/10/14/betting/nfl-week-7-survivor-pool-guide-picks-analysis-strategy/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:37.316944+00:00"
+    },
+    "https://pagesix.com/2025/10/14/celebrity-news/joe-gorga-is-willing-to-forgive-teresa-giudice-under-one-condition/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:38.459694+00:00"
+    },
+    "https://nypost.com/2025/10/14/ticket-sales/the-hives-tour-2026-where-to-buy-tickets-schedule-dates/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:38.502474+00:00"
+    },
+    "https://nypost.com/2025/10/14/real-estate/the-new-hampshire-hideout-of-ghislaine-maxwell-cant-sell/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:39.578953+00:00"
+    },
+    "https://pagesix.com/2025/10/14/photos/hilaria-baldwins-transformation-through-the-years/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:39.635459+00:00"
+    },
+    "https://nypost.com/2025/10/14/media/bari-weiss-faces-mass-confusion-at-cbs-news-as-producers-union-reps-tussle-over-memo-report/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:40.482621+00:00"
+    },
+    "https://nypost.com/2025/10/14/world-news/tropical-storm-lorenzo-is-expected-to-take-an-unusual-path-in-the-atlantic-avoiding-us-landfall/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:40.528597+00:00"
+    },
+    "https://nypost.com/2025/10/14/us-news/family-of-black-man-gunned-down-by-off-duty-milwaukee-cop-admits-shooting-was-justified/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:41.875483+00:00"
+    },
+    "https://pagesix.com/2025/10/14/parents/halle-berry-celebrates-17-year-old-daughter-nahlas-major-milestone/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:42.598409+00:00"
+    },
+    "https://decider.com/2025/10/14/hgtv-bachelor-nation-new-competition-series-bachelor-mansion-takeover/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:42.674694+00:00"
+    },
+    "https://nypost.com/2025/10/14/entertainment/cybill-shepherd-gives-major-update-on-feuds-with-bruce-willis-christine-baranski/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:43.862969+00:00"
+    },
+    "https://nypost.com/2025/10/14/lifestyle/engineer-wins-contest-with-2346-pound-pumpkin/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:45.653985+00:00"
+    },
+    "https://pagesix.com/2025/10/14/style/charli-xcx-talks-plastic-surgery-obsession-in-vanity-fair-cover-story/": {
+      "status": "ok",
+      "fetched_at": "2025-10-14T18:22:46.570533+00:00"
+    }
+  }
+}
