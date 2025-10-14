@@ -11,10 +11,10 @@ chroma_collections:
 
 # === Embedding models ===
 embeddings:
-  topic_model: "intfloat/e5-base-v2"           # high-performing topic model
-  stance_model: "Snowflake/snowflake-arctic-embed-l"  # ideology-aware stance model
-  dim: 1024                                   # stance model has larger dimensionality
-  dtype: "float16"                            # storage-efficient dtype
+  topic_model: "intfloat/e5-base-v2"                 # high-performing topic model
+  stance_model: "Snowflake/snowflake-arctic-embed-l" # ideology-aware stance model
+  dim: 1024                                          # stance model dimensionality
+  dtype: "float16"                                   # storage-efficient dtype
   pooling: "mean"
   chunk_tokens: 512
   normalize: true
@@ -27,10 +27,10 @@ topics:
 
 # === Summarizer (for stance embeddings) ===
 summarizer:
-  model: "facebook/bart-large-cnn"            # stable summarizer; good coherence
-  target_sentences: 5                         # generate 3–5 sentences
-  truncation: 3072                            # allow broader sampling window
-  rhetorical_prompt: true                     # enable persuasion/ideology prompt mode
+  model: "sshleifer/distilbart-cnn-12-6"             # distilled BART (fast, stable on A100 + CUDA 12.x)
+  target_sentences: 5                                # generate 3–5 sentences
+  truncation: 3072                                   # broad sampling window
+  rhetorical_prompt: true                            # enable persuasion/ideology prompt mode
 
 # === Batch output + artifact management ===
 batch:
@@ -41,7 +41,7 @@ batch:
   metadata_file: "metadata.jsonl"
   compress: true
   dtype: "float16"
-  hf_push: true                               # automatically push to HF dataset
+  hf_push: true                                      # automatically push to HF dataset
 
 # === Identifier + hashing scheme ===
 ids:
