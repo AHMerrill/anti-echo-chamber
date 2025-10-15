@@ -1,7 +1,7 @@
 {
   "economy": {
     "families": {
-      "pro_market": {
+      "pro market": {
         "summary": "Markets allocate resources efficiently; government should minimize interference.",
         "examples": [
           "free trade and deregulation promote growth",
@@ -14,7 +14,7 @@
           "public spending is essential for equity and opportunity"
         ]
       },
-      "pro_regulation": {
+      "pro regulation": {
         "summary": "Markets require oversight to prevent abuse, ensure fairness, and protect the public.",
         "examples": [
           "corporate greed requires stronger oversight",
@@ -53,7 +53,7 @@
 
   "governance": {
     "families": {
-      "democratic_institutionalism": {
+      "democratic institutionalism": {
         "summary": "Stable liberal institutions and rule of law are essential for democracy.",
         "examples": [
           "checks and balances prevent authoritarianism",
@@ -66,7 +66,7 @@
           "strong leaders should override bureaucracy for efficiency"
         ]
       },
-      "anti_elite_populism": {
+      "anti elite populism": {
         "summary": "The people’s will is betrayed by self-interested elites, bureaucrats, or technocrats.",
         "examples": [
           "globalist elites control policy against ordinary citizens",
@@ -77,7 +77,7 @@
           "expertise and institutions protect against mob rule and misinformation"
         ]
       },
-      "technocratic_pragmatism": {
+      "technocratic pragmatism": {
         "summary": "Policy should be evidence-based, pragmatic, and non-ideological.",
         "examples": [
           "effective governance matters more than ideology",
@@ -91,9 +91,9 @@
     }
   },
 
-  "environment_and_climate": {
+  "environment and climate": {
     "families": {
-      "climate_urgency": {
+      "climate urgency": {
         "summary": "The climate crisis is an existential threat requiring immediate collective action.",
         "examples": [
           "carbon neutrality is a moral imperative",
@@ -105,7 +105,7 @@
           "climate alarmism exaggerates risk and stifles development"
         ]
       },
-      "market_environmentalism": {
+      "market environmentalism": {
         "summary": "Innovation, technology, and markets—not regulation—will solve environmental problems.",
         "examples": [
           "private sector innovation can decarbonize faster than bureaucracy",
@@ -116,7 +116,7 @@
           "profit-driven motives cannot solve collective ecological crises"
         ]
       },
-      "climate_skepticism": {
+      "climate skepticism": {
         "summary": "Climate science is politicized or overstated, and costly interventions harm economic vitality.",
         "examples": [
           "climate hysteria threatens jobs and freedom",
@@ -130,7 +130,7 @@
     }
   },
 
-  "foreign_policy": {
+  "foreign policy": {
     "families": {
       "internationalist": {
         "summary": "Global cooperation, alliances, and diplomacy ensure peace and stability.",
@@ -143,7 +143,7 @@
           "international institutions constrain national sovereignty"
         ]
       },
-      "nationalist_realist": {
+      "nationalist realist": {
         "summary": "Foreign policy should prioritize national interest, strength, and sovereignty.",
         "examples": [
           "America first policies restore independence",
@@ -154,7 +154,7 @@
           "isolationism weakens collective security and moral leadership"
         ]
       },
-      "humanitarian_interventionist": {
+      "humanitarian interventionist": {
         "summary": "Democracies have a moral duty to intervene abroad to stop atrocities or defend freedom.",
         "examples": [
           "western intervention is necessary to prevent genocide",
@@ -167,9 +167,9 @@
     }
   },
 
-  "social_and_cultural": {
+  "social and cultural": {
     "families": {
-      "social_justice": {
+      "social justice": {
         "summary": "Inequality based on race, gender, or identity must be corrected through systemic reform.",
         "examples": [
           "patriarchy and racism remain embedded in institutions",
@@ -191,7 +191,7 @@
           "rigid traditionalism marginalizes minorities and modern realities"
         ]
       },
-      "free_expression": {
+      "free expression": {
         "summary": "Open discourse and viewpoint diversity outweigh emotional or ideological protection.",
         "examples": [
           "cancel culture threatens democracy",
@@ -202,7 +202,7 @@
           "unchecked speech enables harm, hate, and misinformation"
         ]
       },
-      "moral_progressivism": {
+      "moral progressivism": {
         "summary": "Social norms must evolve toward inclusivity, equality, and pluralism.",
         "examples": [
           "LGBTQ+ rights are non-negotiable",
@@ -216,9 +216,9 @@
     }
   },
 
-  "technology_and_information": {
+  "technology and information": {
     "families": {
-      "techno_optimist": {
+      "techno optimist": {
         "summary": "Technology improves life, expands freedom, and enables progress.",
         "examples": [
           "AI and innovation will solve global challenges",
@@ -229,7 +229,7 @@
           "unregulated technology amplifies inequality and misinformation"
         ]
       },
-      "techno_skeptic": {
+      "techno skeptic": {
         "summary": "Technology accelerates inequality, manipulation, and loss of human control.",
         "examples": [
           "AI threatens jobs and democracy",
@@ -240,7 +240,7 @@
           "innovation and open competition ultimately self-correct abuses"
         ]
       },
-      "information_control": {
+      "information control": {
         "summary": "Misinformation must be managed through regulation and authoritative sources.",
         "examples": [
           "platforms should remove harmful content",
@@ -254,9 +254,9 @@
     }
   },
 
-  "governance_meta": {
+  "governance meta": {
     "families": {
-      "anti_corruption": {
+      "anti corruption": {
         "summary": "Accountability and transparency are moral imperatives for governance.",
         "examples": [
           "expose conflicts of interest",
@@ -264,10 +264,10 @@
           "whistleblowers defend democracy"
         ],
         "counterpositions": [
-          "anti-corruption rhetoric can be weaponized for partisanship"
+          "anti corruption rhetoric can be weaponized for partisanship"
         ]
       },
-      "authoritarian_approval": {
+      "authoritarian approval": {
         "summary": "Strong leaders bring stability and unity even at the expense of liberal norms.",
         "examples": [
           "democracies need decisive leadership",
@@ -283,7 +283,7 @@
 
   "meta": {
     "families": {
-      "non_advocacy": {
+      "non advocacy": {
         "summary": "The article is primarily descriptive or informative, not argumentative.",
         "examples": [
           "neutral reporting of events without evaluative language",
@@ -291,7 +291,7 @@
           "no identifiable stance, ideology, or emotional tone"
         ]
       },
-      "mixed_signals": {
+      "mixed signals": {
         "summary": "Tone or argument is internally inconsistent or unclear.",
         "examples": [
           "praises and criticizes multiple sides equally",
