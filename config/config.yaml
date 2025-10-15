@@ -1,5 +1,5 @@
-# === anti-echo-chamber project config (v4: dual-model stance system, FLAN-T5 + BART, CUDA 12.1) ===
-version: 4
+# === anti-echo-chamber project config (v5: dual-model stance system, FLAN-UL2 + BART, CUDA 12.1) ===
+version: 5
 
 # === Hugging Face dataset for artifact storage ===
 hf_dataset_id: "zanimal/anti-echo-artifacts"
@@ -30,19 +30,25 @@ stance_processing:
   mode: "dual-model-hybrid"                          # FLAN for classification, BART for summary
   variants: ["label", "summary"]                     # two stance representations per article
 
-  # --- Stage 1: Ideological classification (FLAN-T5) ---
+  # --- Stage 1: Ideological classification (FLAN-UL2) ---
   classifier:
-    model: "google/flan-t5-large"                    # instruction-tuned for discrete label control
-    max_tokens: 1024
-    truncation: 2500                                 # short window for efficiency
+    model: "google/flan-ul2"                         # upgraded from flan-t5-large → flan-ul2
+    max_tokens: 2048                                 # extended token budget
+    truncation: 3000                                 # include more article text for classification
     output_lines: 2                                  # political leaning + implied stance
+    generation:
+      do_sample: true                                # allow mild sampling for richer outputs
+      temperature: 0.4                               # helps avoid repetitive or degenerate outputs
+      top_p: 0.9                                     # nucleus sampling
+      num_beams: 1                                   # beam search unnecessary for classification
+      early_stopping: true
     ideological_guidance:
       political_leanings: "https://raw.githubusercontent.com/AHMerrill/anti-echo-chamber/main/config/political_leanings.json"
       implied_stances: "https://raw.githubusercontent.com/AHMerrill/anti-echo-chamber/main/config/implied_stances.json"
     prompt_style:
       type: "categorical"
       description: >
-        FLAN-T5 generates exactly two lines: the author's implied political
+        FLAN-UL2 generates exactly two lines: the author's implied political
         leaning and stance, selected from predefined JSON anchor lists.
 
   # --- Stage 2: Rhetorical summarization (BART) ---
