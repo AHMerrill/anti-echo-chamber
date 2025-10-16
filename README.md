@@ -114,6 +114,97 @@ Every Colab run is stateless. Each collaborator follows this sequence:
 
 ---
 
+## What the notebooks do (end-to-end)
+
+This repo has two Colab-first notebooks that implement the full workflow:
+
+1) `scraper_artifacts.ipynb` — Scrape feeds, normalize into a DataFrame, embed, and publish a batch to Hugging Face.
+2) `anti_echo_chamber.ipynb` — Rebuild a local Chroma index from the HF dataset, then run retrieval for opposite-stance analysis.
+
+High-level flow:
+- Read feeds and/or a provided DataFrame of articles
+- Normalize and de-duplicate by URL hash
+- Compute two embeddings per article:
+  - Topic: what it’s about (SentenceTransformer model)
+  - Stance: how it argues (hybrid: LLM classification + embed the summary/labels)
+- Write artifacts under `batches/<batch_id>/`:
+  - `embeddings_topic.npz`, `embeddings_stance.npz`
+  - `metadata_topic.jsonl`, `metadata_stance.jsonl`
+  - `manifest.json`
+- Upload to `zanimal/anti-echo-artifacts` and append batch to `artifacts/artifacts_registry.json`
+
+All knobs (models, dimensions, dtype, pooling, chunk size, stance mode, etc.) live in `config/config.yaml`.
+
+---
+
+## Collaborator guide: Selenium scraping DataFrame schema
+
+If you are using Selenium (or any custom scraper) to gather additional articles to feed into the `scraper_artifacts.ipynb` pipeline, prepare a pandas DataFrame with the following columns. Keep names and types exactly as specified so the notebook can validate, embed, and package without manual tweaks.
+
+Required columns:
+
+- `url` (string): Canonical article URL. Must be unique per article.
+- `domain` (string): Lowercased site key, e.g., `guardian`, `reuters`, `bbc`, `npr`, `dailycaller`, etc. Use keys that exist in `config/source_bias.json` where possible.
+- `title` (string): Article headline.
+- `text` (string): Main body text (cleaned; no nav/boilerplate if possible). Keep full text local; it is not uploaded.
+- `published_at` (string or datetime): Publication timestamp in ISO 8601 if available (e.g., `2025-10-15T19:45:00Z`).
+
+Recommended columns (help downstream stance/topic processing and QC):
+
+- `author` (string | null): Primary author name.
+- `section` (string | null): Section/category (e.g., `politics`, `world`, `opinion`).
+- `language` (string | null): ISO language code, e.g., `en`.
+- `description` (string | null): Deck/standfirst if present.
+
+Optional columns (used if present; otherwise derived):
+
+- `source_bias_score` (float in [-1.0, +1.0] | null): If you know it; otherwise the notebook can look up by `domain` via `config/source_bias.json`.
+- `political_leaning_hint` (string | null): Free-text hint if you have one; final stance classification may override.
+
+Validation and normalization rules:
+
+- URLs are de-duplicated via a hash scheme configured under `ids` in `config/config.yaml` (e.g., `domain-slug-sha12`).
+- Whitespace is normalized and values are lowercased where configured (`ids.normalize_whitespace`, `ids.lowercase`).
+- The stance pipeline may consult:
+  - `config/political_leanings.json` (ideological families, markers)
+  - `config/implied_stances.json` (issue families and example claims)
+  - `config/source_bias.json` (per-domain bias priors)
+- Topic labeling uses `config/topics.json` with a similarity threshold (`topics.similarity_threshold`) and a cap (`topics.max_topics_per_article`).
+
+Minimal example in code (inside your scraper before saving to CSV/Parquet):
+
+```python
+import pandas as pd
+
+data = [
+  {
+    "url": "https://www.theguardian.com/world/2025/oct/16/example",
+    "domain": "guardian",
+    "title": "Example headline",
+    "text": "Full cleaned article text ...",
+    "published_at": "2025-10-16T00:11:46Z",
+    "author": "Firstname Lastname",
+    "section": "world",
+    "language": "en"
+  }
+]
+
+df = pd.DataFrame(data)
+```
+
+Pass `df` into `scraper_artifacts.ipynb` where prompted (or export to a file the notebook reads). The notebook will:
+- Drop duplicates by URL
+- Compute topic and stance embeddings per `config/config.yaml`
+- Generate and validate `manifest.json`
+- Write `{embeddings_topic, embeddings_stance}.npz` and `{metadata_topic, metadata_stance}.jsonl`
+- Upload to `zanimal/anti-echo-artifacts` and update `artifacts/artifacts_registry.json`
+
+Notes:
+- Do not include full article text in anything that is uploaded. The pipeline keeps raw text local; only derived embeddings and metadata are published.
+- Use `domain` keys that exist in `config/source_bias.json` to inherit consistent bias priors and display names.
+
+---
+
 ## Adding a new feed
 
 1. Edit your scraper to include the new RSS URL.  
