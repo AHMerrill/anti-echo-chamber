@@ -1,6 +1,6 @@
 # anti echo chamber
 
-Builds a free, open embedding index of news and commentary for studying topic framing and sentiment polarity across sources.  
+Builds an embedding index of news and commentary for studying topic framing and sentiment polarity across sources.  
 This repository handles scraping, embedding, batching, and coordination for the Hugging Face dataset [`zanimal/anti-echo-artifacts`](https://huggingface.co/datasets/zanimal/anti-echo-artifacts).
 
 ---
