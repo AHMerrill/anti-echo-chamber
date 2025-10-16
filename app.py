@@ -75,6 +75,17 @@ st.sidebar.markdown("Links")
 st.sidebar.markdown("- GitHub repo: https://github.com/AHMerrill/anti-echo-chamber")
 st.sidebar.markdown("- HF dataset: https://huggingface.co/datasets/zanimal/anti-echo-artifacts")
 
+# Manual, hidden key entry (per-session, not persisted)
+st.sidebar.markdown("---")
+st.sidebar.subheader("Credentials (session-only)")
+if "OPENAI_API_KEY" in st.session_state and not OPENAI_API_KEY:
+    OPENAI_API_KEY = st.session_state["OPENAI_API_KEY"]
+key_input = st.sidebar.text_input("OpenAI API key (hidden)", type="password", value="", help="Used only for this session; prefer Streamlit Secrets for deployments.")
+if key_input:
+    OPENAI_API_KEY = key_input.strip()
+    st.session_state["OPENAI_API_KEY"] = OPENAI_API_KEY
+    os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
+
 # --------------------------------------------------------------------------------------
 # Utilities
 # --------------------------------------------------------------------------------------
