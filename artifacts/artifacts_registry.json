@@ -2,6 +2,33 @@
   "registry_version": "1.0",
   "description": "Artifact registry for Anti Echo Chamber embeddings and metadata.",
   "last_updated": null,
-  "batches": [],
-  "version": 3
+  "batches": [
+    {
+      "schema_version": 2,
+      "batch_id": "batch_20251022T220634Z_4e4eb73b",
+      "created_at": "20251022T220634Z",
+      "models": {
+        "topic_model": "intfloat/e5-base-v2",
+        "stance_model": "all-mpnet-base-v2",
+        "dim": 768,
+        "dtype": "float32",
+        "pooling": "mean",
+        "chunk_tokens": 512,
+        "normalize": true
+      },
+      "counts": {
+        "topic": 57,
+        "stance": 13
+      },
+      "hf_dataset_id": "zanimal/anti-echo-artifacts",
+      "paths": {
+        "embeddings_topic": "batches/batch_20251022T220634Z_4e4eb73b/embeddings_topic.npz",
+        "embeddings_stance": "batches/batch_20251022T220634Z_4e4eb73b/embeddings_stance.npz",
+        "metadata_topic": "batches/batch_20251022T220634Z_4e4eb73b/metadata_topic.jsonl",
+        "metadata_stance": "batches/batch_20251022T220634Z_4e4eb73b/metadata_stance.jsonl",
+        "manifest": "batches/batch_20251022T220634Z_4e4eb73b/manifest.json"
+      }
+    }
+  ],
+  "version": 4
 }
