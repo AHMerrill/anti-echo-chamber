@@ -1,5 +1,5 @@
-# === anti-echo-chamber project config (v6: SentenceTransformer + GPT hybrid stance system) ===
-version: 6
+# === anti-echo-chamber project config (v7: Hybrid Topic + GPT Context Enrichment) ===
+version: 7
 
 # === Hugging Face dataset for artifact storage ===
 hf_dataset_id: "zanimal/anti-echo-artifacts"
@@ -19,11 +19,22 @@ embeddings:
   chunk_tokens: 512
   normalize: true
 
-# === Topic inference ===
+# === Topic inference (Anchor + OpenAI Hybrid) ===
 topics:
   source: "https://raw.githubusercontent.com/AHMerrill/anti-echo-chamber/main/config/topics.json"
   max_topics_per_article: 5
   similarity_threshold: 0.4
+
+  # --- new: OpenAI contextual topic layer ---
+  use_openai_enrichment: true                        # enable GPT topic summaries
+  openai_model: "gpt-4o-mini"                        # model for topic summaries
+  openai_field: "openai_topic_summary"               # metadata field name
+  openai_temperature: 0.4
+  openai_max_tokens: 64
+  openai_prompt: >
+    Summarize the main subject matter of this article in one sentence.
+    Do not include opinions or stances — only describe what it is about.
+    Example: "The article discusses the 2025 Gaza conflict between Israel and Hamas, diplomatic decisions, and aftermath."
 
 # === Stance inference pipeline (LLM + Embedding hybrid) ===
 stance_processing:
